@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "titulo": "A quién iré en necesidad",
+    "preview": "A quién iré en necesidad,\na quién iré en busca de paz,\ny quién podrá mi vida saciar de verdad.\n\nQuién más tendrá de mi compasión,\ny entenderá mi corazón.\nQuién cambiará mi eternidad,\nsino tú Jesús",
+    "slides": [
+      "<b>A quién iré en necesidad,</b><br><b>a quién iré en busca de paz,</b><br><b>y quién podrá mi vida saciar de verdad.</b><br><br><br><b>Quién más tendrá de mi compasión,</b><br><b>y entenderá mi corazón.</b><br><b>Quién cambiará mi eternidad,</b><br><b>sino tú Jesús</b>",
+      "<b>Cristo ¿A dónde más podría ir?</b><br><b>Cristo ¿Qué otro lugar puede existir?</b><br><b>Solo tu tienes palabras de amor</b><br><b>Camino al Padre y verdad eres tú.</b><br><b>Cristo ¿Adónde más podría ir?</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "acordes": [
+      "A [DO]quién iré en necesidad,\na [LAm]quién iré en busca de paz,\n[FA]y quién podrá mi vida saciar de [DO]verdad.[SOL]\n\n\nQuién más tendrá de mi compasión,\ny entenderá mi corazón.\nQuién cambiará mi eternidad,\nsino tú Jesús",
+      "Cristo ¿A dónde más podría ir?\nCristo ¿Qué otro lugar puede existir?\nSolo tu tienes palabras de amor\nCamino al Padre y verdad eres tú.\nCristo ¿Adónde más podría ir?"
+    ]
+  },
+  {
+    "titulo": "Canción de prueba",
+    "preview": "Primera estrofa de prueba\nSegunda línea de prueba",
+    "slides": [
+      "<b>Primera estrofa de prueba<br>Segunda línea de prueba<br>Tercera línea de prueba</b>",
+      "<b>Segunda estrofa de prueba<br>Otra línea aquí<br>Y otra más</b>",
+      "<b>Coro:<br>Esta es la proyección<br>funcionando correctamente<br>en el cancionero</b>"
+    ],
+    "tono": "SOL",
+    "carpeta": "Alabanza",
+    "acordes": [
+      "<b>[SOL]Primera estro[RE]fa de prue[MIm]ba<br>[DO]Segunda línea [SOL]de prueba</b>",
+      "<b>[SOL]Segunda estro[RE]fa de prue[MIm]ba<br>[DO]Otra línea [SOL]aquí</b>"
+    ]
+  }
+]
