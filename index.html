@@ -4,37 +4,40 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="theme-color" content="#1a1a1a"/>
-  <link rel="icon" href="./logo-32.png" type="image/png"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23252526'/%3E%3Ctext x='16' y='23' font-family='Consolas%2CMonaco%2Cmonospace' font-size='22' font-weight='bold' fill='%234ec9b0' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" type="image/svg+xml">
   <link rel="manifest" href="./manifest.json"/>
   <title>Cancionero</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #151c25;
-      --bg2:       #1e2836;
-      --bg3:       #1a2232;
-      --bg4:       #243040;
-      --border:    #2a3a50;
-      --border2:   #2e4060;
-      --text:      #e8e8e8;
-      --text2:     #aaa;
-      --text3:     #888;
-      --text4:     #555;
-      --text5:     #333;
-      --green-bg:  #0d2e3a;
-      --green-bd:  #1a5070;
-      --green-tx:  #4ec0e0;
-      --red-bg:    #2a1a1a;
-      --red-bd:    #5a2a2a;
-      --red-tx:    #c0392b;
-      --hl-bg:     #2d1f4a;
-      --hl-tx:     #c0a0f0;
-      --radius:    10px;
-      --radius-lg: 12px;
+      --bg:        #1e1e1e;
+      --bg2:       #252526;
+      --bg3:       #2d2d30;
+      --bg4:       #3e3e42;
+      --border:    #3e3e42;
+      --border2:   #555555;
+      --text:      #d4d4d4;
+      --text2:     #cccccc;
+      --text3:     #9cdcfe;
+      --text4:     #808080;
+      --text5:     #569cd6;
+      --green-bg:  #0e639c;
+      --green-bd:  #1177bb;
+      --green-tx:  #ffffff;
+      --hl-bg:     #264f78;
+      --hl-tx:     #9cdcfe;
+      --radius:    6px;
+      --radius-lg: 10px;
+      --red-bg:    #3a0e0e;
+      --red-bd:    #c0392b55;
+      --red-tx:    #f14c4c;
+      --teal-bg:   #0a2e2a;
+      --teal-bd:   #1a7a6a;
+      --teal-tx:   #4ec9b0;
     }
 
-    html, body { height: 100%; background: #0e141e; font-family: system-ui, -apple-system, sans-serif; color: var(--text); }
+    html, body { height: 100%; background: #1e1e1e; font-family: system-ui, -apple-system, sans-serif; color: var(--text); }
     #app { max-width: 680px; margin: 0 auto; padding: 1.25rem; min-height: 100vh; zoom: 1.12; }
 
     /* Tabs */
@@ -53,7 +56,7 @@
     #filters { display: flex; gap: 6px; margin-bottom: .875rem; flex-wrap: wrap; }
     .filter-btn { padding: 5px 12px; border-radius: 20px; font-size: 12px; cursor: pointer; border: 0.5px solid var(--border); background: var(--bg2); color: var(--text4); transition: all .12s; user-select: none; }
     .filter-btn:hover { border-color: #555; color: var(--text2); }
-    .filter-btn.active { background: #2e2e2e; color: var(--text); border-color: #555; }
+    .filter-btn.active { background: #0e639c; color: #ffffff; border-color: #1177bb; }
 
     /* Song list */
     #song-list { display: flex; flex-direction: column; gap: 5px; }
@@ -63,9 +66,13 @@
     .st { font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sm { font-size: 11px; color: var(--text4); margin-top: 2px; }
     .sp { font-size: 12px; color: var(--text3); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .add-btn { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 18px; width: 28px; height: 28px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background .12s; }
-    .add-btn:hover { background: #0a3a50; }
-    .in-list .add-btn { background: var(--red-bg); border-color: var(--red-bd); color: var(--red-tx); }
+    .sc-btns { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .sc-acorde-btn { background: none; border: 0.5px solid var(--border2); color: #9cdcfe; font-size: 14px; width: 30px; height: 30px; border-radius: var(--radius); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .12s; flex-shrink: 0; padding: 0; }
+    .sc-acorde-btn:hover { background: #1b3a5c; border-color: #1177bb; }
+    .add-btn { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 18px; width: 28px; height: 28px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .12s; }
+    .add-btn:hover { background: #1177bb; border-color: #1a88cc; }
+    .in-list .add-btn { background: var(--red-bg); border: 0.5px solid var(--red-bd); color: var(--red-tx); }
+    .in-list .add-btn:hover { background: #5a1a1a; border-color: var(--red-tx); }
     .hl { background: var(--hl-bg); color: var(--hl-tx); border-radius: 2px; padding: 0 2px; }
 
     /* Loading / error */
@@ -85,7 +92,7 @@
     .sl-btn { background: var(--bg3); border: 0.5px solid var(--border); color: var(--text2); font-size: 12px; padding: 6px 12px; border-radius: 8px; cursor: pointer; transition: background .12s; white-space: nowrap; }
     .sl-btn:hover { background: var(--border); color: var(--text); }
     .sl-btn.primary { background: var(--green-bg); border-color: var(--green-bd); color: var(--green-tx); }
-    .sl-btn.primary:hover { background: #0a3a50; }
+    .sl-btn.primary:hover { background: #1177bb; border-color: #1a88cc; }
     .sl-btn.primary:disabled { opacity: .3; cursor: default; }
     .sl-btn.danger { color: var(--red-tx); border-color: #3a1a1a; }
     .sl-btn.danger:hover { background: var(--red-bg); }
@@ -105,8 +112,9 @@
     .sl-title { flex: 1; font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
     .sl-title:hover { color: var(--text2); }
     .sl-meta { font-size: 11px; color: var(--text4); flex-shrink: 0; }
-    .sl-remove { background: none; border: none; color: var(--text5); font-size: 15px; cursor: pointer; padding: 0 2px; transition: color .12s; }
-    .sl-remove:hover { color: var(--red-tx); }
+    .sl-tono { font-size: 11px; flex-shrink: 0; color: #9cdcfe !important; font-weight: 500; }
+    .sl-remove { background: none; border: none; color: var(--red-tx); font-size: 15px; cursor: pointer; padding: 0 2px; transition: color .12s; opacity: .7; }
+    .sl-remove:hover { opacity: 1; }
     #sl-empty { font-size: 13px; color: #444; text-align: center; padding: 2rem 0; border: 0.5px dashed #2a2a2a; border-radius: var(--radius); }
 
     /* Panel importar desde texto */
@@ -132,8 +140,8 @@
 
     /* Acordes */
     .acorde-wrap { display: inline-flex; flex-direction: column; align-items: center; vertical-align: bottom; text-align: center; gap: 0; padding-top: 8px; }
-    .acorde-txt { font-size: .6em; font-weight: 700; color: #a08cf0; line-height: 1; white-space: nowrap; margin-bottom: 1px; }
-    .acorde-sil { line-height: inherit; }
+    .acorde-txt { font-size: .6em; font-weight: 700; color: #9cdcfe; line-height: 1; white-space: nowrap; margin-bottom: 1px; }
+    .acorde-sil { line-height: inherit; font-weight: 700; }
     #viewer { display: none; flex-direction: column; }
     #back { font-size: 13px; color: var(--text4); cursor: pointer; margin-bottom: 1rem; display: flex; align-items: center; gap: 5px; border: none; background: none; padding: 0; }
     #back:hover { color: var(--text2); }
@@ -151,21 +159,10 @@
     .nav-btn:hover:not(:disabled) { background: var(--border); color: var(--text); }
     .nav-btn:disabled { opacity: .3; cursor: default; }
     #slide-counter { font-size: 12px; color: var(--text4); flex: 1; text-align: center; }
-    #fs-btn { background: var(--bg3); border: 0.5px solid var(--border); color: var(--text2); font-size: 12px; padding: 0 10px; height: 38px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
-    #fs-btn:hover { background: var(--border); color: var(--text); }
-    #fs-btn-acordes { background: #1a2e3a; border: 0.5px solid #2a4a5a; color: #a08cf0; font-size: 12px; padding: 0 10px; height: 38px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
-    #fs-btn-acordes:hover { background: #1a1a4a; }
-    #fs-retomar { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 12px; padding: 0 10px; height: 38px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
-    #fs-retomar:hover { background: #0a3a50; }
-    #fs-btn-edges { background: var(--bg3); border: 0.5px solid var(--border); color: var(--text2); font-size: 12px; padding: 0 10px; height: 38px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
-    #fs-btn-edges:hover { background: var(--border); color: var(--text); }
     #fs-btn-acordes { background: var(--bg3); border: 0.5px solid var(--border); color: var(--text2); font-size: 12px; padding: 0 10px; height: 38px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
     #song-nav { display: flex; gap: 6px; margin-top: .75rem; }
 
     /* Editor de slide */
-    #edit-btn { background: none; border: none; color: var(--text5); font-size: 15px; cursor: pointer; padding: 4px 6px; border-radius: 6px; transition: color .12s, background .12s; line-height: 1; }
-    #edit-btn:hover { color: var(--text2); background: var(--bg4); }
-    #edit-btn.editado { color: #f0a030; }
     #edit-modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 8000; align-items: center; justify-content: center; padding: 1rem; }
     #edit-modal-bg.open { display: flex; }
     #edit-modal { background: var(--bg2); border: 0.5px solid var(--border2); border-radius: var(--radius-lg); padding: 1.25rem; width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: .875rem; }
@@ -175,7 +172,7 @@
     #edit-textarea:focus { border-color: #555; }
     #edit-modal-actions { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
     #edit-guardar { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 12px; padding: 6px 14px; border-radius: 8px; cursor: pointer; }
-    #edit-guardar:hover { background: #0a3a50; }
+    #edit-guardar:hover { background: #264f78; }
     #edit-cancelar { background: var(--bg3); border: 0.5px solid var(--border); color: var(--text2); font-size: 12px; padding: 6px 14px; border-radius: 8px; cursor: pointer; }
     #edit-cancelar:hover { background: var(--border); }
     #edit-descartar { background: none; border: none; color: var(--red-tx); font-size: 12px; padding: 6px 10px; cursor: pointer; margin-left: auto; opacity: .7; }
@@ -223,43 +220,34 @@
     .transp-ctrl { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
     .transp-btn { background: none; border: 0.5px solid #333; color: #777; font-size: 13px; width: 24px; height: 24px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .12s; line-height: 1; }
     .transp-btn:hover { border-color: #666; color: #ccc; }
-    .transp-tono { font-size: 13px; font-weight: 600; color: #a08cf0; min-width: 36px; text-align: center; }
+    .transp-tono { font-size: 13px; font-weight: 600; color: #9cdcfe; min-width: 36px; text-align: center; }
     /* Versión fullscreen — un poco más grande */
     #fs-transp .transp-btn { width: 28px; height: 28px; font-size: 14px; border-color: #444; }
     #fs-transp .transp-tono { font-size: 15px; min-width: 42px; }
     @media (min-width: 1024px) { #fs-transp { display: none !important; } }
-    #fs-minimize, #fs-cl {
+    #fs-cl {
       background: none; border: none; color: #888; cursor: pointer; transition: color .12s;
       flex-shrink: 0; padding: 0 4px; line-height: 1;
     }
-    #fs-minimize { font-size: 28px; }
     #fs-cl { font-size: 30px; }
-    #fs-minimize:hover, #fs-cl:hover { color: #ccc; }
+    #fs-cl:hover { color: #ccc; }
 
     /* Área central de contenido */
     #fs-center {
       flex: 1;
-      display: flex; align-items: center; justify-content: center;
-      padding: 0 80px;
+      display: flex; align-items: flex-start; justify-content: center;
+      padding: 1rem;
       overflow-y: auto;
       min-height: 0;
     }
-    @media (min-width: 1024px) {
-      #fs-center {
-        height: 100vh;
-        flex: none;
-        padding: 0 80px;
-      }
-    }
     #fs-content {
       color: #f0f0f0; text-align: center;
-      max-width: 1100px; width: 100%;
-    }
-    @media (min-width: 1024px) {
-      #fs-content { max-width: 94vw; padding: 0 2vw; }
+      max-width: 900px; width: 100%;
+      padding: 0.5rem 0;
     }
     #fs-content br.stanza { display: block; margin-top: 1.5em; }
     #fs-content .stanza-sep { display: block; height: 1.5em; }
+    #fs-content .slide-divider { display: block; border: none; border-top: 1px solid #6a6a6a; margin: 1.1em auto; width: 35%; opacity: 0.55; }
 
     /* Modo acordes: alineado a la izquierda, fuente monoespaciada, scroll en desktop y móvil */
     #fso.modo-acordes #fs-center {
@@ -272,7 +260,14 @@
       text-align: left;
       font-family: 'Courier New', Courier, monospace;
       padding: 1rem 1.25rem;
-      max-width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      font-weight: 700;
+    }
+    @media (min-width: 768px) {
+      #fso.modo-acordes #fs-center {
+        justify-content: center;
+      }
     }
     #fso.modo-acordes .acorde-txt {
       font-family: 'Courier New', Courier, monospace;
@@ -285,6 +280,7 @@
     }
 
     /* Botones laterales de diapositiva */
+    @media (max-width: 767px) { #fs-prev-slide, #fs-next-slide { display: none !important; } }
     .fs-side-btn {
       position: fixed; top: 50%; transform: translateY(-50%);
       background: none; border: none; color: #555; font-size: 28px;
@@ -295,16 +291,10 @@
     #fs-prev-slide { left: .5rem; }
     #fs-next-slide { right: .5rem; }
 
-    /* En móvil y tablet: ocultar flechas y aprovechar todo el ancho */
+    /* En móvil y tablet: ocultar elementos de desktop */
     @media (max-width: 1023px) {
-      .fs-side-btn { display: none; }
-      #fs-center { padding: 0; overflow-y: auto; align-items: flex-start; }
-      #fs-content { padding: 1rem; }
       #fs-dots { display: none; }
       #fs-slide-ctr { display: none; }
-      #fs-btn-edges { display: none; }
-      #fs-content .slide-divider { display: block; border: none; border-top: 0.5px solid #2a2a2a; margin: 1.25em 2rem; }
-      #export-btn { display: none; }
       .sl-meta { display: none; }
       #fs-song-title { font-size: 13px; }
       #fs-song-counter { font-size: 11px; }
@@ -318,7 +308,6 @@
       padding: .4rem 0 .6rem;
     }
     @media (min-width: 1024px) { #fs-bottom { display: none; } }
-    @media (min-width: 1024px) { #fs-btn { display: none; } #fs-btn-acordes { display: none; } }
     
     #fs-dots { display: flex; gap: 12px; align-items: center; }
     @media (min-width: 1024px) { #fs-dots { display: none; } }
@@ -351,10 +340,7 @@
     #fs-size-reset { font-size: 13px; font-weight: 600; }
     #fs-size-up { font-size: 15px; font-weight: 600; }
     #fs-size-reset.auto { color: #444; border-color: #2a2a2a; }
-    #fs-lh-down, #fs-lh-reset, #fs-lh-up { font-size: 13px; }
-    #fs-lh-reset.auto { color: #444; border-color: #2a2a2a; }
-    #fs-mayus { font-size: 11px; font-weight: 600; letter-spacing: .03em; }
-    #fs-mayus.activo { color: #a08cf0; border-color: #a08cf0; }
+
     #fs-content.mayus { text-transform: uppercase; }
     /* En móvil: size-ctrl va al bottom; en desktop va al top */
     @media (max-width: 1023px) {
@@ -448,7 +434,7 @@
   .edit-song-row:hover { border-color: #444; background: #222; }
   .edit-song-row-title { font-size: 13px; color: var(--text2); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .edit-song-row-tono { font-size: 11px; color: var(--green-tx); font-weight: 500; flex-shrink: 0; }
-  .edit-song-row-acorde { font-size: 11px; color: #a08cf0; flex-shrink: 0; }
+  .edit-song-row-acorde { font-size: 11px; color: #9cdcfe; flex-shrink: 0; }
 
   /* Formulario edición de acordes/tono */
   #acorde-form { display: none; flex-direction: column; gap: .75rem; }
@@ -472,6 +458,12 @@
   }
   #acorde-textarea:focus { border-color: #555; }
   .acorde-hint { font-size: 11px; color: var(--text4); line-height: 1.5; }
+  .edit-tabs { display: flex; gap: 2px; margin-bottom: .75rem; border-bottom: 0.5px solid var(--border); }
+  .edit-tab-btn { background: none; border: none; border-bottom: 2px solid transparent; color: var(--text4); font-size: 13px; padding: 6px 14px; cursor: pointer; font-family: inherit; margin-bottom: -1px; transition: color .12s; }
+  .edit-tab-btn.active { color: var(--text); border-bottom-color: #0e639c; }
+  .edit-tab-btn:hover:not(.active) { color: var(--text2); }
+  .edit-tab-pane { display: none; }
+  .edit-tab-pane.active { display: flex; flex-direction: column; gap: .75rem; }
   .acorde-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 
   /* Nueva canción */
@@ -510,12 +502,12 @@
   }
   #btn-export-json:hover { border-color: #555; color: var(--text); }
   #btn-publicar {
-    background: var(--green-bg); border: 0.5px solid var(--green-bd);
-    color: var(--green-tx); font-size: 13px; padding: 8px 20px;
+    background: #4a2080; border: 0.5px solid #5a2a90;
+    color: #ffffff; font-size: 13px; padding: 8px 20px;
     border-radius: 8px; cursor: pointer; transition: all .12s; white-space: nowrap; flex-shrink: 0;
     font-weight: 500;
   }
-  #btn-publicar:hover { background: #0a3a50; }
+  #btn-publicar:hover { background: #5e2ea8; border-color: #6e3ab8; }
   #btn-publicar:disabled { opacity: .4; cursor: default; }
 
   /* Botones compartidos */
@@ -524,17 +516,18 @@
     color: var(--green-tx); font-size: 12px; padding: 6px 14px;
     border-radius: 8px; cursor: pointer; transition: all .12s;
   }
-  .btn-primary:hover { background: #0a3a50; }
+  .btn-primary:hover { background: #1177bb; border-color: #1a88cc; }
   .btn-secondary {
     background: none; border: 0.5px solid var(--border2); color: var(--text4);
     font-size: 12px; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: all .12s;
   }
   .btn-secondary:hover { border-color: #555; color: var(--text2); }
   .btn-danger {
-    background: none; border: 0.5px solid #5a2020; color: #c07070;
+    background: none; border: none; color: var(--red-tx);
     font-size: 12px; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: all .12s;
+    opacity: .7;
   }
-  .btn-danger:hover { border-color: #8a3030; color: #e09090; }
+  .btn-danger:hover { opacity: 1; }
   .edit-msg { font-size: 12px; padding: 5px 0; }
   .edit-msg.ok { color: var(--green-tx); }
   .edit-msg.err { color: #c07070; }
@@ -583,35 +576,6 @@
   }
   #tab-setlist .notif-dot.visible { display: block; }
 
-  /* ── Popup novedad ──────────────────────────────────────── */
-  #novedad-bg {
-    display: none; position: fixed; inset: 0;
-    background: rgba(0,0,0,.7); z-index: 9100;
-    align-items: flex-end; justify-content: center;
-    padding: 0 0 1.5rem;
-  }
-  #novedad-bg.open { display: flex; }
-  #novedad-card {
-    background: var(--bg2); border: 0.5px solid var(--border2);
-    border-radius: var(--radius-lg); width: 100%; max-width: 480px;
-    padding: 1.25rem; display: flex; flex-direction: column; gap: .85rem;
-    margin: 0 1rem;
-    animation: slideUp .25s ease;
-  }
-  @keyframes slideUp { from { transform: translateY(24px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-  #novedad-card h3 {
-    font-size: 14px; font-weight: 600; color: var(--text); margin: 0;
-    display: flex; align-items: center; gap: .4rem;
-  }
-  #novedad-card p { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 0; }
-  #novedad-card p b { color: var(--text); font-weight: 500; }
-  #novedad-actions { display: flex; gap: 8px; justify-content: flex-end; }
-  #novedad-help { background: none; border: 0.5px solid var(--border2); color: var(--text4); font-size: 12px; padding: 6px 14px; border-radius: 8px; cursor: pointer; transition: all .12s; }
-  #novedad-help:hover { border-color: #555; color: var(--text2); }
-  #novedad-ok { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 12px; padding: 6px 16px; border-radius: 8px; cursor: pointer; transition: all .12s; }
-  #novedad-ok:hover { background: #0a3a50; }
-
-
   /* ── Popup desbordamiento ───────────────────────────────── */
   #overflow-bg {
     display: none; position: fixed; inset: 0;
@@ -631,7 +595,7 @@
   #overflow-card ul { font-size: 12px; color: var(--text4); margin: 0; padding-left: 1.2rem; line-height: 1.8; }
   #overflow-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
   #overflow-auto { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 12px; padding: 7px 16px; border-radius: 8px; cursor: pointer; transition: all .12s; }
-  #overflow-auto:hover { background: #0a3a50; }
+  #overflow-auto:hover { background: #264f78; }
   #overflow-igual { background: none; border: 0.5px solid var(--border2); color: var(--text4); font-size: 12px; padding: 7px 14px; border-radius: 8px; cursor: pointer; transition: all .12s; }
   #overflow-igual:hover { border-color: #555; color: var(--text2); }
   </style>
@@ -651,12 +615,10 @@
       <input id="search" type="text" placeholder="Buscar canción o letra..." autocomplete="off"/>
     </div>
     <div id="filters">
-      <button class="filter-btn active" data-filter="alabanza">Alabanza / Adoración</button>
-      <button class="filter-btn" data-filter="nuevas">Nuevas</button>
+      <button class="filter-btn active" data-filter="todas">Todas</button>
+      <button class="filter-btn" data-filter="alabanza">Alabanza / Adoración</button>
       <button class="filter-btn" data-filter="himnos">Himnos</button>
-      <button class="filter-btn" data-filter="escuela">Esc. bíblica</button>
       <button class="filter-btn" data-filter="navidad">Navidad</button>
-      <button class="filter-btn" data-filter="todas">Todas</button>
     </div>
     <div id="count"></div>
     <div id="loading">Cargando canciones...</div>
@@ -674,7 +636,8 @@
       <div class="sl-section-body">
         <div id="sl-servicio-items"></div>
         <div class="sl-section-btns">
-          <button class="sl-btn primary" id="play-servicio-btn">&#9654; Proyectar esta lista</button>
+          <button class="sl-btn primary" id="play-servicio-btn">&#9654; Proyectar</button>
+          <button class="sl-btn" id="play-servicio-acordes-btn" title="Proyectar con acordes">&#9654; Con acordes</button>
           
         </div>
       </div>
@@ -692,11 +655,11 @@
           <span id="sl-saved" style="font-size:11px;color:var(--text4)">&#10003; guardado</span>
         </div>
         <div id="sl-toolbar" style="display:flex;gap:6px;flex-wrap:wrap">
-          <button class="sl-btn primary" id="play-btn" disabled>&#9654; Proyectar mi lista</button>
+          <button class="sl-btn primary" id="play-btn" disabled>&#9654; Proyectar</button>
+          <button class="sl-btn" id="play-btn-acordes" disabled title="Proyectar con acordes">&#9654; Con acordes</button>
           
           <button class="sl-btn" id="txt-btn">&#9776; Cargar lista</button>
           <button class="sl-btn danger" id="clear-btn">Limpiar</button>
-          <button class="sl-btn" id="export-btn" style="margin-left:auto;opacity:.45;font-size:11px">&#8595; Json</button>
         </div>
         <div id="txt-panel">
           <textarea id="txt-input" placeholder="Pegá o escribí la lista de canciones, una por línea:&#10;&#10;Bésame&#10;Alfonsina&#10;gracia a la vida&#10;..."></textarea>
@@ -735,11 +698,6 @@
       <button class="nav-btn" id="prev">&#8592;</button>
       <span id="slide-counter"></span>
       <button class="nav-btn" id="next">&#8594;</button>
-      <button id="edit-btn" title="Editar esta diapositiva">&#9998;</button>
-      <button id="fs-retomar" style="display:none">&#9654; Retomar</button>
-      <button id="fs-btn">&#9654; Proyectar</button>
-      <button id="fs-btn-acordes">&#9654; Con acordes</button>
-      <button id="fs-btn-edges" title="Proyectar con pantalla negra al inicio y al final">&#9654; Proyectar</button>
     </div>
     <div id="song-nav">
       <button class="snav-btn" id="prev-song" disabled></button>
@@ -762,23 +720,55 @@
         <div id="edit-search-results"></div>
         <div id="acorde-form">
           <div id="acorde-form-titulo"></div>
-          <div class="acorde-field">
-            <label>Tonalidad (ej: SOL, LAm, FA#)</label>
-            <input id="acorde-tono-input" type="text" placeholder="Dejar vacío si no aplica"/>
+
+          <!-- Tabs: Acordes / Letra -->
+          <div class="edit-tabs">
+            <button class="edit-tab-btn active" data-etab="tab-acordes">Acordes</button>
+            <button class="edit-tab-btn" data-etab="tab-letra">Letra</button>
           </div>
-          <div class="acorde-field">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
-              <label style="margin:0">Acordes — escribí la letra con los acordes entre corchetes [SOL] en la línea correspondiente</label>
-              <button id="btn-insertar-acorde" class="btn-secondary" style="flex-shrink:0;margin-left:8px;padding:3px 10px;font-size:11px">+ Acorde</button>
+
+          <!-- Tab: Acordes -->
+          <div class="edit-tab-pane active" id="tab-acordes">
+            <div class="acorde-field">
+              <label>Tonalidad (ej: SOL, LAm, FA#)</label>
+              <input id="acorde-tono-input" type="text" placeholder="Dejar vacío si no aplica"/>
             </div>
-            <textarea id="acorde-textarea" placeholder="Ejemplo:&#10;[SOL]Sublime gracia del [RE]Señor&#10;[DO]que a un [SOL]pecador salvó&#10;---&#10;[SOL]Cuán dulce el [RE]nombre de Jesús&#10;[DO]al [SOL]oído del [RE]creyente"></textarea>
+            <div class="acorde-field">
+              <label>Categoría</label>
+              <select id="acorde-carpeta-select" style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;cursor:pointer">
+                <option value="Alabanza">Alabanza / Adoración</option>
+                <option value="Himnos">Himnos</option>
+                <option value="Navidad">Navidad</option>
+              </select>
+            </div>
+            <div class="acorde-field">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+                <label style="margin:0">Acordes — escribí la letra con los acordes entre corchetes [SOL] en la línea correspondiente</label>
+                <button id="btn-insertar-acorde" class="btn-secondary" style="flex-shrink:0;margin-left:8px;padding:3px 10px;font-size:11px">+ Acorde</button>
+              </div>
+              <textarea id="acorde-textarea" placeholder="Ejemplo:&#10;[SOL]Sublime gracia del [RE]Señor&#10;[DO]que a un [SOL]pecador salvó&#10;---&#10;[SOL]Cuán dulce el [RE]nombre de Jesús&#10;[DO]al [SOL]oído del [RE]creyente"></textarea>
+            </div>
+            <p class="acorde-hint">Separá las diapositivas con <strong>---</strong> en una línea sola.</p>
+            <div class="acorde-actions">
+              <button class="btn-primary" id="acorde-guardar">Guardar acordes</button>
+              <button class="btn-secondary" id="acorde-cancelar">Cancelar</button>
+              <button class="btn-danger" id="acorde-borrar">Borrar acordes</button>
+            </div>
           </div>
-          <p class="acorde-hint">Separá las diapositivas con <strong>---</strong> en una línea sola.</p>
-          <div class="acorde-actions">
-            <button class="btn-primary" id="acorde-guardar">Guardar</button>
-            <button class="btn-secondary" id="acorde-cancelar">Cancelar</button>
-            <button class="btn-danger" id="acorde-borrar">Borrar acordes</button>
+
+          <!-- Tab: Letra -->
+          <div class="edit-tab-pane" id="tab-letra">
+            <div class="acorde-field">
+              <label>Letra — separá las diapositivas con <strong>---</strong> en una línea sola</label>
+              <textarea id="letra-textarea" style="min-height:220px;width:100%;box-sizing:border-box" placeholder="Escribí o pegá la letra aquí&#10;&#10;---&#10;&#10;Segunda diapositiva..."></textarea>
+            </div>
+            <p class="acorde-hint">Los cambios en la letra reemplazan los slides de la canción. Los acordes existentes se conservan.</p>
+            <div class="acorde-actions">
+              <button class="btn-primary" id="letra-guardar">Guardar letra</button>
+              <button class="btn-secondary" id="acorde-cancelar-letra">Cancelar</button>
+            </div>
           </div>
+
           <div id="acorde-msg" class="edit-msg"></div>
         </div>
       </div>
@@ -800,6 +790,14 @@
             <input id="nueva-tono-input" type="text" placeholder="Dejar vacío si no aplica"/>
           </div>
           <div class="acorde-field">
+            <label>Categoría</label>
+            <select id="nueva-carpeta-select" style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;cursor:pointer">
+              <option value="Alabanza">Alabanza / Adoración</option>
+              <option value="Himnos">Himnos</option>
+              <option value="Navidad">Navidad</option>
+            </select>
+          </div>
+          <div class="acorde-field">
             <label>Letra — separá las diapositivas con <strong>---</strong> en una línea sola</label>
             <textarea id="nueva-letra-textarea" placeholder="Escribí o pegá la letra aquí&#10;&#10;---&#10;&#10;Segunda diapositiva..."></textarea>
           </div>
@@ -818,6 +816,23 @@
       <p>Publicá los cambios directamente en el cancionero para que queden disponibles para todos.</p>
       <button id="btn-export-json" style="display:none">&#8595; Exportar canciones.json</button>
       <button id="btn-publicar">&#9729; Publicar cambios</button>
+    </div>
+
+    <!-- Fijar lista para todos -->
+    <div id="fijar-section" style="margin-top:1.5rem;padding-top:1.5rem;border-top:0.5px solid var(--border)">
+      <p style="margin:0 0 .75rem;font-size:13px;color:var(--text4)">Fijá una lista para que todos los usuarios la vean en la pestaña Listas.</p>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <input id="fijar-nombre" type="text" placeholder="Nombre de la lista (ej: Reunión del domingo)..."
+          style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.5rem .75rem;font-size:13px;font-family:inherit;outline:none"/>
+        <input id="fijar-expira" type="date"
+          style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.5rem .75rem;font-size:13px;font-family:inherit;outline:none;color-scheme:dark"/>
+        <div style="font-size:12px;color:var(--text4)">Canciones de <b>Mi lista</b> actual: <span id="fijar-count">0</span></div>
+        <div style="display:flex;gap:8px">
+          <button id="btn-fijar-lista" style="background:#0a4a3a;border:0.5px solid #0e5a48;color:#ffffff;font-size:13px;padding:7px 16px;border-radius:8px;cursor:pointer;font-weight:500;transition:all .12s">&#128204; Fijar lista</button>
+          <button id="btn-borrar-lista" style="background:none;border:0.5px solid var(--border2);color:var(--text4);font-size:13px;padding:7px 14px;border-radius:8px;cursor:pointer">&#10006; Borrar lista fijada</button>
+        </div>
+        <div id="fijar-msg" style="font-size:12px;color:var(--text4)"></div>
+      </div>
     </div>
 
     <!-- Modal contraseña admin -->
@@ -861,22 +876,6 @@
 </div>
 
 
-<!-- Popup novedad -->
-<div id="novedad-bg">
-  <div id="novedad-card">
-    <h3>&#127381; Novedades del Cancionero</h3>
-    <p>
-      Ahora podés crear <b>tu propia lista de canciones</b> en la pestaña <b>Listas</b>.<br><br>
-      Tu lista es completamente independiente de la <b>lista fijada</b> para una reunión — podés armarla, modificarla o borrarla sin afectar nada.<br><br>
-      Para cargarla tenés dos opciones: pegá los nombres de las canciones como texto (uno por línea) y el cancionero las busca automáticamente, o agregá canciones una por una tocando el <b>+</b> desde la pestaña <b>Cancionero</b>.<br><br>
-      Reordená arrastrando y proyectá cuando quieras.
-    </p>
-    <div id="novedad-actions">
-      <button id="novedad-help">Ver ayuda completa</button>
-      <button id="novedad-ok">&#10003; Entendido</button>
-    </div>
-  </div>
-</div>
 
 
 <!-- Popup desbordamiento de diapositivas -->
@@ -903,104 +902,80 @@
     <div id="help-body">
 
       <div class="help-section">
-        <h3>Listas de canciones</h3>
-        <div class="help-row">
-          <span class="help-icon">&#128204;</span>
-          <span class="help-text"><b>Lista fijada</b> — si hay una lista preparada para la reunión, aparece automáticamente en la pestaña <b>Listas</b> y un punto rojo en la pestaña avisa que está disponible. Es de solo lectura: nadie puede modificarla ni borrarla por accidente.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#9776;</span>
-          <span class="help-text"><b>Mi lista</b> es tuya y solo tuya. Agregá canciones tocando el <b>+</b> en el cancionero, reordenalas arrastrando, y proyectá cuando quieras. Podés limpiarla o armar una nueva en cualquier momento sin que eso afecte la lista fijada.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#9997;</span>
-          <span class="help-text"><b>Cargar lista</b> te permite pegar los nombres de las canciones como texto (uno por línea) y el cancionero las busca automáticamente, incluso si los nombres no son exactos. El resultado se carga en <b>Mi lista</b>.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#128190;</span>
-          <span class="help-text">Mi lista se guarda automáticamente en el dispositivo y persiste aunque cierres la app.</span>
-        </div>
-      </div>
-
-      <hr class="help-divider"/>
-
-      <div class="help-section">
-        <h3>Buscar canciones</h3>
+        <h3>Buscar y ver canciones</h3>
         <div class="help-row">
           <span class="help-icon">&#9906;</span>
-          <span class="help-text">Escribí cualquier palabra del <b>título o de la letra</b> para encontrar una canción. Los filtros de arriba (Alabanza, Himnos, etc.) te ayudan a acotar la búsqueda.</span>
+          <span class="help-text">Escribí cualquier palabra del <b>título o de la letra</b> para encontrar una canción. Los filtros de arriba te ayudan a acotar por categoría.</span>
         </div>
         <div class="help-row">
           <span class="help-icon">&#9834;</span>
           <span class="help-text">Las canciones con el ícono <b>♫</b> tienen acordes disponibles para proyectar.</span>
         </div>
-      </div>
-
-      <hr class="help-divider"/>
-
-      <div class="help-section">
-        <h3>Ver una canción</h3>
         <div class="help-row">
           <span class="help-icon">&#128196;</span>
-          <span class="help-text">Tocá el nombre de cualquier canción para ver su letra diapositiva por diapositiva. Usá las <b>flechas ← →</b> para navegar.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#9654;</span>
-          <span class="help-text"><b>Proyectar</b> abre la pantalla completa con la letra grande, ideal para mostrar en una pantalla o TV.<br><b>Con acordes</b> muestra toda la canción con los acordes para los músicos.<br><b>Con pausas</b> agrega una pantalla negra al inicio y al final.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#9998;</span>
-          <span class="help-text">El botón de <b>editar</b> (lápiz) te permite corregir el texto de una diapositiva. Los cambios se guardan solo en este dispositivo y no afectan el archivo original.</span>
-        </div>
-      </div>
-
-      <hr class="help-divider"/>
-
-      <div class="help-section">
-        <h3>En la proyección</h3>
-        <div class="help-row">
-          <span class="help-icon">&#9700;</span>
-          <span class="help-text">En <b>modo letra</b>: <span class="help-kbd">←</span> <span class="help-kbd">→</span> cambian de diapositiva, <span class="help-kbd">Shift ←</span> <span class="help-kbd">Shift →</span> cambian de canción, <span class="help-kbd">Esc</span> sale.<br>En <b>modo acordes</b>: <span class="help-kbd">←</span> <span class="help-kbd">→</span> cambian directamente de canción.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#128241;</span>
-          <span class="help-text">En el celular podés <b>deslizar</b> hacia los costados para cambiar de canción.</span>
+          <span class="help-text">Tocá el nombre de cualquier canción para ver su letra. Usá las <b>flechas ← →</b> para navegar entre diapositivas.</span>
         </div>
         <div class="help-row">
           <span class="help-icon">&#9837;</span>
-          <span class="help-text">Las canciones con tono definido muestran controles de <b>transposición</b> (▲▼) para subir o bajar semitonos en el momento, sin modificar nada permanente.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#8722;</span>
-          <span class="help-text">El botón <b>−</b> (minimizar) te deja volver al cancionero sin cerrar la proyección. Podés retomarla con el botón <b>▶ Retomar</b>.</span>
-        </div>
-      </div></div>
-
-      <hr class="help-divider"/>
-
-      <div class="help-section">
-        <h3>Pestaña Editar</h3>
-        <div class="help-row">
-          <span class="help-icon">&#9835;</span>
-          <span class="help-text"><b>Acordes y tonalidad</b> — buscá cualquier canción y editá sus acordes escribiendo la letra con los acordes entre corchetes (ej: <b>[SOL]</b>, <b>[LAm]</b>) justo antes de la sílaba donde cambia. Si la canción no tiene acordes todavía, la letra aparece cargada para que solo tengas que agregarlos. Al cambiar la tonalidad, los acordes se transponen automáticamente.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#43;</span>
-          <span class="help-text"><b>Agregar canción nueva</b> — escribí o pegá la letra directamente en la app. Separá las diapositivas con <b>---</b> en una línea sola. La canción queda disponible en el cancionero de inmediato.</span>
-        </div>
-        <div class="help-row">
-          <span class="help-icon">&#8595;</span>
-          <span class="help-text"><b>Publicar cambios</b> — sube el cancionero completo con todos los cambios (acordes, tonalidades y canciones nuevas) directamente al servidor. Los cambios quedan disponibles para todos en aproximadamente 1 minuto.</span>
+          <span class="help-text">Las canciones con tono definido muestran controles de <b>transposición</b> (▲▼) para subir o bajar semitonos en el momento.</span>
         </div>
       </div>
 
       <hr class="help-divider"/>
 
       <div class="help-section">
-        <h3>Funciona sin internet</h3>
+        <h3>Listas de canciones</h3>
+        <div class="help-row">
+          <span class="help-icon">&#128204;</span>
+          <span class="help-text"><b>Lista fijada</b> — si hay una lista preparada, aparece automáticamente en la pestaña <b>Listas</b> con un punto rojo. Es de solo lectura.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#9776;</span>
+          <span class="help-text"><b>Mi lista</b> es tuya y solo tuya. Agregá canciones tocando el <b>+</b>, reordenalas arrastrando, y proyectá cuando quieras.</span>
+        </div>
+      </div>
+
+      <hr class="help-divider"/>
+
+      <div class="help-section">
+        <h3>Proyección</h3>
+        <div class="help-row">
+          <span class="help-icon">&#9654;</span>
+          <span class="help-text"><b>Proyectar</b> abre la pantalla completa con la letra grande. <b>Con acordes</b> muestra toda la canción con los acordes para los músicos.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#128247;</span>
+          <span class="help-text">Deslizá hacia los costados para cambiar de diapositiva. En el celular o tablet es la forma más natural de navegar.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#9700;</span>
+          <span class="help-text">También podés usar las flechas <span class="help-kbd">←</span> <span class="help-kbd">→</span> del teclado para cambiar de diapositiva. <span class="help-kbd">Esc</span> cierra la proyección.</span>
+        </div>
         <div class="help-row">
           <span class="help-icon">&#128267;</span>
-          <span class="help-text">El cancionero se puede <b>instalar en el celular o la computadora</b> como una app (buscá la opción "Agregar a pantalla de inicio" o "Instalar" en el navegador) y funciona completamente <b>sin conexión a internet</b>.</span>
+          <span class="help-text">El cancionero funciona <b>sin internet</b> y se puede instalar como app (buscá "Agregar a pantalla de inicio" en el navegador).</span>
+        </div>
+      </div>
+
+      <hr class="help-divider"/>
+
+      <div class="help-section" style="background:var(--bg3);border-radius:var(--radius-lg);padding:1rem;border:0.5px solid var(--border2)">
+        <h3 style="color:var(--green-tx)">&#128274; Solo para administradores</h3>
+        <div class="help-row">
+          <span class="help-icon">&#9835;</span>
+          <span class="help-text"><b>Acordes y tonalidad</b> — en la pestaña <b>Editar</b>, buscá cualquier canción y editá sus acordes con la notación <b>[SOL]</b>, <b>[LAm]</b> justo antes de la sílaba. Al cambiar la tonalidad los acordes se transponen automáticamente.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#43;</span>
+          <span class="help-text"><b>Agregar canción</b> — pegá la letra directamente. Separá las diapositivas con <b>---</b> en una línea sola.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#128204;</span>
+          <span class="help-text"><b>Fijar lista</b> — armá tu lista en "Mi lista", luego en la pestaña Editar ponele nombre, fecha de vencimiento y presioná "Fijar lista". Todos los usuarios la verán de inmediato.</span>
+        </div>
+        <div class="help-row">
+          <span class="help-icon">&#9729;</span>
+          <span class="help-text"><b>Publicar cambios</b> — sube todos los cambios al servidor. Quedan disponibles para todos en aproximadamente 1 minuto.</span>
         </div>
       </div>
 
@@ -1042,17 +1017,11 @@
       <button id="fs-size-reset" title="Tamaño automático">A</button>
       <button id="fs-size-up" title="Agrandar texto">A&#43;</button>
       <span style="display:inline-block;width:1px;height:16px;background:#333;margin:0 4px"></span>
-      <button id="fs-lh-down" title="Reducir interlineado">&#8801;&#8722;</button>
-      <button id="fs-lh-reset" title="Interlineado automático">&#8801;</button>
-      <button id="fs-lh-up" title="Aumentar interlineado">&#8801;&#43;</button>
-      <span style="display:inline-block;width:1px;height:16px;background:#333;margin:0 4px"></span>
-      <button id="fs-mayus" title="Convertir a mayúsculas">AA</button>
     </div>
-    <button id="fs-minimize" title="Minimizar">&#8722;</button>
     <button id="fs-cl">&#10005;</button>
   </div>
 
-  <!-- Flechas laterales -->
+  <!-- Flechas laterales: ocultas, solo para compatibilidad del JS -->
   <button class="fs-side-btn" id="fs-prev-slide">&#8592;</button>
   <button class="fs-side-btn" id="fs-next-slide">&#8594;</button>
 
@@ -1077,15 +1046,21 @@
 
 
 <script>
+// ── Seguridad: ocultar fso si quedó visible por caché del SW ──
+(function() {
+  const fso = document.getElementById("fso");
+  if (fso && fso.style.display === "flex") fso.style.display = "none";
+})();
+
 const LS_KEY = "cancionero_setlist";
 const LS_MI_LISTA = "cancionero_mi_lista"; // lista del usuario, independiente
 let SONGS = [], query = "", activeTab = "cancionero", setlist = [], slName = "";
 let viewerSlides = [], viewerIdx = 0, viewerQueue = null;
 // Lista del servicio (setlist.json) — solo lectura, nunca se mezcla con la del usuario
 let servicioSetlist = [], servicioNombre = "";
-let activeFilter = "alabanza";
+let activeFilter = "todas";
 let mostrarAcordes = false;
-let fsMinimizado = false;
+
 let fsMostrarAcordes = false;
 let fsConAcordes = false;
 
@@ -1186,14 +1161,15 @@ document.getElementById("fs-transp-up").addEventListener("click", () => {
   cambiarTransposicion(s.songTitle, 1);
 });
 
-function actualizarBotonRetomar() {
-  document.getElementById("fs-retomar").style.display = fsMinimizado ? "" : "none";
-}
 
 // ── Acordes ────────────────────────────────────────────────────
 // Convierte texto con [Am]sílaba en HTML con el acorde encima
 function renderizarAcordes(texto) {
   if (!texto) return "";
+  // Normalizar: siempre convertir \n a <br> si no hay <br>
+  if (!texto.includes("<br>")) {
+    texto = texto.replace(/\n/g, "<br>");
+  }
   // Limpiar solo etiquetas de tamaño (fs-XX) pero preservar <b> y <br>
   texto = texto.replace(/<span[^>]*class="fs-[^"]*"[^>]*>/gi, "").replace(/<\/span>/gi, "");
   // Desescapar entidades HTML básicas
@@ -1232,7 +1208,13 @@ function renderizarAcordes(texto) {
 }
 
 function cancionTieneAcordes(song) {
-  return song && Array.isArray(song.acordes) && song.acordes.length > 0;
+  if (!song) return false;
+  if (Array.isArray(song.acordes) && song.acordes.length > 0) return true;
+  // También revisar localStorage (acordes editados pero no publicados aún)
+  try {
+    const ov = getAcordesLS()[song.titulo];
+    return !!(ov && ov.acordes_texto && ov.acordes_texto.trim());
+  } catch(e) { return false; }
 }
 
 // ── Filtros ────────────────────────────────────────────────────
@@ -1292,6 +1274,7 @@ function hlTexto(text, q) {
 }
 function inList(t) { return setlist.includes(t); }
 function updateBadge() {
+  actualizarFijarCount();
   // Tab siempre dice "Listas" — solo mostramos/ocultamos el punto rojo
   const dot = document.getElementById("tab-setlist-dot");
   if (dot) dot.classList.toggle("visible", servicioSetlist.length > 0);
@@ -1327,7 +1310,7 @@ function getFsBaseSize() {
 function aplicarFontSize() {
   const size = Math.min(FS_MAX, Math.max(FS_MIN, getFsBaseSize() + fsSizeOffset));
   document.getElementById("fs-content").style.fontSize = size + "px";
-  document.getElementById("fs-content").style.lineHeight = fsLineHeight;
+  document.getElementById("fs-content").style.lineHeight = "1.4";
   // Botón reset: apagado si estamos en automático
   document.getElementById("fs-size-reset").classList.toggle("auto", fsSizeOffset === 0);
 }
@@ -1345,40 +1328,7 @@ document.getElementById("fs-size-reset").addEventListener("click", () => {
 });
 cargarFontOffset();
 
-// ── Interlineado en proyección ─────────────────────────────────
-const LS_LINE_HEIGHT = "cancionero_fs_lh";
-const LH_BASE = 1.4;
-const LH_STEP = 0.15;
-const LH_MIN  = 1.0;
-const LH_MAX  = 2.5;
-let fsLineHeight = LH_BASE;
 
-function cargarLineHeight() {
-  try {
-    const v = parseFloat(localStorage.getItem(LS_LINE_HEIGHT));
-    if (!isNaN(v)) fsLineHeight = v;
-  } catch(e) {}
-}
-function guardarLineHeight() {
-  try { localStorage.setItem(LS_LINE_HEIGHT, fsLineHeight); } catch(e) {}
-}
-function aplicarLineHeight() {
-  document.getElementById("fs-content").style.lineHeight = fsLineHeight;
-  document.getElementById("fs-lh-reset").classList.toggle("auto", fsLineHeight === LH_BASE);
-}
-
-document.getElementById("fs-lh-down").addEventListener("click", () => {
-  fsLineHeight = Math.round(Math.max(LH_MIN, fsLineHeight - LH_STEP) * 100) / 100;
-  guardarLineHeight(); aplicarLineHeight();
-});
-document.getElementById("fs-lh-up").addEventListener("click", () => {
-  fsLineHeight = Math.round(Math.min(LH_MAX, fsLineHeight + LH_STEP) * 100) / 100;
-  guardarLineHeight(); aplicarLineHeight();
-});
-document.getElementById("fs-lh-reset").addEventListener("click", () => {
-  fsLineHeight = LH_BASE; guardarLineHeight(); aplicarLineHeight();
-});
-cargarLineHeight();
 
 // ── Slides ─────────────────────────────────────────────────────
 function buildSlides(queue, pauseEdges) {
@@ -1387,7 +1337,7 @@ function buildSlides(queue, pauseEdges) {
   const ediciones = cargarEdiciones();
   for (let si = 0; si < queue.length; si++) {
     const song = SONGS.find(s => s.titulo === queue[si]); if (!song) continue;
-    if (!mobile) {
+    if (false) { // pausas eliminadas
       if (si > 0) slides.push({ type:"pause", songIdx:si });
       if (pauseEdges && si === 0) slides.push({ type:"pause", songIdx:si });
     }
@@ -1429,7 +1379,6 @@ async function cargarCanciones() { // retorna promesa — cargarSetlist() se enc
     document.getElementById("loading").style.display = "none";
     updateBadge(); renderList();
     if (activeTab === "setlist") renderSetlist();
-    mostrarNovedadSiCorresponde();
   } catch(e) {
     document.getElementById("loading").style.display = "none";
     const err = document.getElementById("error-msg"); err.style.display = "block";
@@ -1518,8 +1467,6 @@ function renderList() {
     // Filtro de categoría
     if (activeFilter === "alabanza" && ["Himnos","Escuela bíblica","Navidad"].includes(c.carpeta)) return false;
     if (activeFilter === "himnos" && c.carpeta !== "Himnos") return false;
-    if (activeFilter === "nuevas" && !c.nueva) return false;
-    if (activeFilter === "escuela" && c.carpeta !== "Escuela bíblica") return false;
     if (activeFilter === "navidad" && c.carpeta !== "Navidad") return false;
     // Filtro de búsqueda
     return norm(c.titulo).includes(q) || (c.preview && norm(c.preview).includes(q));
@@ -1536,14 +1483,26 @@ function renderList() {
       const linea = c.preview.split(/\n/).find(l => norm(l).includes(q));
       if (linea) previewHtml = `<div class="sp">${hlTexto(linea.trim(), query)}...</div>`;
     }
+    const tieneAcordes = cancionTieneAcordes(c);
     card.innerHTML = `
       <div class="sc-info">
-        <div class="st">${hlTexto(c.titulo, query)}${c.acordes ? ' <span style="color:#7eb8f7;font-size:12px">♫</span>' : ""}</div>
-        <div class="sm">${c.tono ? `<span style="color:var(--green-tx);font-weight:500">${c.tono}</span> &middot; ` : ""}Carpeta ${c.carpeta} &middot; ${c.slides.length} diapositiva${c.slides.length !== 1 ? "s" : ""}</div>
+        <div class="st">${hlTexto(c.titulo, query)}</div>
+        <div class="sm">${c.tono ? `<span style="color:#9cdcfe;font-weight:500">${c.tono}</span> &middot; ` : ""}${c.carpeta} &middot; ${c.slides.length} diap.</div>
         ${previewHtml}
       </div>
-      <button class="add-btn">${inL ? "&#8722;" : "&#43;"}</button>`;
+      <div class="sc-btns">
+        ${tieneAcordes ? `<button class="sc-acorde-btn" title="Ver con acordes">♫</button>` : ""}
+        <button class="add-btn">${inL ? "&#8722;" : "&#43;"}</button>
+      </div>`;
     card.querySelector(".add-btn").addEventListener("click", e => { e.stopPropagation(); toggleSL(c.titulo); });
+    if (tieneAcordes) {
+      card.querySelector(".sc-acorde-btn").addEventListener("click", e => {
+        e.stopPropagation();
+        viewerQueue = null;
+        viewerSlides = buildSingle(c, false);
+        abrirFullscreenDirecto(true);
+      });
+    }
     card.querySelector(".sc-info").addEventListener("click", () => openSong(c, null));
     list.appendChild(card);
   });
@@ -1564,7 +1523,7 @@ function renderSetlistItems(lista, container, removable, onRemove) {
     const song = SONGS.find(s => s.titulo === titulo);
     const div = document.createElement("div"); div.className = "sl-item";
     if (removable) div.draggable = true;
-    div.innerHTML = `${removable ? '<span class="drag-handle">&#9776;</span>' : ''}<span class="sl-num">${i+1}</span><span class="sl-title">${titulo}</span>${song?.tono ? `<span class="sl-tono" style="color:var(--green-tx);font-weight:500;font-size:11px;flex-shrink:0">${song.tono}</span>` : ""}<span class="sl-meta">${song ? song.slides.length+" diap." : ""}</span>${removable ? '<button class="sl-remove">&#10005;</button>' : ''}`;
+    div.innerHTML = `${removable ? '<span class="drag-handle">&#9776;</span>' : ''}<span class="sl-num">${i+1}</span><span class="sl-title">${titulo}</span>${song?.tono ? `<span class="sl-tono">${song.tono}</span>` : ""}<span class="sl-meta">${song ? song.slides.length+" diap." : ""}</span>${removable ? '<button class="sl-remove">&#10005;</button>' : ''}`;
     if (removable) {
       div.querySelector(".sl-remove").addEventListener("click", () => onRemove(i));
       setupDrag(div, i);
@@ -1589,6 +1548,7 @@ function renderSetlist() {
   document.getElementById("sl-count").textContent = setlist.length ? `(${setlist.length})` : "";
   document.getElementById("sl-name").value = slName;
   document.getElementById("play-btn").disabled = setlist.length === 0;
+  document.getElementById("play-btn-acordes").disabled = setlist.length === 0;
     const items = document.getElementById("sl-items");
   renderSetlistItems(setlist, items, true, (i) => {
     setlist.splice(i, 1); saveToStorage(); updateBadge(); renderSetlist(); renderList();
@@ -1608,15 +1568,23 @@ function setupDrag(el, idx) {
 }
 document.getElementById("sl-name").addEventListener("input", e => { slName = e.target.value; saveToStorage(); updateBadge(); });
 document.getElementById("play-btn").addEventListener("click", () => { if (setlist.length) openSetlist([...setlist], false); });
+document.getElementById("play-btn-acordes").addEventListener("click", () => {
+  if (!setlist.length) return;
+  viewerQueue = [...setlist];
+  viewerSlides = buildSlides([...setlist], false);
+  abrirFullscreenDirecto(true);
+});
 document.getElementById("play-servicio-btn").addEventListener("click", () => { if (servicioSetlist.length) openSetlist([...servicioSetlist], false); });
+document.getElementById("play-servicio-acordes-btn").addEventListener("click", () => {
+  if (!servicioSetlist.length) return;
+  viewerQueue = [...servicioSetlist];
+  viewerSlides = buildSlides([...servicioSetlist], false);
+  abrirFullscreenDirecto(true);
+});
 document.getElementById("clear-btn").addEventListener("click", () => {
   if (confirm("¿Limpiar mi lista?")) { setlist = []; slName = ""; saveToStorage(); updateBadge(); renderSetlist(); renderList(); }
 });
-document.getElementById("export-btn").addEventListener("click", () => {
-  const name = document.getElementById("sl-name").value.trim() || "setlist";
-  const blob = new Blob([JSON.stringify({name, songs:setlist}, null, 2)], {type:"application/json"});
-  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name.replace(/\s+/g,"_")+".json"; a.click();
-});
+
 
 // ── Importar desde texto ───────────────────────────────────────
 
@@ -1746,107 +1714,53 @@ document.getElementById("txt-confirmar").addEventListener("click", () => {
   document.getElementById("txt-input").value = "";
   document.getElementById("txt-results").innerHTML = "";
 });
+function abrirFullscreenDirecto(conAcordes) {
+  fsMostrarAcordes = conAcordes;
+  const o = document.getElementById("fso");
+  document.getElementById("tabs").style.display = "none";
+  document.getElementById("cancionero-panel").style.display = "none";
+  document.getElementById("setlist-panel").style.display = "none";
+  document.getElementById("editar-panel").style.display = "none";
+  o.style.display = "flex";
+  if (conAcordes) o.classList.add("modo-acordes"); else o.classList.remove("modo-acordes");
+  liberarOrientacion(); activarWakeLock();
+  renderFSNewSong();
+  if (o.requestFullscreen) o.requestFullscreen().catch(() => {});
+}
+
 function openSong(song, queue, pauseEdges) {
-  mostrarAcordes = false; // resetear al abrir canción
+  mostrarAcordes = false;
   viewerQueue = queue || null;
   viewerSlides = queue ? buildSlides(queue, pauseEdges) : buildSingle(song, pauseEdges);
   viewerIdx = queue ? viewerSlides.findIndex(s => s.type === "slide" && s.songTitle === song.titulo) : 0;
   if (viewerIdx < 0) viewerIdx = 0;
-  showViewer(queue ? "&#8592; Lista" : "&#8592; Cancionero");
+  // Abrir directamente fullscreen (sin pantalla intermedia)
+  abrirFullscreenDirecto(false);
 }
-function openSetlist(queue, pauseEdges) { mostrarAcordes = false; viewerQueue = queue; viewerSlides = buildSlides(queue, pauseEdges); viewerIdx = 0; showViewer("&#8592; Lista"); }
+function openSetlist(queue, pauseEdges) { mostrarAcordes = false; viewerQueue = queue; viewerSlides = buildSlides(queue, pauseEdges); viewerIdx = 0; abrirFullscreenDirecto(false); }
 function showViewer(label) {
-  document.getElementById("cancionero-panel").style.display = "none";
-  document.getElementById("setlist-panel").style.display = "none";
-  document.getElementById("editar-panel").style.display = "none";
-  document.getElementById("tabs").style.display = "none";
-  document.getElementById("viewer").style.display = "flex";
-  document.getElementById("back").innerHTML = label;
-  renderViewerSlide();
+  // Viewer eliminado — ya no se usa. openSong llama directo a abrirFullscreenDirecto.
 }
 function renderViewerSlide() {
-  const s = viewerSlides[viewerIdx]; if (!s) return;
-  const isPause = s.type === "pause";
-  const song = isPause ? null : SONGS.find(c => c.titulo === s.songTitle);
-  const offset = song ? getOffset(song.titulo) : 0;
-
-  document.getElementById("slide-box").className = isPause ? "pause" : "normal";
-
-  if (!isPause && mostrarAcordes && isMobile()) {
-    const slideAcordes = song?.acordes?.[s.slideNum - 1];
-    document.getElementById("slide-content").innerHTML = slideAcordes
-      ? renderizarAcordes(transponerTexto(slideAcordes, offset))
-      : s.html.replace(/(<br>){3}/gi, "<br><br>");
-  } else {
-    document.getElementById("slide-content").innerHTML = isPause ? "" : s.html.replace(/(<br>){3}/gi, "<br><br>");
-  }
-
-  document.getElementById("vtitle").textContent = isPause ? "— pausa —" : s.songTitle;
-  document.getElementById("vtitle").style.color = isPause ? "#333" : "";
-  document.getElementById("vtitle-counter").textContent = (!isPause && viewerQueue && viewerQueue.length > 1) ? `Canción ${s.songIdx+1} de ${viewerQueue.length}` : "";
-  const tonoTransp = song?.tono ? transponerTono(song.tono, offset) : null;
-  const tonoStr = tonoTransp ? ` · Tono: ${tonoTransp}` : "";
-  document.getElementById("vmeta").textContent = isPause ? "Pantalla negra" : s.slideNum + " / " + s.totalSlides + tonoStr;
-  document.getElementById("prev").disabled = viewerIdx === 0;
-  document.getElementById("next").disabled = viewerIdx === viewerSlides.length - 1;
-
-  // Botón editar — oculto solo si no hay ningún slide con contenido cerca
-  const editBtn = document.getElementById("edit-btn");
-  const slideRef = isPause
-    ? (viewerSlides.slice(0, viewerIdx).reverse().find(sl => sl.type === "slide")
-    || viewerSlides.slice(viewerIdx + 1).find(sl => sl.type === "slide"))
-    : s;
-  if (!slideRef) {
-    editBtn.style.display = "none";
-  } else {
-    editBtn.style.display = "";
-    const ediciones = cargarEdiciones();
-    const tieneEdicion = ediciones[slideRef.songTitle]?.[slideRef.slideNum - 1] !== undefined;
-    editBtn.classList.toggle("editado", tieneEdicion);
-    editBtn.title = tieneEdicion ? "Editar (corregida)" : "Editar esta diapositiva";
-  }
-
-  // Controles de transposición
-  actualizarCtrlTransp(song?.titulo || "", song?.tono || "");
-
-  // Botón Con acordes:
-  //   - Canción sola: visible solo si tiene acordes en el JSON
-  //   - Lista con más de una canción: siempre visible
-  // En slides de pausa, buscar la canción más cercana para evaluar acordes
-  const esLista = viewerQueue && viewerQueue.length > 1;
-  const songParaAcordes = song || (() => {
-    const ref = viewerSlides.slice(0, viewerIdx).reverse().find(sl => sl.type === "slide")
-             || viewerSlides.slice(viewerIdx + 1).find(sl => sl.type === "slide");
-    return ref ? SONGS.find(c => c.titulo === ref.songTitle) : null;
-  })();
-  const tieneAcordes = !!songParaAcordes?.acordes;
-  document.getElementById("fs-btn-acordes").style.display = (esLista || tieneAcordes) ? "" : "none";
-
-  const ps = document.getElementById("prev-song"), ns = document.getElementById("next-song");
-  if (viewerQueue && viewerQueue.length > 1) {
-    const ci = s.songIdx, hasPrev = ci > 0, hasNext = ci < viewerQueue.length-1;
-    ps.style.display = ns.style.display = "";
-    ps.disabled = !hasPrev; ns.disabled = !hasNext;
-    ps.innerHTML = hasPrev ? "&#8592; "+viewerQueue[ci-1] : "";
-    ns.innerHTML = hasNext ? viewerQueue[ci+1]+" &#8594;" : "";
-  } else { ps.style.display = ns.style.display = "none"; }
+  // Viewer eliminado — no-op
 }
 function goSlide(d) {
-  viewerIdx = Math.max(0, Math.min(viewerSlides.length-1, viewerIdx+d));
-  renderViewerSlide();
-  if (document.getElementById("fso").style.display === "flex") renderFS();
+  // Navegar entre canciones (no entre slides individuales)
+  goSongDirect(d);
+}
+function goSongDirect(d) {
+  // Para canción individual (sin queue): no hay a dónde ir
+  if (!viewerQueue || viewerQueue.length <= 1) return;
+  const ci = viewerSlides[viewerIdx]?.songIdx ?? 0;
+  const ni = ci + d;
+  if (ni < 0 || ni >= viewerQueue.length) return;
+  const t = viewerSlides.findIndex(sl => sl.songIdx === ni && sl.type === "slide");
+  if (t < 0) return;
+  viewerIdx = t;
+  if (document.getElementById("fso").style.display === "flex") renderFSNewSong();
 }
 function goSong(d) {
-  if (!viewerQueue) return;
-  const ci = viewerSlides[viewerIdx]?.songIdx || 0;
-  const ni = ci+d; if (ni < 0 || ni >= viewerQueue.length) return;
-  let t = viewerSlides.findIndex(sl => sl.songIdx === ni && sl.type === "slide");
-  if (t < 0) t = 0; viewerIdx = t; renderViewerSlide();
-  if (document.getElementById("fso").style.display === "flex") renderFSNewSong();
-  // Actualizar metrónomo al cambiar de canción en modo acordes
-  if (fsMostrarAcordes) {
-    const newSong = SONGS.find(c => c.titulo === viewerQueue[ni]);
-  }
+  goSongDirect(d);
 }
 // ── Editor de slides ───────────────────────────────────────────
 const LS_EDICIONES = "cancionero_ediciones"; // { "Titulo": ["html slide 0", null, "html slide 2", ...] }
@@ -1964,13 +1878,6 @@ function descartarEdicion() {
   renderViewerSlide();
 }
 
-document.getElementById("edit-btn").addEventListener("click", abrirEditor);
-document.getElementById("edit-guardar").addEventListener("click", guardarEdicion);
-document.getElementById("edit-cancelar").addEventListener("click", cerrarEditor);
-document.getElementById("edit-descartar").addEventListener("click", descartarEdicion);
-document.getElementById("edit-modal-bg").addEventListener("click", e => {
-  if (e.target === document.getElementById("edit-modal-bg")) cerrarEditor();
-});
 document.getElementById("edit-textarea").addEventListener("keydown", e => {
   if (e.key === "Enter" && e.ctrlKey) { e.preventDefault(); guardarEdicion(); }
   if (e.key === "Escape") { e.preventDefault(); cerrarEditor(); }
@@ -1999,12 +1906,9 @@ document.getElementById("back").addEventListener("click", () => {
   else if (activeTab === "setlist") { document.getElementById("setlist-panel").style.display = "flex"; renderSetlist(); }
   else if (activeTab === "editar") { document.getElementById("editar-panel").style.display = "flex"; renderNuevasGuardadas(); }
 });
-document.getElementById("prev").addEventListener("click", () => goSlide(-1));
-document.getElementById("next").addEventListener("click", () => goSlide(1));
-document.getElementById("prev-song").addEventListener("click", () => goSong(-1));
-document.getElementById("next-song").addEventListener("click", () => goSong(1));
+// Navegación del viewer eliminada (se usa fso directamente)
 
-function isMobile() { return window.innerWidth < 1024; }
+function isMobile() { return true; } // Proyección siempre en modo scroll (sin flechas laterales)
 
 // ── Orientación ────────────────────────────────────────────────
 function bloquearPortrait() {
@@ -2038,30 +1942,49 @@ document.addEventListener("visibilitychange", () => {
 });
 
 function renderFSNewSong() {
-  // En móvil y en modo acordes desktop: volver al tope al cambiar de canción
-  if (isMobile() || fsMostrarAcordes) {
-    document.getElementById("fs-center").scrollTop = 0;
-  }
+  document.getElementById("fs-center").scrollTop = 0;
   renderFS();
 }
 
 function buildFullSongHtml(songIdx, conAcordes, offset) {
   offset = offset || 0;
   const slides = viewerSlides.filter(s => s.type === "slide" && s.songIdx === songIdx);
+  if (!slides.length) return "";
   if (conAcordes) {
-    const song = SONGS.find(s => s.titulo === slides[0]?.songTitle);
-    return slides.map((s, i) => {
-      const slideAcordes = song?.acordes?.[s.slideNum - 1];
-      return slideAcordes
-        ? renderizarAcordes(transponerTexto(slideAcordes, offset))
-        : htmlParaFS(s.html);
+    const songTitle = slides[0].songTitle;
+    const song = SONGS.find(s => s.titulo === songTitle);
+    // Obtener acordes: primero del LS, luego de SONGS
+    const acordesLS = getAcordesLS();
+    const ovLS = acordesLS[songTitle];
+    // acordesLS guarda acordes_texto como string completo separado por ---
+    // convertirlo al mismo formato que song.acordes (array por slide)
+    let acordesArr = song?.acordes || [];
+    if (ovLS?.acordes_texto) {
+      acordesArr = ovLS.acordes_texto.split(/^---$/m).map(b => b.trim()).filter(Boolean);
+    }
+    return slides.map((s) => {
+      let slideAcordes = acordesArr[s.slideNum - 1] || "";
+      if (slideAcordes) {
+        // Normalizar: \n → <br>
+        if (!slideAcordes.includes("<br>")) {
+          slideAcordes = slideAcordes.replace(/\n/g, "<br>");
+        }
+        return renderizarAcordes(transponerTexto(slideAcordes, offset));
+      }
+      return htmlParaFS(s.html);
     }).join('<hr class="slide-divider">');
   }
   return slides.map(s => htmlParaFS(s.html)).join('<hr class="slide-divider">');
 }
 
 function renderFS() {
-  const s = viewerSlides[viewerIdx]; if (!s) return;
+  const s = viewerSlides[viewerIdx];
+  if (!s) {
+    // Fallback: intentar primer slide disponible
+    const first = viewerSlides.findIndex(x => x.type === "slide");
+    if (first >= 0) { viewerIdx = first; renderFS(); }
+    return;
+  }
   const isPause = s.type === "pause";
   const mobile = isMobile();
   const song = isPause ? null : SONGS.find(c => c.titulo === s.songTitle);
@@ -2072,129 +1995,64 @@ function renderFS() {
 
   if (isPause) {
     document.getElementById("fs-content").innerHTML = "";
-  } else if (mobile || fsMostrarAcordes) {
-    // Modo acordes (desktop y móvil): canción completa con scroll
-    document.getElementById("fs-content").innerHTML = buildFullSongHtml(s.songIdx, fsMostrarAcordes, offset);
+  } else if (fsMostrarAcordes) {
+    // Modo acordes: canción completa con scroll
+    document.getElementById("fs-content").innerHTML = buildFullSongHtml(s.songIdx, true, offset);
   } else {
-    document.getElementById("fs-content").innerHTML = htmlParaFS(s.html);
+    // Modo letra: canción completa con scroll, igual que acordes
+    document.getElementById("fs-content").innerHTML = buildFullSongHtml(s.songIdx, false, offset);
+    document.getElementById("fs-center").scrollTop = 0;
   }
   aplicarFontSize();
 
   // Controles de transposición en fullscreen
   actualizarCtrlTransp(song?.titulo || "", song?.tono || "");
 
-  // Paginador de puntos — solo desktop y fuera de modo acordes
-  const dotsEl = document.getElementById("fs-dots");
-  dotsEl.innerHTML = "";
-  if (!mobile && !isPause && !fsMostrarAcordes && s.totalSlides > 1) {
-    for (let i = 0; i < s.totalSlides; i++) {
-      const dot = document.createElement("div");
-      dot.className = "fs-dot" + (i === s.slideNum-1 ? " active" : "");
-      dotsEl.appendChild(dot);
-    }
-  }
+  // Paginador de puntos y contador eliminados (navegación por canción, no por slide)
+  document.getElementById("fs-dots").innerHTML = "";
+  document.getElementById("fs-slide-ctr").textContent = "";
 
-  // Contador numérico — solo desktop y fuera de modo acordes
-  document.getElementById("fs-slide-ctr").textContent = (!mobile && !isPause && !fsMostrarAcordes && s.totalSlides > 1) ? (s.slideNum + " / " + s.totalSlides) : "";
-
-  // Flechas laterales — ocultar en modo acordes desktop (navegan por diapositiva, no tiene sentido)
-  document.getElementById("fs-prev-slide").style.display = (!mobile && fsMostrarAcordes) ? "none" : "";
-  document.getElementById("fs-next-slide").style.display = (!mobile && fsMostrarAcordes) ? "none" : "";
-
-  // Nav canciones
-  document.getElementById("fs-prev-slide").disabled = viewerIdx === 0;
-  document.getElementById("fs-next-slide").disabled = viewerIdx === viewerSlides.length-1;
-  const ci = s.songIdx, hasSongNav = viewerQueue && viewerQueue.length > 1;
+  // Flechas laterales: visibles solo si hay canción anterior/siguiente
+  const ci2 = s.songIdx ?? 0;
+  const hayQueue = !!(viewerQueue && viewerQueue.length > 1);
+  const hayPrev = hayQueue && ci2 > 0;
+  const hayNext = hayQueue && ci2 < viewerQueue.length - 1;
+  const prevBtn = document.getElementById("fs-prev-slide");
+  const nextBtn = document.getElementById("fs-next-slide");
+  // En desktop: mostrar solo si hay adónde ir (CSS oculta en móvil con !important)
+  prevBtn.style.visibility = hayPrev ? "visible" : "hidden";
+  nextBtn.style.visibility = hayNext ? "visible" : "hidden";
+  prevBtn.disabled = !hayPrev;
+  nextBtn.disabled = !hayNext;
+  const ci = s.songIdx ?? 0;
+  const hasSongNav = viewerQueue && viewerQueue.length > 1;
   document.getElementById("fs-song-nav").style.display = hasSongNav ? "flex" : "none";
   if (hasSongNav) {
     document.getElementById("fs-ps").disabled = ci === 0;
-    document.getElementById("fs-ns").disabled = ci === viewerQueue.length-1;
+    document.getElementById("fs-ns").disabled = ci === viewerQueue.length - 1;
   }
 }
 
-document.getElementById("fs-btn").addEventListener("click", () => {
-  fsMinimizado = false; fsMostrarAcordes = false; actualizarBotonRetomar();
-  const curSlide = viewerSlides.find(s => s.type === "slide");
-  const curSong = curSlide ? SONGS.find(c => c.titulo === curSlide.songTitle) : null;
-  if (viewerQueue && viewerQueue.length > 0) viewerSlides = buildSlides(viewerQueue, false);
-  else if (curSong) viewerSlides = buildSingle(curSong, false);
-  viewerIdx = 0;
-  const o = document.getElementById("fso"); o.style.display = "flex";
-  o.classList.remove("modo-acordes");
-  if (o.requestFullscreen) o.requestFullscreen();
-  liberarOrientacion(); activarWakeLock();
-  verificarYProyectar(() => renderFSNewSong());
-});
-document.getElementById("fs-btn-acordes").addEventListener("click", () => {
-  fsMinimizado = false; fsMostrarAcordes = true; actualizarBotonRetomar();
-  const curSlide = viewerSlides.find(s => s.type === "slide");
-  const curSong = curSlide ? SONGS.find(c => c.titulo === curSlide.songTitle) : null;
-  if (viewerQueue && viewerQueue.length > 0) viewerSlides = buildSlides(viewerQueue, false);
-  else if (curSong) viewerSlides = buildSingle(curSong, false);
-  viewerIdx = 0;
-  // Metrónomo: mostrar solo si la canción tiene BPM definido
-  const primerSlide = viewerSlides.find(s => s.type === "slide");
-  const primeraSong = primerSlide ? SONGS.find(c => c.titulo === primerSlide.songTitle) : null;
-  const o = document.getElementById("fso"); o.style.display = "flex";
-  o.classList.add("modo-acordes");
-  if (o.requestFullscreen) o.requestFullscreen();
-  liberarOrientacion(); activarWakeLock();
-  renderFSNewSong();
-});
-document.getElementById("fs-btn-edges").addEventListener("click", () => {
-  fsMinimizado = false; fsMostrarAcordes = false; actualizarBotonRetomar();
-  const curSlide = viewerSlides.find(s => s.type === "slide");
-  const curSong = curSlide ? SONGS.find(c => c.titulo === curSlide.songTitle) : null;
-  if (viewerQueue && viewerQueue.length > 0) {
-    viewerSlides = buildSlides(viewerQueue, true);
-  } else if (curSong) {
-    viewerSlides = buildSingle(curSong, true);
-  } else { return; }
-  viewerIdx = 0;
-  const o = document.getElementById("fso"); o.style.display = "flex";
-  o.classList.remove("modo-acordes");
-  if (o.requestFullscreen) o.requestFullscreen();
-  liberarOrientacion(); activarWakeLock();
-  verificarYProyectar(() => renderFSNewSong());
-});
 document.getElementById("fs-cl").addEventListener("click", () => {
   const o = document.getElementById("fso");
   o.style.display = "none";
   o.classList.remove("modo-acordes");
-  if (document.fullscreenElement) document.exitFullscreen();
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
   bloquearPortrait(); liberarWakeLock();
-  fsMinimizado = false; actualizarBotonRetomar();
-  // Si el índice actual apunta a una pausa, buscar el próximo slide con contenido
-  if (viewerSlides[viewerIdx]?.type === "pause") {
-    const next = viewerSlides.findIndex((s, i) => i >= viewerIdx && s.type === "slide");
-    if (next >= 0) viewerIdx = next;
+  // Resetear a la primera canción de la lista
+  if (viewerQueue && viewerQueue.length > 1) {
+    viewerIdx = viewerSlides.findIndex(s => s.type === "slide" && s.songIdx === 0);
+    if (viewerIdx < 0) viewerIdx = 0;
   }
-  renderViewerSlide();
-  // Volver al inicio del contenido
+  document.getElementById("tabs").style.display = "flex";
+  document.getElementById("cancionero-panel").style.display = activeTab === "cancionero" ? "block" : "none";
+  document.getElementById("setlist-panel").style.display  = activeTab === "setlist"    ? "flex"  : "none";
+  document.getElementById("editar-panel").style.display   = activeTab === "editar"     ? "flex"  : "none";
+  if (activeTab === "setlist") renderSetlist();
   window.scrollTo(0, 0);
-  document.getElementById("fs-center").scrollTop = 0;
 });
-document.getElementById("fs-minimize").addEventListener("click", () => {
-  if (document.fullscreenElement) document.exitFullscreen();
-  bloquearPortrait(); liberarWakeLock();
-  const o = document.getElementById("fso");
-  o.style.display = "none";
-  document.getElementById("cancionero-panel").style.display = "none";
-  document.getElementById("setlist-panel").style.display = "none";
-  document.getElementById("editar-panel").style.display = "none";
-  document.getElementById("tabs").style.display = "none";
-  document.getElementById("viewer").style.display = "flex";
-  fsMinimizado = true; actualizarBotonRetomar();
-  renderViewerSlide();
-});
-document.getElementById("fs-retomar").addEventListener("click", () => {
-  const o = document.getElementById("fso"); o.style.display = "flex";
-  if (o.requestFullscreen) o.requestFullscreen();
-  liberarOrientacion(); activarWakeLock();
-  renderFS();
-});
-document.getElementById("fs-prev-slide").addEventListener("click", () => goSlide(-1));
-document.getElementById("fs-next-slide").addEventListener("click", () => goSlide(1));
+document.getElementById("fs-prev-slide").addEventListener("click", () => goSongDirect(-1));
+document.getElementById("fs-next-slide").addEventListener("click", () => goSongDirect(1));
 document.getElementById("fs-ps").addEventListener("click", () => goSong(-1));
 document.getElementById("fs-ns").addEventListener("click", () => goSong(1));
 
@@ -2206,11 +2064,9 @@ document.addEventListener("keydown", e => {
   const fsOpen = document.getElementById("fso").style.display === "flex";
   const inViewer = document.getElementById("viewer").style.display === "flex";
   if (fsOpen || inViewer) {
-    const acordesDesktop = fsOpen && fsMostrarAcordes && !isMobile();
-    if (e.key === "ArrowLeft" && !e.shiftKey) { acordesDesktop ? goSong(-1) : goSlide(-1); }
-    else if (e.key === "ArrowRight" && !e.shiftKey) { acordesDesktop ? goSong(1) : goSlide(1); }
-    else if (e.key === "ArrowLeft" && e.shiftKey) goSong(-1);
-    else if (e.key === "ArrowRight" && e.shiftKey) goSong(1);
+    // ← → siempre cambian de canción
+    if (e.key === "ArrowLeft") goSongDirect(-1);
+    else if (e.key === "ArrowRight") goSongDirect(1);
     else if (e.key === "Escape" && fsOpen) {
       document.getElementById("fso").style.display = "none";
       if (document.fullscreenElement) document.exitFullscreen();
@@ -2231,25 +2087,48 @@ function onTouchEnd(e) {
   const dx = e.changedTouches[0].clientX - touchStartX;
   const dy = e.changedTouches[0].clientY - touchStartY;
   if (Math.abs(dx) < SWIPE_MIN || Math.abs(dx) < Math.abs(dy) * SWIPE_RATIO) return;
-  if (isMobile()) {
-    // En móvil: swipe cambia de canción
-    if (dx < 0) goSong(1); else goSong(-1);
-  } else {
-    // En desktop: swipe cambia de diapositiva
-    if (dx < 0) goSlide(1); else goSlide(-1);
-  }
+  // Swipe horizontal cambia de canción
+  if (dx < 0) goSongDirect(1); else goSongDirect(-1);
 }
 
-document.getElementById("slide-box").addEventListener("touchstart", onTouchStart, { passive: true });
-document.getElementById("slide-box").addEventListener("touchend", onTouchEnd, { passive: true });
+// touch slide-box eliminado
 document.getElementById("fs-center").addEventListener("touchstart", onTouchStart, { passive: true });
 document.getElementById("fs-center").addEventListener("touchend", onTouchEnd, { passive: true });
 document.getElementById("setlist-panel").style.display = "none";
 updateBadge();
 cargarCanciones().then(() => cargarSetlist());
 
+// ── Panel Editar — localStorage ────────────────────────────────
+const LS_ACORDES  = "cancionero_acordes";  // { titulo: { tono, acordes_texto } }
+const LS_NUEVAS   = "cancionero_nuevas";   // [ { titulo, tono, slides, preview, carpeta } ]
 
-wrap.appendChild(row);
+function getAcordesLS() { try { return JSON.parse(localStorage.getItem(LS_ACORDES)) || {}; } catch(e) { return {}; } }
+function setAcordesLS(obj) { try { localStorage.setItem(LS_ACORDES, JSON.stringify(obj)); } catch(e) {} }
+function getNuevasLS() { try { return JSON.parse(localStorage.getItem(LS_NUEVAS)) || []; } catch(e) { return []; } }
+function setNuevasLS(arr) { try { localStorage.setItem(LS_NUEVAS, JSON.stringify(arr)); } catch(e) {} }
+
+let acordeCancionActual = null;
+
+function renderEditSearch(q) {
+  const wrap = document.getElementById("edit-search-results");
+  wrap.innerHTML = "";
+  if (!q || q.length < 1) return;
+  const qn = norm(q);
+  const todas = [...SONGS, ...getNuevasLS().filter(n => !SONGS.find(s => s.titulo === n.titulo))];
+  const encontradas = todas.filter(c => norm(c.titulo).includes(qn)).slice(0, 8);
+  const acordesLS = getAcordesLS();
+  encontradas.forEach(c => {
+    const override = acordesLS[c.titulo] || {};
+    const tono = override.tono ?? c.tono ?? "";
+    const tieneAcordes = override.acordes_texto || c.acordes;
+    const row = document.createElement("div");
+    row.className = "edit-song-row";
+    row.innerHTML = `
+      <span class="edit-song-row-title">${c.titulo}</span>
+      ${tono ? `<span class="edit-song-row-tono">${tono}</span>` : ""}
+      ${tieneAcordes ? `<span class="edit-song-row-acorde">♫</span>` : ""}`;
+    row.addEventListener("click", () => { abrirEditorAcordes(c); document.getElementById("edit-search-results").innerHTML = ""; });
+    wrap.appendChild(row);
   });
   if (!encontradas.length) wrap.innerHTML = `<div style="font-size:12px;color:var(--text4);padding:6px 0">Sin resultados</div>`;
 }
@@ -2281,6 +2160,9 @@ function abrirEditorAcordes(cancion) {
   const override = acordesLS[cancion.titulo] || {};
   document.getElementById("acorde-form-titulo").textContent = cancion.titulo;
   document.getElementById("acorde-tono-input").value = override.tono ?? cancion.tono ?? "";
+  // Cargar categoría actual
+  const carpetaActual = override.carpeta ?? cancion.carpeta ?? "Alabanza";
+  document.getElementById("acorde-carpeta-select").value = carpetaActual;
 
   // Prioridad: 1) localStorage, 2) acordes del JSON, 3) letra plana de los slides
   let textoAcordes = override.acordes_texto || "";
@@ -2305,6 +2187,15 @@ function abrirEditorAcordes(cancion) {
   }
 
   document.getElementById("acorde-msg").textContent = "";
+
+  // Cargar letra plana en el tab Letra
+  const letraTextarea = document.getElementById("letra-textarea");
+  letraTextarea.value = slidesATextoPlano(cancion.slides);
+
+  // Volver siempre al tab Acordes al abrir
+  document.querySelectorAll(".edit-tab-btn").forEach(b => b.classList.toggle("active", b.dataset.etab === "tab-acordes"));
+  document.querySelectorAll(".edit-tab-pane").forEach(p => p.classList.toggle("active", p.id === "tab-acordes"));
+
   document.getElementById("acorde-form").classList.add("visible");
   textarea.focus();
 }
@@ -2317,6 +2208,16 @@ function cerrarEditorAcordes() {
 }
 
 document.getElementById("edit-search").addEventListener("input", e => renderEditSearch(e.target.value));
+
+// ── Tabs del editor (Acordes / Letra) ─────────────────────────
+document.querySelectorAll(".edit-tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".edit-tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".edit-tab-pane").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.etab).classList.add("active");
+  });
+});
 
 // Transposición automática al cambiar tonalidad en el editor de acordes
 let acordeTonoPrevio = "";
@@ -2354,16 +2255,19 @@ document.getElementById("acorde-tono-input").addEventListener("change", function
 
 document.getElementById("acorde-guardar").addEventListener("click", () => {
   if (!acordeCancionActual) return;
-  const tono = document.getElementById("acorde-tono-input").value.trim();
-  const texto = document.getElementById("acorde-textarea").value.trim();
+  const tono    = document.getElementById("acorde-tono-input").value.trim();
+  const texto   = document.getElementById("acorde-textarea").value.trim();
+  const carpeta = document.getElementById("acorde-carpeta-select").value;
   const obj = getAcordesLS();
-  obj[acordeCancionActual.titulo] = { tono, acordes_texto: texto };
+  obj[acordeCancionActual.titulo] = { tono, acordes_texto: texto, carpeta };
   setAcordesLS(obj);
   // Actualizar SONGS en memoria
   const song = SONGS.find(s => s.titulo === acordeCancionActual.titulo);
   if (song) {
     if (tono) song.tono = tono; else delete song.tono;
     if (texto) song.acordes = textoToAcordesArray(texto); else delete song.acordes;
+    song.carpeta = carpeta;
+    song.nueva = carpeta === "Nuevas";
   }
   document.getElementById("acorde-msg").textContent = "✓ Guardado";
   document.getElementById("acorde-msg").className = "edit-msg ok";
@@ -2371,18 +2275,71 @@ document.getElementById("acorde-guardar").addEventListener("click", () => {
 });
 
 document.getElementById("acorde-cancelar").addEventListener("click", cerrarEditorAcordes);
+document.getElementById("acorde-cancelar-letra").addEventListener("click", cerrarEditorAcordes);
+
+document.getElementById("letra-guardar").addEventListener("click", () => {
+  if (!acordeCancionActual) return;
+  const texto = document.getElementById("letra-textarea").value.trim();
+  const msg = document.getElementById("acorde-msg");
+  if (!texto) { msg.textContent = "La letra no puede estar vacía."; msg.className = "edit-msg err"; return; }
+
+  const nuevosSlides = textoToSlides(texto);
+  const nuevoPreview = texto.split(/^---$/m)[0].trim();
+
+  // Actualizar en SONGS en memoria
+  const song = SONGS.find(s => s.titulo === acordeCancionActual.titulo);
+  if (song) {
+    song.slides = nuevosSlides;
+    song.preview = nuevoPreview;
+  }
+
+  // Si es una canción nueva (en localStorage), actualizar también ahí
+  const arr = getNuevasLS();
+  const idx = arr.findIndex(n => n.titulo === acordeCancionActual.titulo);
+  if (idx >= 0) {
+    arr[idx].slides = nuevosSlides;
+    arr[idx].preview = nuevoPreview;
+    setNuevasLS(arr);
+  }
+
+  // Actualizar el textarea de acordes con la nueva letra (sin acordes)
+  // solo si el campo de acordes está vacío
+  const acordeTA = document.getElementById("acorde-textarea");
+  if (!acordeTA.value.trim()) {
+    acordeTA.value = texto;
+  }
+
+  // También actualizar el textarea de letra (recargar normalizado)
+  document.getElementById("letra-textarea").value = slidesATextoPlano(nuevosSlides);
+
+  msg.textContent = "✓ Letra actualizada";
+  msg.className = "edit-msg ok";
+  renderList();
+});
 
 document.getElementById("acorde-borrar").addEventListener("click", () => {
   if (!acordeCancionActual) return;
+  // Borrar de localStorage
   const obj = getAcordesLS();
-  delete obj[acordeCancionActual.titulo];
+  const tituloOriginal = acordeCancionActual.titulo;
+  delete obj[tituloOriginal];
   setAcordesLS(obj);
-  const song = SONGS.find(s => s.titulo === acordeCancionActual.titulo);
-  if (song) { delete song.tono; delete song.acordes; }
-  document.getElementById("acorde-msg").textContent = "Acordes eliminados";
-  document.getElementById("acorde-msg").className = "edit-msg";
+  // Borrar de SONGS en memoria — restaurar desde el JSON original
+  // Para eso recargamos del JSON si es posible; si no, borramos los campos
+  const song = SONGS.find(s => s.titulo === tituloOriginal);
+  if (song) {
+    // Si tenía acordes en el JSON original los recuperamos
+    // guardamos referencia a si tenía acordes originales
+    delete song.acordes;
+    // El tono se restaura al original si existía antes de override
+    // Como no tenemos el original, simplemente borramos el override
+  }
+  // Limpiar el override en el acordesLS de tono también
+  document.getElementById("acorde-msg").textContent = "✓ Acordes eliminados (se aplicará al publicar)";
+  document.getElementById("acorde-msg").className = "edit-msg ok";
   document.getElementById("acorde-tono-input").value = "";
   document.getElementById("acorde-textarea").value = "";
+  document.getElementById("acorde-carpeta-select").value = song?.carpeta || "Alabanza";
   renderList();
 });
 
@@ -2406,10 +2363,11 @@ function textoToSlides(texto) {
 }
 
 document.getElementById("nueva-guardar").addEventListener("click", () => {
-  const titulo = document.getElementById("nueva-titulo-input").value.trim();
-  const tono   = document.getElementById("nueva-tono-input").value.trim();
-  const texto  = document.getElementById("nueva-letra-textarea").value.trim();
-  const msg    = document.getElementById("nueva-msg");
+  const titulo  = document.getElementById("nueva-titulo-input").value.trim();
+  const tono    = document.getElementById("nueva-tono-input").value.trim();
+  const texto   = document.getElementById("nueva-letra-textarea").value.trim();
+  const carpeta = document.getElementById("nueva-carpeta-select").value;
+  const msg     = document.getElementById("nueva-msg");
   if (!titulo) { msg.textContent = "El título es obligatorio."; msg.className = "edit-msg err"; return; }
   if (!texto)  { msg.textContent = "La letra no puede estar vacía."; msg.className = "edit-msg err"; return; }
   if (SONGS.find(s => norm(s.titulo) === norm(titulo))) {
@@ -2417,7 +2375,8 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   }
   const slides  = textoToSlides(texto);
   const preview = texto.split(/^---$/m)[0].trim();
-  const nueva = { titulo, preview, slides, carpeta: "Nuevas", nueva: true };
+  const esNueva = carpeta === "Nuevas";
+  const nueva = { titulo, preview, slides, carpeta, nueva: esNueva };
   if (tono) nueva.tono = tono;
   // Guardar en LS y en SONGS
   const arr = getNuevasLS();
@@ -2428,6 +2387,7 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   // Limpiar form
   document.getElementById("nueva-titulo-input").value = "";
   document.getElementById("nueva-tono-input").value = "";
+  document.getElementById("nueva-carpeta-select").value = "Alabanza";
   document.getElementById("nueva-letra-textarea").value = "";
   msg.textContent = `✓ "${titulo}" guardada`;
   msg.className = "edit-msg ok";
@@ -2438,6 +2398,7 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
 document.getElementById("nueva-limpiar").addEventListener("click", () => {
   document.getElementById("nueva-titulo-input").value = "";
   document.getElementById("nueva-tono-input").value = "";
+  document.getElementById("nueva-carpeta-select").value = "Alabanza";
   document.getElementById("nueva-letra-textarea").value = "";
   document.getElementById("nueva-msg").textContent = "";
 });
@@ -2497,15 +2458,91 @@ document.getElementById("btn-export-json").addEventListener("click", () => {
   URL.revokeObjectURL(url);
 });
 
+// ── Fijar lista para todos ─────────────────────────────────────
+function actualizarFijarCount() {
+  const el = document.getElementById("fijar-count");
+  if (el) el.textContent = setlist.length;
+}
+
+document.getElementById("btn-fijar-lista").addEventListener("click", () => {
+  const nombre = document.getElementById("fijar-nombre").value.trim();
+  const expira = document.getElementById("fijar-expira").value;
+  const msg = document.getElementById("fijar-msg");
+  if (!nombre) { msg.textContent = "Ponele un nombre a la lista."; return; }
+  if (!setlist.length) { msg.textContent = "Mi lista está vacía. Agregá canciones primero."; return; }
+  if (!adminAutenticado) {
+    mostrarAuthModal(() => publicarSetlist(nombre, expira));
+  } else {
+    publicarSetlist(nombre, expira);
+  }
+});
+
+document.getElementById("btn-borrar-lista").addEventListener("click", () => {
+  if (!adminAutenticado) {
+    mostrarAuthModal(() => publicarSetlist(null, null, true));
+  } else {
+    publicarSetlist(null, null, true);
+  }
+});
+
+async function publicarSetlist(nombre, expira, borrar = false) {
+  const msg = document.getElementById("fijar-msg");
+  msg.textContent = "Conectando…";
+  const datos = borrar ? {} : {
+    name: nombre,
+    expira: expira || null,
+    songs: [...setlist]
+  };
+  const jsonStr = JSON.stringify(datos, null, 2);
+  const base64 = btoa(unescape(encodeURIComponent(jsonStr)));
+  const headers = {
+    "Authorization": "token " + GH_CONFIG.token,
+    "Accept": "application/vnd.github+json",
+    "Content-Type": "application/json",
+    "X-GitHub-Api-Version": "2022-11-28"
+  };
+  const url = `https://api.github.com/repos/${GH_CONFIG.owner}/${GH_CONFIG.repo}/contents/setlist.json`;
+  let sha = null;
+  try {
+    const res = await fetch(url, { headers });
+    if (res.ok) { const d = await res.json(); sha = d.sha; }
+  } catch(e) {}
+  const body = {
+    message: borrar ? "Borrar lista fijada" : `Fijar lista: ${nombre}`,
+    content: base64,
+    branch: GH_CONFIG.branch
+  };
+  if (sha) body.sha = sha;
+  try {
+    const res = await fetch(url, { method: "PUT", headers, body: JSON.stringify(body) });
+    if (res.ok) {
+      msg.textContent = borrar ? "✓ Lista fijada borrada" : `✓ Lista "${nombre}" fijada para todos`;
+      msg.style.color = "var(--green-tx)";
+    } else {
+      const err = await res.json();
+      msg.textContent = "Error: " + (err.message || "desconocido");
+      msg.style.color = "#f14c4c";
+    }
+  } catch(e) {
+    msg.textContent = "Error de conexión";
+    msg.style.color = "#f14c4c";
+  }
+}
+
+// Actualizar contador al cambiar la lista
+const _origToggleSL = toggleSL;
+
+
 // ── GitHub Publish ─────────────────────────────────────────────
 // CONFIGURACIÓN — completar antes de usar
 const GH_CONFIG = {
-  owner:  "GITHUB_USUARIO",        // nombre de usuario de GitHub
+  owner:  "gomezalb",        // nombre de usuario de GitHub
   repo:   "cancionero_dina",       // nombre del repositorio
   file:   "canciones.json",        // archivo a actualizar
   branch: "main",                  // rama (normalmente "main" o "master")
-  token:  "GITHUB_TOKEN",          // Fine-grained token con permisos de escritura
-  password: "ADMIN_PASSWORD"       // contraseña de acceso al panel
+  token:  "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",          // Fine-grained token con permisos de escritura
+  password: "Tripode@120"       // contraseña de acceso al panel
+
 };
 
 let adminAutenticado = false;
@@ -2521,6 +2558,7 @@ function construirExportado() {
       if (ov) {
         if (ov.tono) c.tono = ov.tono; else delete c.tono;
         if (ov.acordes_texto) c.acordes = textoToAcordesArray(ov.acordes_texto); else delete c.acordes;
+        if (ov.carpeta) c.carpeta = ov.carpeta;
       }
       delete c.nueva;
       return c;
@@ -2768,32 +2806,6 @@ document.getElementById("btn-insertar-acorde").addEventListener("click", () => {
 });
 
 
-// ── Popup novedad (se muestra una sola vez) ────────────────────
-const LS_NOVEDAD = "cancionero_novedad_v1"; // cambiar versión para volver a mostrar
-
-function mostrarNovedadSiCorresponde() {
-  if (localStorage.getItem(LS_NOVEDAD)) return; // ya fue visto
-  document.getElementById("novedad-bg").classList.add("open");
-}
-
-document.getElementById("novedad-ok").addEventListener("click", () => {
-  localStorage.setItem(LS_NOVEDAD, "1");
-  document.getElementById("novedad-bg").classList.remove("open");
-});
-
-document.getElementById("novedad-help").addEventListener("click", () => {
-  localStorage.setItem(LS_NOVEDAD, "1");
-  document.getElementById("novedad-bg").classList.remove("open");
-  helpAbrir();
-});
-
-// Cerrar al tocar fuera
-document.getElementById("novedad-bg").addEventListener("click", e => {
-  if (e.target === document.getElementById("novedad-bg")) {
-    localStorage.setItem(LS_NOVEDAD, "1");
-    document.getElementById("novedad-bg").classList.remove("open");
-  }
-});
 
 
 // ── Detección y ajuste de desbordamiento ───────────────────────
@@ -2808,7 +2820,7 @@ function detectarDesbordamiento() {
   const alturaDisponible = fsCenter.clientHeight;
   const anchoCont = fsContent.clientWidth || fsCenter.clientWidth - 160;
   const fontSize = fsContent.style.fontSize || (getFsBaseSize() + fsSizeOffset) + "px";
-  const lineH = fsContent.style.lineHeight || String(fsLineHeight);
+  const lineH = fsContent.style.lineHeight || "1.4";
 
   const desbordadas = [];
   viewerSlides.filter(s => s.type === "slide").forEach(s => {
@@ -2866,11 +2878,6 @@ document.getElementById("overflow-igual").addEventListener("click", () => {
 
 // ── Toggle mayúsculas ─────────────────────────────────────────
 let fsMayus = false;
-document.getElementById("fs-mayus").addEventListener("click", () => {
-  fsMayus = !fsMayus;
-  document.getElementById("fs-content").classList.toggle("mayus", fsMayus);
-  document.getElementById("fs-mayus").classList.toggle("activo", fsMayus);
-});
 
 // ── Ayuda ─────────────────────────────────────────────────────
 function helpAbrir() { document.getElementById("help-modal-bg").classList.add("open"); }
