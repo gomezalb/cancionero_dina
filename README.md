@@ -1,76 +1,134 @@
-# Cancionero
+# Cancionero Dina
 
-Cancionero digital con panel de administración integrado. Basado en [cancionero original](https://github.com/gomezalb/cancionero).
+Cancionero digital con panel de administración integrado, basado en [cancionero original](https://github.com/gomezalb/cancionero).
 
-## Configuración inicial (una sola vez)
+---
 
-### 1. Crear el repositorio en GitHub
+## Estructura de ramas
 
-1. Creá un nuevo repositorio público en GitHub llamado `cancionero_dina`
-2. Subí todos estos archivos al repositorio
-3. En **Settings → Pages**, activá GitHub Pages desde la rama `main`
-
-### 2. Crear el token de GitHub
-
-1. Entrá a [github.com/settings/tokens](https://github.com/settings/tokens)
-2. Hacé clic en **"Fine-grained tokens" → "Generate new token"**
-3. Configurá:
-   - **Token name:** `cancionero-dina-admin`
-   - **Expiration:** 1 year (podés renovarlo cada año)
-   - **Repository access:** Solo `cancionero_dina`
-   - **Permissions → Contents:** `Read and write`
-4. Hacé clic en **Generate token** y copiá el token (empieza con `github_pat_...`)
-
-### 3. Configurar el token y contraseña en el código
-
-Abrí `index.html` y buscá esta sección cerca del final del archivo:
-
-```javascript
-const GH_CONFIG = {
-  owner:  "GITHUB_USUARIO",     // ← reemplazar con tu usuario de GitHub
-  repo:   "cancionero_dina",
-  file:   "canciones.json",
-  branch: "main",
-  token:  "GITHUB_TOKEN",       // ← reemplazar con el token que generaste
-  password: "ADMIN_PASSWORD"    // ← elegí una contraseña para el admin
-};
+```
+main   ← producción (lo que ven los usuarios, admin publica canciones aquí)
+dev    ← desarrollo (cambios de código, nunca toca canciones.json del admin)
 ```
 
-Reemplazá los tres valores y volvé a subir el archivo.
+---
 
-## Uso del panel de administración
+## Setup inicial (una sola vez)
 
-1. Entrá al cancionero en la URL de GitHub Pages
-2. Tocá la pestaña **Editar**
-3. Desde ahí podés:
-   - **Buscar y editar** acordes/tonalidad de cualquier canción
-   - **Agregar canciones nuevas** con la letra
-4. Cuando terminés los cambios, tocá **"☁ Publicar cambios"**
-5. Ingresá la contraseña de administración
-6. En aproximadamente **1 minuto** los cambios son visibles para todos
+```bash
+# Clonar el repo
+git clone https://github.com/gomezalb/cancionero_dina.git
+cd cancionero_dina
 
-## Estructura del proyecto
-
-- `index.html` — toda la aplicación
-- `canciones.json` — base de datos de canciones
-- `setlist.json` — lista fijada para reuniones (opcional)
-- `sw.js` — service worker para uso offline
-- `manifest.json` — configuración PWA
-
-## Lista fijada (setlist.json)
-
-Para fijar una lista para una reunión, editá `setlist.json`:
-
-```json
-{
-  "name": "Reunión del domingo",
-  "expira": "2026-12-31",
-  "songs": [
-    "Título canción 1",
-    "Título canción 2"
-  ]
-}
+# Crear y publicar la rama dev
+git checkout -b dev
+git push origin dev
 ```
 
-Cuando pasa la fecha de `expira`, la lista fijada deja de mostrarse automáticamente.
-Para no tener lista fijada, dejá el archivo como `{}`.
+---
+
+## Flujo de trabajo como desarrollador
+
+### 1. Antes de empezar a trabajar — sincronizar dev con main
+
+```bash
+git checkout main
+git pull origin main          # traer últimos cambios (incluye canciones del admin)
+
+git checkout dev
+git merge main                # incorporar esos cambios a dev
+```
+
+### 2. Desarrollar normalmente
+
+```bash
+# Hacer cambios en el código...
+
+git add .
+git commit -m "Descripción del cambio"
+git push origin dev           # push a dev, nunca toca main ni canciones.json
+```
+
+### 3. Llevar mejoras a producción (main)
+
+```bash
+git checkout main
+git pull origin main          # IMPORTANTE: traer lo último del admin antes de mergear
+
+git merge dev                 # incorporar cambios de código
+
+# Restaurar canciones.json del admin por si el merge lo pisó
+git checkout main -- canciones.json
+
+git push origin main          # publicar a producción
+```
+
+### 4. Volver a dev para seguir desarrollando
+
+```bash
+git checkout dev
+git merge main                # mantener dev sincronizado
+```
+
+---
+
+## Archivos importantes
+
+| Archivo | Descripción | ¿Se sube al repo? |
+|---|---|---|
+| `index.html` | Toda la aplicación | ✅ Sí |
+| `config.js` | Owner, repo, branch (sin secretos) | ✅ Sí |
+| `config.local.js` | Token GitHub real | ❌ No (.gitignore) |
+| `canciones.json` | Base de datos de canciones | ✅ Sí (el admin lo gestiona) |
+| `setlist.json` | Lista fijada actual | ✅ Sí (el admin lo gestiona) |
+| `sw.js` | Service Worker (offline/PWA) | ✅ Sí |
+| `manifest.json` | Configuración PWA | ✅ Sí |
+
+---
+
+## Configuración del token (cuando lo regenerás)
+
+1. Ir a [github.com/settings/tokens](https://github.com/settings/tokens) → Fine-grained tokens
+2. Regenerar el token `cancionero-dina-admin`
+3. Abrir `config.local.js` y reemplazar el valor de `GH_TOKEN_LOCAL`
+4. La próxima vez que abrás el cancionero en local, el token se inyecta automáticamente en `localStorage`
+5. Para el dispositivo del admin: ella lo ingresa una vez desde el modal al entrar a **Editar**
+
+---
+
+## Probar en local
+
+```bash
+# Cualquier servidor estático sirve, por ejemplo:
+python3 -m http.server 8000
+
+# Abrir en el navegador
+http://localhost:8000
+```
+
+> **Nota:** `canciones.json` en local puede estar desactualizado respecto a lo que publicó el admin.
+> Siempre hacer `git pull origin main` antes de arrancar para tener la versión más reciente.
+
+---
+
+## Versionado del Service Worker
+
+Cada vez que subís cambios a `main`, incrementar la versión del caché en `sw.js` para forzar actualización en los dispositivos:
+
+```js
+// sw.js
+const CACHE_VERSION = "cancionero-dina-v4"; // ← incrementar este número
+```
+
+---
+
+## Panel de administración
+
+El panel está integrado en la pestaña **Editar** del cancionero.
+
+| Función | Cómo acceder |
+|---|---|
+| Agregar / editar canciones | Pestaña Editar → ingresar token la primera vez |
+| Publicar cambios | Pestaña Editar → botón ☁ Publicar cambios |
+| Fijar lista para todos | Pestaña Editar → sección Fijar lista |
+| Olvidar token guardado | Modal de token → botón "Olvidar token guardado" |
