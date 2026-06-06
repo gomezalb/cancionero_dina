@@ -717,10 +717,10 @@
   <!-- Panel Editar -->
   <div id="editar-panel">
 
-    <!-- Sección: acordes y tonalidad -->
+    <!-- Sección: modificar canción -->
     <div class="edit-section">
       <div class="edit-section-header">
-        <span>Acordes y tonalidad</span>
+        <span>Modificar canción</span>
       </div>
       <div class="edit-section-body">
         <div id="edit-search-wrap">
@@ -800,7 +800,8 @@
         <span>Agregar canción nueva</span>
       </div>
       <div class="edit-section-body">
-        <div id="nueva-form">
+        <button id="btn-mostrar-nueva-form" class="btn-primary" style="align-self:flex-start">＋ Nueva canción</button>
+        <div id="nueva-form" style="display:none;flex-direction:column;gap:.75rem">
           <div class="acorde-field">
             <label>Título</label>
             <input id="nueva-titulo-input" type="text" placeholder="Nombre de la canción"/>
@@ -2530,6 +2531,15 @@ function textoToSlides(texto) {
   }).filter(Boolean);
 }
 
+// ── Mostrar/ocultar formulario nueva canción ───────────────────
+document.getElementById("btn-mostrar-nueva-form").addEventListener("click", () => {
+  const form = document.getElementById("nueva-form");
+  const btn  = document.getElementById("btn-mostrar-nueva-form");
+  const visible = form.style.display === "flex";
+  form.style.display = visible ? "none" : "flex";
+  btn.textContent = visible ? "＋ Nueva canción" : "✕ Cancelar";
+});
+
 document.getElementById("nueva-guardar").addEventListener("click", () => {
   const titulo  = document.getElementById("nueva-titulo-input").value.trim();
   const tono    = document.getElementById("nueva-tono-input").value.trim();
@@ -2565,6 +2575,9 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   document.getElementById("nueva-letra-textarea").value = "";
   msg.textContent = `✓ "${titulo}" guardada`;
   msg.className = "edit-msg ok";
+  // Ocultar form y resetear botón
+  document.getElementById("nueva-form").style.display = "none";
+  document.getElementById("btn-mostrar-nueva-form").textContent = "＋ Nueva canción";
   renderList();
   renderNuevasGuardadas();
 });
