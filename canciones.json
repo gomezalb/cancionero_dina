@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "titulo": "Bueno es alabar oh Señor",
+    "preview": "/Bueno es alabar oh Señor\ntu nombre.\nDarte gloria, honra y honor,\npor siempre.\nBueno es alabarte Jesús\ny gozarme en tu poder/",
+    "slides": [
+      "<b>/Bueno es alabar oh Señor</b><br><b>tu nombre.</b><br><b>Darte gloria, honra y honor,</b><br><b>por siempre.</b><br><b>Bueno es alabarte Jesús</b><br><b>y gozarme en tu poder/</b>",
+      "<b>/Porque grande eres tú,</b><br><b>grandes son tus obras,</b><br><b>porque grande eres tú,</b><br><b>grande es tu amor,</b><br><b>grande es tu gloria/</b><br><br><br><b>Bueno es alabarte Señor.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL",
+    "youtube": "https://www.youtube.com/watch?v=ZZ7tgBj3r3M",
+    "youtube_vocal": "https://www.youtube.com/watch?v=P80HHSUqNYo",
+    "acordes": [
+      "/[SOL]Bueno es [DO]alabar oh [RE]Señor\ntu [DO]nom[RE]bre.\n[SOL]Darte gloria, [DO]honra y [RE]honor,\npor [DO]siem[RE]pre.\n[SOL]Bueno es [DO]alabarte [RE]Jesús\ny [MIm]gozarme en tu [RE]poder/",
+      "/Porque [SOL]grande [DO]eres [RE]tú,\n[SOL]grandes [DO]son tus [RE]obras,\nporque [SOL]grande [DO]eres [RE]tú, \ngrande es tu [MIm]amor,\ngrande es tu [RE]gloria/\n\n[DO]Bueno es [RE]alabarte [SOL]Señor"
+    ]
+  },
+  {
+    "titulo": "Quebrantado fuiste oh Jesús (Gloria en lo alto)",
+    "preview": "Quebrantado fuiste, oh Jesús\npor mi rebelión\nResucitaste y hoy puedo vivir\ny de nuevo nacer\n\nCuánto amaste al mundo, Dios\nCuánto te quiero agradecer",
+    "slides": [
+      "<b>Quebrantado fuiste, oh Jesús</b><br><b>por mi rebelión</b><br><b>Resucitaste y hoy puedo vivir</b><br><b>y de nuevo nacer</b><br><br><b>Cuánto amaste al mundo, Dios</b><br><b>Cuánto te quiero agradecer</b>",
+      "<b>Gloria, gloria en lo alto</b><br><b>Gloria en lo alto, gloria al Rey</b><br><b>Gloria, gloria a ti mi Cristo</b><br><b>Tu nombre por siempre exaltaré</b>",
+      "<b>Venciste el mundo pecador</b><br><b>Con tu gran amor</b><br><b>Ahora el Padre te ha exaltado</b><br><b>Al más alto lugar</b><br><br><b>Cuánto amaste al mundo Dios</b><br><b>Cuánto te quiero enaltecer</b>",
+      "<b>/Gloria, gloria en lo alto</b><br><b>Gloria en lo alto, gloria al Rey</b><br><b>Gloria, gloria a ti mi Cristo</b><br><b>Tu nombre por siempre exaltaré/</b>",
+      "<b>/Digno, solo tú eres digno</b><br><b>Solo tú eres digno</b><br><b>Solo tú eres Dios/</b><br><br><b>/Gloria, gloria en lo alto</b><br><b>Gloria en lo alto, gloria al rey</b><br><b>Gloria, gloria a ti mi Cristo</b><br><b>Tu nombre por siempre exaltaré/</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MI",
+    "youtube": "https://www.youtube.com/watch?v=ZZ7tgBj3r3M",
+    "youtube_vocal": "https://www.youtube.com/watch?v=P80HHSUqNYo",
+    "acordes": [
+      "Quebrantado fuiste, oh Jesús\npor mi rebelión\nResucitaste y hoy puedo vivir\ny de nuevo nacer\n\nCuánto amaste al mundo, Dios\nCuánto te quiero agradecer",
+      "Gloria, gloria en lo alto\nGloria en lo alto, gloria al Rey\nGloria, gloria a ti mi Cristo\nTu nombre por siempre exaltaré",
+      "Venciste el mundo pecador\nCon tu gran amor\nAhora el Padre te ha exaltado\nAl más alto lugar\n\nCuánto amaste al mundo Dios\nCuánto te quiero enaltecer",
+      "/Gloria, gloria en lo alto\nGloria en lo alto, gloria al Rey\nGloria, gloria a ti mi Cristo\nTu nombre por siempre exaltaré/",
+      "/Digno, solo tú eres digno\nSolo tú eres digno\nSolo tú eres Dios/\n\n/Gloria, gloria en lo alto\nGloria en lo alto, gloria al rey\nGloria, gloria a ti mi Cristo\nTu nombre por siempre exaltaré/"
+    ]
+  }
+]
