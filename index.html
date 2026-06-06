@@ -2583,13 +2583,36 @@ function renderNuevasGuardadas() {
   const wrap = document.getElementById("nuevas-guardadas");
   const nuevas = getNuevasLS();
   if (!nuevas.length) { wrap.innerHTML = ""; return; }
-  wrap.innerHTML = `<div style="font-size:11px;color:var(--text4);margin-top:.5rem;margin-bottom:.35rem">Guardadas en este dispositivo (${nuevas.length}):</div>` +
-    nuevas.map((c, i) => `
-      <div class="edit-song-row" style="cursor:default">
-        <span class="edit-song-row-title">${c.titulo}</span>
-        ${c.tono ? `<span class="edit-song-row-tono">${c.tono}</span>` : ""}
-        <button class="btn-danger" style="padding:2px 8px;font-size:11px" data-i="${i}">&#10005;</button>
-      </div>`).join("");
+
+  // Preservar estado abierto/cerrado entre re-renders
+  const yaAbierto = wrap.querySelector("#nuevas-guardadas-list")?.style.display === "block";
+
+  wrap.innerHTML = `
+    <button id="nuevas-guardadas-toggle" style="
+      display:flex;align-items:center;gap:6px;background:none;border:none;
+      color:var(--text4);font-size:11px;cursor:pointer;padding:.35rem 0;margin-top:.5rem;
+      font-family:inherit;
+    ">
+      <span id="nuevas-guardadas-chevron" style="font-size:10px;transition:transform .15s">${yaAbierto ? "▼" : "▶"}</span>
+      Guardadas en este dispositivo (${nuevas.length})
+    </button>
+    <div id="nuevas-guardadas-list" style="display:${yaAbierto ? "block" : "none"}">
+      ${nuevas.map((c, i) => `
+        <div class="edit-song-row" style="cursor:default">
+          <span class="edit-song-row-title">${c.titulo}</span>
+          ${c.tono ? `<span class="edit-song-row-tono">${c.tono}</span>` : ""}
+          <button class="btn-danger" style="padding:2px 8px;font-size:11px" data-i="${i}">&#10005;</button>
+        </div>`).join("")}
+    </div>`;
+
+  wrap.querySelector("#nuevas-guardadas-toggle").addEventListener("click", () => {
+    const list = wrap.querySelector("#nuevas-guardadas-list");
+    const chevron = wrap.querySelector("#nuevas-guardadas-chevron");
+    const abierto = list.style.display === "block";
+    list.style.display = abierto ? "none" : "block";
+    chevron.textContent = abierto ? "▶" : "▼";
+  });
+
   wrap.querySelectorAll(".btn-danger").forEach(btn => {
     btn.addEventListener("click", () => {
       const i = parseInt(btn.dataset.i);
@@ -2597,7 +2620,6 @@ function renderNuevasGuardadas() {
       const titulo = arr[i].titulo;
       arr.splice(i, 1);
       setNuevasLS(arr);
-      // Quitar de SONGS
       const idx = SONGS.findIndex(s => s.titulo === titulo && s.carpeta === "Nuevas");
       if (idx >= 0) SONGS.splice(idx, 1);
       renderNuevasGuardadas();
