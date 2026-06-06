@@ -132,3 +132,14 @@ El panel está integrado en la pestaña **Editar** del cancionero.
 | Publicar cambios | Pestaña Editar → botón ☁ Publicar cambios |
 | Fijar lista para todos | Pestaña Editar → sección Fijar lista |
 | Olvidar token guardado | Modal de token → botón "Olvidar token guardado" |
+
+---
+
+## Publicar desde local vs producción
+
+`config.local.js` sobreescribe `GH_BRANCH = "dev"`, así al hacer click en **Publicar** desde localhost, el `canciones.json` sube a la rama `dev` y nunca pisa el del admin en `main`.
+
+| Entorno | Branch de publicación | Archivo de config |
+|---|---|---|
+| Local (vos) | `dev` | `config.js` + `config.local.js` |
+| Producción (admin) | `main` | solo `config.js` |
