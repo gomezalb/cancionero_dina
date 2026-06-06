@@ -71,6 +71,8 @@
     .sc-acorde-btn:hover { background: #1b3a5c; border-color: #1177bb; }
     .sc-yt-btn { background: none; border: 0.5px solid var(--border2); color: #ff4444; font-size: 13px; width: 30px; height: 30px; border-radius: var(--radius); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .12s; flex-shrink: 0; padding: 0; }
     .sc-yt-btn:hover { background: #3a0e0e; border-color: #ff4444; }
+    .sc-vocal-btn { background: none; border: 0.5px solid var(--border2); color: #b080ff; font-size: 13px; width: 30px; height: 30px; border-radius: var(--radius); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .12s; flex-shrink: 0; padding: 0; }
+    .sc-vocal-btn:hover { background: #1e0e3a; border-color: #b080ff; }
     .add-btn { background: var(--green-bg); border: 0.5px solid var(--green-bd); color: var(--green-tx); font-size: 18px; width: 28px; height: 28px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .12s; }
     .add-btn:hover { background: #1177bb; border-color: #1a88cc; }
     .in-list .add-btn { background: var(--red-bg); border: 0.5px solid var(--red-bd); color: var(--red-tx); }
@@ -119,6 +121,8 @@
     .sl-remove:hover { opacity: 1; }
     .sl-yt-btn { background: none; border: none; color: #ff4444; font-size: 12px; cursor: pointer; padding: 0; opacity: .7; transition: opacity .12s; flex-shrink: 0; width: 20px; text-align: center; }
     .sl-yt-btn:hover { opacity: 1; }
+    .sl-vocal-btn { background: none; border: none; color: #b080ff; font-size: 12px; cursor: pointer; padding: 0; opacity: .7; transition: opacity .12s; flex-shrink: 0; width: 20px; text-align: center; }
+    .sl-vocal-btn:hover { opacity: 1; }
     .sl-yt-placeholder { display: inline-block; width: 20px; flex-shrink: 0; }
     #sl-empty { font-size: 13px; color: #444; text-align: center; padding: 2rem 0; border: 0.5px dashed #2a2a2a; border-radius: var(--radius); }
 
@@ -724,7 +728,10 @@
         </div>
         <div id="edit-search-results"></div>
         <div id="acorde-form">
-          <div id="acorde-form-titulo"></div>
+          <div class="acorde-field">
+            <label>Título</label>
+            <input id="acorde-form-titulo" type="text" style="width:100%;background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:14px;font-weight:500;font-family:inherit;outline:none;box-sizing:border-box"/>
+          </div>
 
           <!-- Tabs: Acordes / Letra -->
           <div class="edit-tabs">
@@ -749,6 +756,10 @@
             <div class="acorde-field">
               <label>Link de YouTube (opcional)</label>
               <input id="acorde-youtube-input" type="url" placeholder="https://www.youtube.com/watch?v=..." style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;box-sizing:border-box"/>
+            </div>
+            <div class="acorde-field">
+              <label>Link de YouTube — arreglos vocales (opcional)</label>
+              <input id="acorde-vocal-input" type="url" placeholder="https://www.youtube.com/watch?v=..." style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;box-sizing:border-box"/>
             </div>
             <div class="acorde-field">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
@@ -801,6 +812,10 @@
           <div class="acorde-field">
             <label>Link de YouTube (opcional)</label>
             <input id="nueva-youtube-input" type="url" placeholder="https://www.youtube.com/watch?v=..." style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;box-sizing:border-box"/>
+          </div>
+          <div class="acorde-field">
+            <label>Link de YouTube — arreglos vocales (opcional)</label>
+            <input id="nueva-vocal-input" type="url" placeholder="https://www.youtube.com/watch?v=..." style="background:var(--bg3);border:0.5px solid var(--border2);color:var(--text);border-radius:var(--radius);padding:.45rem .6rem;font-size:13px;font-family:inherit;outline:none;width:100%;box-sizing:border-box"/>
           </div>
           <div class="acorde-field">
             <label>Categoría</label>
@@ -1563,6 +1578,8 @@ function renderList() {
     const acordesLSEntry = getAcordesLS()[c.titulo] || {};
     const youtubeUrl = acordesLSEntry.youtube || c.youtube || "";
     const tieneYoutube = !!youtubeUrl;
+    const vocalUrl = acordesLSEntry.youtube_vocal || c.youtube_vocal || "";
+    const tieneVocal = !!vocalUrl;
     card.innerHTML = `
       <div class="sc-info">
         <div class="st">${hlTexto(c.titulo, query)}</div>
@@ -1571,6 +1588,7 @@ function renderList() {
       </div>
       <div class="sc-btns">
         ${tieneYoutube ? `<button class="sc-yt-btn" title="Ver en YouTube">▶</button>` : ""}
+        ${tieneVocal ? `<button class="sc-vocal-btn" title="Arreglos vocales">🎤</button>` : ""}
         ${tieneAcordes ? `<button class="sc-acorde-btn" title="Ver con acordes">♫</button>` : ""}
         <button class="add-btn">${inL ? "&#8722;" : "&#43;"}</button>
       </div>`;
@@ -1587,6 +1605,12 @@ function renderList() {
       card.querySelector(".sc-yt-btn").addEventListener("click", e => {
         e.stopPropagation();
         window.open(youtubeUrl, "_blank", "noopener");
+      });
+    }
+    if (tieneVocal) {
+      card.querySelector(".sc-vocal-btn").addEventListener("click", e => {
+        e.stopPropagation();
+        window.open(vocalUrl, "_blank", "noopener");
       });
     }
     card.querySelector(".sc-info").addEventListener("click", () => openSong(c, null));
@@ -1611,10 +1635,14 @@ function renderSetlistItems(lista, container, removable, onRemove) {
     if (removable) div.draggable = true;
     const acordesEntry = getAcordesLS()[titulo] || {};
     const youtubeUrlSL = acordesEntry.youtube || song?.youtube || "";
+    const vocalUrlSL = acordesEntry.youtube_vocal || song?.youtube_vocal || "";
     const ytBtn = youtubeUrlSL
       ? `<button class="sl-yt-btn" title="Ver en YouTube">▶</button>`
       : `<span class="sl-yt-placeholder"></span>`;
-    div.innerHTML = `${removable ? '<span class="drag-handle">&#9776;</span>' : ''}<span class="sl-num">${i+1}</span><span class="sl-title">${titulo}</span>${song?.tono ? `<span class="sl-tono">${song.tono}</span>` : ""}<span class="sl-meta">${song ? song.slides.length+" diap." : ""}</span>${ytBtn}${removable ? '<button class="sl-remove">&#10005;</button>' : ''}`;
+    const vocalBtn = vocalUrlSL
+      ? `<button class="sl-vocal-btn" title="Arreglos vocales">🎤</button>`
+      : `<span class="sl-yt-placeholder"></span>`;
+    div.innerHTML = `${removable ? '<span class="drag-handle">&#9776;</span>' : ''}<span class="sl-num">${i+1}</span><span class="sl-title">${titulo}</span>${song?.tono ? `<span class="sl-tono">${song.tono}</span>` : ""}<span class="sl-meta">${song ? song.slides.length+" diap." : ""}</span>${ytBtn}${vocalBtn}${removable ? '<button class="sl-remove">&#10005;</button>' : ''}`;
     if (removable) {
       div.querySelector(".sl-remove").addEventListener("click", () => onRemove(i));
       setupDrag(div, i);
@@ -1623,6 +1651,12 @@ function renderSetlistItems(lista, container, removable, onRemove) {
       div.querySelector(".sl-yt-btn").addEventListener("click", e => {
         e.stopPropagation();
         window.open(youtubeUrlSL, "_blank", "noopener");
+      });
+    }
+    if (vocalUrlSL) {
+      div.querySelector(".sl-vocal-btn").addEventListener("click", e => {
+        e.stopPropagation();
+        window.open(vocalUrlSL, "_blank", "noopener");
       });
     }
     div.querySelector(".sl-title").addEventListener("click", () => { if (song) openSong(song, [...lista]); });
@@ -2255,12 +2289,13 @@ function abrirEditorAcordes(cancion) {
   acordeCancionActual = cancion;
   const acordesLS = getAcordesLS();
   const override = acordesLS[cancion.titulo] || {};
-  document.getElementById("acorde-form-titulo").textContent = cancion.titulo;
+  document.getElementById("acorde-form-titulo").value = cancion.titulo;
   document.getElementById("acorde-tono-input").value = override.tono ?? cancion.tono ?? "";
   // Cargar categoría actual
   const carpetaActual = override.carpeta ?? cancion.carpeta ?? "Alabanza";
   document.getElementById("acorde-carpeta-select").value = carpetaActual;
   document.getElementById("acorde-youtube-input").value = override.youtube ?? cancion.youtube ?? "";
+  document.getElementById("acorde-vocal-input").value = override.youtube_vocal ?? cancion.youtube_vocal ?? "";
 
   // Prioridad: 1) localStorage, 2) acordes del JSON, 3) letra plana de los slides
   let textoAcordes = override.acordes_texto || "";
@@ -2353,24 +2388,52 @@ document.getElementById("acorde-tono-input").addEventListener("change", function
 
 document.getElementById("acorde-guardar").addEventListener("click", () => {
   if (!acordeCancionActual) return;
+  const nuevoTitulo = document.getElementById("acorde-form-titulo").value.trim();
   const tono    = document.getElementById("acorde-tono-input").value.trim();
-  const texto   = document.getElementById("acorde-textarea").value.trim();
+  const texto   = document.getElementById("acorde-textarea").value.replace(/\r\n/g,"\n").replace(/\r/g,"\n").trim();
   const carpeta = document.getElementById("acorde-carpeta-select").value;
   const youtube = document.getElementById("acorde-youtube-input").value.trim();
+  const vocal   = document.getElementById("acorde-vocal-input").value.trim();
+  const msg = document.getElementById("acorde-msg");
+
+  if (!nuevoTitulo) { msg.textContent = "El título no puede estar vacío."; msg.className = "edit-msg err"; return; }
+
+  const tituloOriginal = acordeCancionActual.titulo;
   const obj = getAcordesLS();
-  obj[acordeCancionActual.titulo] = { tono, acordes_texto: texto, carpeta, youtube };
+
+  // Si el título cambió, renombrar en LS y en SONGS
+  if (nuevoTitulo !== tituloOriginal) {
+    if (SONGS.find(s => s.titulo !== tituloOriginal && norm(s.titulo) === norm(nuevoTitulo))) {
+      msg.textContent = "Ya existe una canción con ese nombre."; msg.className = "edit-msg err"; return;
+    }
+    // Renombrar en acordesLS: copiar entrada con nueva clave y borrar la vieja
+    if (obj[tituloOriginal]) { obj[nuevoTitulo] = obj[tituloOriginal]; delete obj[tituloOriginal]; }
+    // Renombrar en nuevasLS si corresponde
+    const nuevasArr = getNuevasLS();
+    const nIdx = nuevasArr.findIndex(n => n.titulo === tituloOriginal);
+    if (nIdx >= 0) { nuevasArr[nIdx].titulo = nuevoTitulo; setNuevasLS(nuevasArr); }
+    // Renombrar en setlist si estaba
+    const slIdx = setlist.indexOf(tituloOriginal);
+    if (slIdx >= 0) { setlist[slIdx] = nuevoTitulo; saveToStorage(); }
+    acordeCancionActual = { ...acordeCancionActual, titulo: nuevoTitulo };
+  }
+
+  obj[nuevoTitulo] = { tono, acordes_texto: texto, carpeta, youtube, youtube_vocal: vocal };
   setAcordesLS(obj);
   // Actualizar SONGS en memoria
-  const song = SONGS.find(s => s.titulo === acordeCancionActual.titulo);
+  const song = SONGS.find(s => s.titulo === tituloOriginal) || SONGS.find(s => s.titulo === nuevoTitulo);
   if (song) {
+    song.titulo = nuevoTitulo;
     if (tono) song.tono = tono; else delete song.tono;
     if (texto) song.acordes = textoToAcordesArray(texto); else delete song.acordes;
     song.carpeta = carpeta;
     song.nueva = carpeta === "Nuevas";
     if (youtube) song.youtube = youtube; else delete song.youtube;
+    if (vocal) song.youtube_vocal = vocal; else delete song.youtube_vocal;
   }
-  document.getElementById("acorde-msg").textContent = "✓ Guardado";
-  document.getElementById("acorde-msg").className = "edit-msg ok";
+  SONGS.sort((a,b) => a.titulo.localeCompare(b.titulo));
+  msg.textContent = "✓ Guardado";
+  msg.className = "edit-msg ok";
   renderList();
 });
 
@@ -2379,7 +2442,7 @@ document.getElementById("acorde-cancelar-letra").addEventListener("click", cerra
 
 document.getElementById("letra-guardar").addEventListener("click", () => {
   if (!acordeCancionActual) return;
-  const texto = document.getElementById("letra-textarea").value.trim();
+  const texto = document.getElementById("letra-textarea").value.replace(/\r\n/g,"\n").replace(/\r/g,"\n").trim();
   const msg = document.getElementById("acorde-msg");
   if (!texto) { msg.textContent = "La letra no puede estar vacía."; msg.className = "edit-msg err"; return; }
 
@@ -2409,8 +2472,7 @@ document.getElementById("letra-guardar").addEventListener("click", () => {
     acordeTA.value = texto;
   }
 
-  // También actualizar el textarea de letra (recargar normalizado)
-  document.getElementById("letra-textarea").value = slidesATextoPlano(nuevosSlides);
+  // No recargar el textarea desde HTML para evitar duplicación de saltos de línea en el roundtrip
 
   msg.textContent = "✓ Letra actualizada";
   msg.className = "edit-msg ok";
@@ -2439,26 +2501,32 @@ document.getElementById("acorde-borrar").addEventListener("click", () => {
   document.getElementById("acorde-msg").className = "edit-msg ok";
   document.getElementById("acorde-tono-input").value = "";
   document.getElementById("acorde-textarea").value = "";
+  document.getElementById("acorde-youtube-input").value = "";
+  document.getElementById("acorde-vocal-input").value = "";
   document.getElementById("acorde-carpeta-select").value = song?.carpeta || "Alabanza";
   renderList();
 });
 
 // Convertir texto con --- a array de slides (igual que generar_canciones.py)
 function textoToAcordesArray(texto) {
+  texto = texto.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   return texto.split(/^---$/m).map(bloque => bloque.trim()).filter(Boolean);
 }
 
 // ── Sección nueva canción ──────────────────────────────────────
 function textoToSlides(texto) {
-  // Divide por --- y convierte cada bloque a HTML en negrita
+  // Normalizar saltos de línea (Windows \r\n → \n)
+  texto = texto.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   return texto.split(/^---$/m).map(bloque => {
     const lineas = bloque.trim().split(/\n/);
-    const html = lineas.map((l, i) => {
-      const t = l.trim();
-      if (!t) return i === 0 ? "" : "<br>";
-      return `<b>${t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</b>`;
-    }).filter((l, i, arr) => !(l === "" && (i === 0 || i === arr.length - 1)));
-    return html.join("<br>");
+    let html = "";
+    for (let i = 0; i < lineas.length; i++) {
+      const t = lineas[i].trim();
+      if (i > 0) html += "<br>"; // separador entre líneas
+      if (t) html += `<b>${t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</b>`;
+      // línea vacía: el <br> ya fue agregado arriba, no se agrega nada más
+    }
+    return html;
   }).filter(Boolean);
 }
 
@@ -2466,7 +2534,8 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   const titulo  = document.getElementById("nueva-titulo-input").value.trim();
   const tono    = document.getElementById("nueva-tono-input").value.trim();
   const youtube = document.getElementById("nueva-youtube-input").value.trim();
-  const texto   = document.getElementById("nueva-letra-textarea").value.trim();
+  const vocal   = document.getElementById("nueva-vocal-input").value.trim();
+  const texto   = document.getElementById("nueva-letra-textarea").value.replace(/\r\n/g,"\n").replace(/\r/g,"\n").trim();
   const carpeta = document.getElementById("nueva-carpeta-select").value;
   const msg     = document.getElementById("nueva-msg");
   if (!titulo) { msg.textContent = "El título es obligatorio."; msg.className = "edit-msg err"; return; }
@@ -2480,6 +2549,7 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   const nueva = { titulo, preview, slides, carpeta, nueva: esNueva };
   if (tono) nueva.tono = tono;
   if (youtube) nueva.youtube = youtube;
+  if (vocal) nueva.youtube_vocal = vocal;
   // Guardar en LS y en SONGS
   const arr = getNuevasLS();
   arr.push(nueva);
@@ -2489,6 +2559,8 @@ document.getElementById("nueva-guardar").addEventListener("click", () => {
   // Limpiar form
   document.getElementById("nueva-titulo-input").value = "";
   document.getElementById("nueva-tono-input").value = "";
+  document.getElementById("nueva-youtube-input").value = "";
+  document.getElementById("nueva-vocal-input").value = "";
   document.getElementById("nueva-carpeta-select").value = "Alabanza";
   document.getElementById("nueva-letra-textarea").value = "";
   msg.textContent = `✓ "${titulo}" guardada`;
@@ -2501,6 +2573,7 @@ document.getElementById("nueva-limpiar").addEventListener("click", () => {
   document.getElementById("nueva-titulo-input").value = "";
   document.getElementById("nueva-tono-input").value = "";
   document.getElementById("nueva-youtube-input").value = "";
+  document.getElementById("nueva-vocal-input").value = "";
   document.getElementById("nueva-carpeta-select").value = "Alabanza";
   document.getElementById("nueva-letra-textarea").value = "";
   document.getElementById("nueva-msg").textContent = "";
@@ -2648,6 +2721,7 @@ function construirExportado() {
         if (ov.acordes_texto) c.acordes = textoToAcordesArray(ov.acordes_texto); else delete c.acordes;
         if (ov.carpeta) c.carpeta = ov.carpeta;
         if (ov.youtube) c.youtube = ov.youtube; else if (!c.youtube) delete c.youtube;
+        if (ov.youtube_vocal) c.youtube_vocal = ov.youtube_vocal; else if (!c.youtube_vocal) delete c.youtube_vocal;
       }
       delete c.nueva;
       return c;
@@ -2758,6 +2832,9 @@ function aplicarLocalStorageAlInicio() {
     }
     if (ov.youtube !== undefined) {
       if (ov.youtube) song.youtube = ov.youtube; else delete song.youtube;
+    }
+    if (ov.youtube_vocal !== undefined) {
+      if (ov.youtube_vocal) song.youtube_vocal = ov.youtube_vocal; else delete song.youtube_vocal;
     }
   });
   const nuevasLS = getNuevasLS();
