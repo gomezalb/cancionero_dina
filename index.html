@@ -1491,11 +1491,14 @@ async function cargarSetlist() {
     if (!res.ok) { updateBadge(); renderList(); if (activeTab === "setlist") renderSetlist(); return; }
     const d = await res.json();
 
-    // Verificar vencimiento — si venció, no mostrar la lista del servicio
+    // Verificar vencimiento — si venció, borrarla automáticamente de GitHub
     if (d.expira) {
       const hoy = new Date(); hoy.setHours(0,0,0,0);
       const expira = new Date(d.expira); expira.setHours(0,0,0,0);
       if (hoy > expira) {
+        // Borrar silenciosamente de GitHub si el admin tiene token
+        const token = localStorage.getItem("cancionero_admin_token");
+        if (token) publicarSetlist(null, null, true).catch(() => {});
         updateBadge(); renderList(); if (activeTab === "setlist") renderSetlist(); return;
       }
     }
@@ -2730,6 +2733,8 @@ document.getElementById("btn-fijar-lista").addEventListener("click", () => {
 });
 
 document.getElementById("btn-borrar-lista").addEventListener("click", () => {
+  // Limpiar también "Mi lista" del admin
+  setlist = []; slName = ""; saveToStorage(); updateBadge();
   if (!adminAutenticado) {
     mostrarAuthModal(() => publicarSetlist(null, null, true));
   } else {
