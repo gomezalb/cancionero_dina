@@ -1,7 +1,7 @@
 // sw.js — Service Worker del Cancionero
 // Versión del caché — cambiá este número cada vez que subas cambios a GitHub
 
-const CACHE_VERSION = "cancionero-dina-v4";
+const CACHE_VERSION = "cancionero-dina-v5";
 
 const ARCHIVOS = [
   "./",
