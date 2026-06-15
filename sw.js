@@ -1,7 +1,7 @@
 // sw.js — Service Worker del Cancionero
 // Versión del caché — cambiá este número cada vez que subas cambios a GitHub
 
-const CACHE_VERSION = "cancionero-dina-v3";
+const CACHE_VERSION = "cancionero-dina-v4";
 
 const ARCHIVOS = [
   "./",
@@ -45,8 +45,8 @@ self.addEventListener("fetch", e => {
   // Nunca interceptar sw.js — el navegador debe poder compararlo siempre con la red
   if (url.pathname.endsWith("sw.js")) return;
 
-  // index.html y manifest.json: network-first para detectar cambios rápido
-  if (url.pathname.endsWith("/") || url.pathname.endsWith("index.html") || url.pathname.endsWith("manifest.json")) {
+  // index.html, manifest.json, canciones.json y setlist.json: network-first para detectar cambios rápido
+  if (url.pathname.endsWith("/") || url.pathname.endsWith("index.html") || url.pathname.endsWith("manifest.json") || url.pathname.endsWith("canciones.json") || url.pathname.endsWith("setlist.json")) {
     e.respondWith(
       fetch(e.request)
         .then(response => {

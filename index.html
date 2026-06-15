@@ -770,9 +770,10 @@
             </div>
             <p class="acorde-hint">Separá las diapositivas con <strong>---</strong> en una línea sola.</p>
             <div class="acorde-actions">
-              <button class="btn-primary" id="acorde-guardar">Guardar acordes</button>
+              <button class="btn-primary" id="acorde-guardar">Guardar cambios</button>
               <button class="btn-secondary" id="acorde-cancelar">Cancelar</button>
               <button class="btn-danger" id="acorde-borrar">Borrar acordes</button>
+              <button class="btn-danger" id="acorde-eliminar-cancion" style="margin-left:auto">🗑 Eliminar canción</button>
             </div>
           </div>
 
@@ -1436,7 +1437,7 @@ function buildSingle(song, pauseEdges) {
 // ── Carga canciones.json ───────────────────────────────────────
 async function cargarCanciones() { // retorna promesa — cargarSetlist() se encadena después
   try {
-    const res = await fetch("canciones.json");
+    const res = await fetch("canciones.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     SONGS = await res.json();
     setlist = setlist.filter(t => SONGS.some(s => s.titulo === t));
@@ -1486,7 +1487,7 @@ async function cargarSetlist() {
   cargarMiLista();
 
   try {
-    const res = await fetch("setlist.json");
+    const res = await fetch("setlist.json", { cache: "no-store" });
     if (!res.ok) { updateBadge(); renderList(); if (activeTab === "setlist") renderSetlist(); return; }
     const d = await res.json();
 
@@ -2508,6 +2509,46 @@ document.getElementById("acorde-borrar").addEventListener("click", () => {
   renderList();
 });
 
+document.getElementById("acorde-eliminar-cancion").addEventListener("click", () => {
+  if (!acordeCancionActual) return;
+  const titulo = acordeCancionActual.titulo;
+  if (!confirm(`¿Eliminar "${titulo}" del cancionero?\n\nEsta acción no se puede deshacer. Se aplicará al publicar.`)) return;
+
+  // Quitar de SONGS en memoria
+  const idx = SONGS.findIndex(s => s.titulo === titulo);
+  if (idx >= 0) SONGS.splice(idx, 1);
+
+  // Quitar de acordesLS
+  const obj = getAcordesLS();
+  delete obj[titulo];
+  setAcordesLS(obj);
+
+  // Quitar de nuevasLS por si era nueva
+  const nuevasArr = getNuevasLS();
+  const nIdx = nuevasArr.findIndex(n => n.titulo === titulo);
+  if (nIdx >= 0) { nuevasArr.splice(nIdx, 1); setNuevasLS(nuevasArr); }
+
+  // Quitar de setlist si estaba
+  const slIdx = setlist.indexOf(titulo);
+  if (slIdx >= 0) { setlist.splice(slIdx, 1); saveToStorage(); }
+
+  // Marcar como eliminada para excluir al publicar
+  const eliminadas = JSON.parse(localStorage.getItem("cancionero_eliminadas") || "[]");
+  if (!eliminadas.includes(titulo)) eliminadas.push(titulo);
+  localStorage.setItem("cancionero_eliminadas", JSON.stringify(eliminadas));
+
+  // Cerrar formulario
+  acordeCancionActual = null;
+  document.getElementById("acorde-form").classList.remove("visible");
+  document.getElementById("edit-search").value = "";
+  document.getElementById("edit-search-results").innerHTML = "";
+  document.getElementById("acorde-msg").textContent = `✓ "${titulo}" eliminada (se aplicará al publicar)`;
+  document.getElementById("acorde-msg").className = "edit-msg ok";
+
+  renderList();
+  renderNuevasGuardadas();
+});
+
 // Convertir texto con --- a array de slides (igual que generar_canciones.py)
 function textoToAcordesArray(texto) {
   texto = texto.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
@@ -2727,6 +2768,12 @@ async function publicarSetlist(nombre, expira, borrar = false) {
   try {
     const res = await fetch(url, { method: "PUT", headers, body: JSON.stringify(body) });
     if (res.ok) {
+      // Invalidar caché del SW para setlist.json
+      if ("caches" in window) {
+        caches.keys().then(keys => keys.forEach(k => caches.open(k).then(c => {
+          c.delete(new Request("./setlist.json"));
+        })));
+      }
       msg.textContent = borrar ? "✓ Lista fijada borrada" : `✓ Lista "${nombre}" fijada para todos`;
       msg.style.color = "var(--green-tx)";
     } else {
@@ -2744,9 +2791,11 @@ async function publicarSetlist(nombre, expira, borrar = false) {
 const _origToggleSL = toggleSL;
 
 function construirExportado() {
-  const acordesLS = getAcordesLS();
-  const nuevasLS  = getNuevasLS();
+  const acordesLS  = getAcordesLS();
+  const nuevasLS   = getNuevasLS();
+  const eliminadas = JSON.parse(localStorage.getItem("cancionero_eliminadas") || "[]");
   const exportado = SONGS
+    .filter(s => !eliminadas.includes(s.titulo))
     .filter(s => s.carpeta !== "Nuevas" || !getNuevasLS().find(n => n.titulo === s.titulo))
     .map(s => {
       const c = { ...s };
@@ -2762,7 +2811,7 @@ function construirExportado() {
       return c;
     });
   nuevasLS.forEach(n => {
-    if (!exportado.find(s => s.titulo === n.titulo)) {
+    if (!eliminadas.includes(n.titulo) && !exportado.find(s => s.titulo === n.titulo)) {
       const c = { ...n }; delete c.nueva; exportado.push(c);
     }
   });
@@ -2830,6 +2879,15 @@ async function publicarEnGitHub() {
       body: JSON.stringify(body)
     });
     if (res.ok) {
+      // Limpiar lista de eliminadas — ya están fuera del JSON publicado
+      localStorage.removeItem("cancionero_eliminadas");
+      // Invalidar caché del SW para canciones.json y setlist.json
+      if ("caches" in window) {
+        caches.keys().then(keys => keys.forEach(k => caches.open(k).then(c => {
+          c.delete(new Request("./canciones.json"));
+          c.delete(new Request("./setlist.json"));
+        })));
+      }
       mostrarPubModal(
         "✓ Publicado",
         `El cancionero se actualizó correctamente con <b>${exportado.length} canciones</b>.<br><br>
