@@ -15,6 +15,27 @@
     ]
   },
   {
+    "titulo": "Construiré mi vida",
+    "preview": "Digno de recibir toda adoración\nDigno de recibir hoy está canción\nDigno de entregarte mi corazón\nVivo por ti",
+    "slides": [
+      "<b>Digno de recibir toda adoración</b><br><b>Digno de recibir hoy está canción</b><br><b>Digno de entregarte mi corazón</b><br><b>Vivo por ti</b>",
+      "<b>Cristo Jesús, no hay otro nombre igual</b><br><b>Cristo, no hay nadie más que pueda salvar</b><br><b>Digno de entregarte mi corazón</b><br><b>Vivo por ti, vivo por ti</b>",
+      "<b>Santo, como tú no hay nadie</b><br><b>Dios incomparable, abre tu mis ojos Cristo</b><br><b>Quiero conocerte más y</b><br><b>Ser lleno de ti hoy y llevar tu amor al mundo</b>",
+      "<b>Cristo Jesús, no hay otro nombre igual</b><br><b>Cristo, no hay nadie más que pueda salvar</b><br><b>Digno de entregarte mi corazón</b><br><b>Vivo por ti, vivo por ti</b>",
+      "<b>Construiré mi vida en tu amor, ahí estoy seguro</b><br><b>Mi confianza está en ti, Señor, y no seré movido</b><br><b>Construiré mi vida en tu amor, ahí estoy seguro</b><br><b>Mi confianza está en ti, Señor, y no seré movido</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MI",
+    "youtube": "https://www.youtube.com/watch?v=88AZFyXP0gU&list=RD88AZFyXP0gU&start_radio=1",
+    "acordes": [
+      "[MI]Digno de [LA]recibir toda adoración\n[MI/SOL#]Digno de [LA]recibir hoy está canción\n[MI]Digno de [LA]entregarte mi corazón\n[MI/SOL#]Vivo por ti[LA]",
+      "[MI]Cristo Jesús, no [LA]hay otro nombre igual\n[MI/SOL#]Cristo, no hay nadie [LA]más que pueda salvar\n[MI]Digno de entre[LA]garte mi corazón\n[MI/SOL#]Vivo por ti, vivo por [LA]ti",
+      "[LA]Santo, como tú no hay [FA#m]nadie\nDios [MI]incomparable, abre tu mis [DO#m]ojos Cristo\n[LA]Quiero conocerte [FA#m]más y\nSer lleno de [MI]ti hoy y llevar [FA#m]tu amor al mundo[LA]",
+      "Cristo Jesús, no hay otro nombre igual\nCristo, no hay nadie más que pueda salvar\nDigno de entregarte mi corazón\nVivo por ti, vivo por ti",
+      "[LA]Construiré mi [SI]vida en tu [DO#m]amor, ahí [MI]estoy seguro\n[LA]Mi confianza [SI]está en ti, [DO#m]Señor, y no [MI]seré movido\n[LA]Construiré mi [SI]vida en tu [DO#m]amor, ahí [MI]estoy seguro\n[LA]Mi confianza [SI]está en ti, [DO#m]Señor, y no [MI]seré movido"
+    ]
+  },
+  {
     "titulo": "En el nombre de Jesús",
     "preview": "Lucha por nosotros a nuestro lado esta\nSuya es la victoria ha vencido ya\nNo nos detendremos no nos moverán, Cristo estas aquí\nLleva nuestras cargas nos libra en mal\nSuya es la victoria ha vencido ya\nNo nos detendremos no nos moverán Cristo estas aquí",
     "slides": [
