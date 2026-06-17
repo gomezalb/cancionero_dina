@@ -1,14 +1,38 @@
 [
   {
-    "titulo": "CON HUMILDAD",
+    "titulo": "Con Humildad",
     "preview": "Con humildad, y sencillez\na Tí Señor me acercaré\nes por tu amor, que soy feliz\npara decir con todo mi corazón",
     "slides": [
       "<b>Con humildad, y sencillez</b><br><b>a Tí Señor me acercaré</b><br><b>es por tu amor, que soy feliz</b><br><b>para decir con todo mi corazón</b>",
       "<b>Te amo a Tí,</b><br><b>y no hay más que decir</b><br><b>mi vida es la prueba de mi amor</b><br><b>por Tí</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "MI",
-    "youtube": "https://www.youtube.com/watch?v=g5N7B7V0_dk&list=RDg5N7B7V0_dk&start_radio=1"
+    "tono": "Mi",
+    "youtube": "https://www.youtube.com/watch?v=g5N7B7V0_dk&list=RDg5N7B7V0_dk&start_radio=1",
+    "acordes": [
+      "[Mi]Con humildad, y [La]sencillez\n[Do#m]a Tí [La]Señor me [Si]acercaré\n[Mi]es por tu amor, que soy [La]feliz\n[Do#m]para [La]decir con todo [Si}mi corazón",
+      "[La]Te amo a [Mi]Tí,\ny no hay [La]más que [Do#m]decir\nmi [La]vida [Mi]es la prueba [La]de mi amor\npor [MiTí"
+    ]
+  },
+  {
+    "titulo": "En el nombre de Jesús",
+    "preview": "Lucha por nosotros a nuestro lado esta\nSuya es la victoria ha vencido ya\nNo nos detendremos no nos moverán, Cristo estas aquí\nLleva nuestras cargas nos libra en mal\nSuya es la victoria ha vencido ya\nNo nos detendremos no nos moverán Cristo estas aquí",
+    "slides": [
+      "<b>Lucha por nosotros a nuestro lado esta</b><br><b>Suya es la victoria ha vencido ya</b><br><b>No nos detendremos no nos moverán, Cristo estas aquí</b><br><b>Lleva nuestras cargas nos libra en mal</b><br><b>Suya es la victoria ha vencido ya</b><br><b>No nos detendremos no nos moverán Cristo estas aquí</b>",
+      "<b>Viviré no moriré Por el poder de su nombre</b><br><b>Vive en mi soy libre al fin Solo en Jesús</b>",
+      "<b>Lleva nuestras cargas nos libra en mal</b><br><b>Suya es la victoria ha vencido ya</b><br><b>No nos detendremos no nos moverán Cristo estas aquí</b>",
+      "<b>Dios es por nosotros Vence las tinieblas</b><br><b>Si reino establece no será movido</b><br><b>En su nombre Cristo cae el enemigo</b><br><b>Y yo lo gritare (gritare)X2</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "Re",
+    "youtube": "https://www.youtube.com/watch?v=mERx1Z_Vfps&list=RDmERx1Z_Vfps&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=gjUb5EEUPog",
+    "acordes": [
+      "[Re]Lucha por [Sol]nosotros a nuestro lado [Mim]esta\nSuya es la [Sim]victoria ha vencido [Re]ya\nNo nos [Sol]detendremos no nos [La]moverán, Cristo estas [Re]aquí\nLleva nuestras [Sol]cargas nos libra en [Mim]mal\nSuya es la [Sim]victoria ha vencido [Re]ya\nNo nos [Sol]detendremos no nos [La]moverán Cristo estas [Re]aquí",
+      "[La]Viviré no[Sol] moriré Por el [Re]poder de su [Sim]nombre\nVive en [Do]mi soy libre al [Sol]fin Solo en [Re]Jesús",
+      "[Re]Lleva nuestras [Sol]cargas nos libra en [Mim]mal\nSuya es la [SIm]victoria ha vencido [RE]ya\nNo nos [SOL]detendremos no nos [LA]moverán Cristo estas [RE]aquí",
+      "[RE]Dios es por [SOL]nosotros Vence las [LA]tinieblas\nSi reino [SIm]establece no será [FA#m]movido\nEn su nombre [SOL]Cristo cae el [LA]enemigo\nY yo lo [SIm]gritare [FA#m](gritare)X2"
+    ]
   },
   {
     "titulo": "Glorioso día",
