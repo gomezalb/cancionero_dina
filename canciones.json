@@ -1,5 +1,23 @@
 [
   {
+    "titulo": "Al estar aquí",
+    "preview": "Al estar en la presencia\nDe tu divinidad\nY al contemplar la hermosura\nDe Tu santidad\nMi espíritu se alegra\nEn Tu majestad\nTe adoro a Ti, te adoro a Ti",
+    "slides": [
+      "<b>Al estar en la presencia</b><br><b>De tu divinidad</b><br><b>Y al contemplar la hermosura</b><br><b>De Tu santidad</b><br><b>Mi espíritu se alegra</b><br><b>En Tu majestad</b><br><b>Te adoro a Ti, te adoro a Ti</b>",
+      "<b>Cuando veo la grandeza</b><br><b>De Tu dulce amor</b><br><b>Y compruebo la pureza</b><br><b>De Tu corazón</b><br><b>Mi espíritu se alegra en Tu majestad</b><br><b>Te adoro a Ti, te adoro a Ti</b>",
+      "<b>Y al estar aquí</b><br><b>Delante de Ti, Te adoraré</b><br><b>Postrado ante Ti</b><br><b>Mi corazón</b><br><b>Te adora, oh, Dios</b><br><b>Y siempre quiero estar</b><br><b>Para adorar y contemplar Tu santidad</b><br><b>Te adoro a Ti, Señor, te adoro a Ti</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "Sol",
+    "youtube": "https://www.youtube.com/watch?v=77pgHk5PSyk&list=RD77pgHk5PSyk&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=bZrMUCWCF1k",
+    "acordes": [
+      "[Sol]Al estar en la [Re/Fa#]presencia\nDe tu [Mim]divinidad\nY al [Do]contemplar la [Lam]hermosura\nDe Tu [Re]santidad\nMi [Sol]espíritu se [Si]alegra\nEn Tu [Do]majestad\nTe [Lam]adoro a Ti, te [Re]adoro a Ti",
+      "[Sol]Cuando veo la [Re/Fa#]grandeza\nDe Tu [Mim]dulce amor\nY [Do]compruebo la [Lam]pureza\nDe Tu [Re]corazón\nMi [Sol]espíritu se [[Si]alegra en Tu [Do]majestad\nTe [Lam]adoro a Ti, te [Re]adoro a Ti",
+      "Y al [Sol]estar aquí\n[Mim]Delante de Ti, Te [Do]adoraré\n[Sol/Si]Postrado [Lam]ante Ti\nMi corazón\nTe [Re]adora, oh, Dios\nY siempre [Sol]quiero estar\nPara adorar y [Do]contemplar Tu [Dom]santidad\nTe [Sol]adoro a Ti, [Re]Señor, te [do]adoro [Sol]a Ti"
+    ]
+  },
+  {
     "titulo": "Con Humildad",
     "preview": "Con humildad, y sencillez\na Tí Señor me acercaré\nes por tu amor, que soy feliz\npara decir con todo mi corazón",
     "slides": [
