@@ -130,6 +130,28 @@
     ]
   },
   {
+    "titulo": "Medley Himnos",
+    "preview": "Señor, mi Dios\nAl contemplar los cielos\nEl firmamento y las estrellas mil\nAl oír Tu voz en los potentes truenos\nY ver brillar el Sol en su cenit",
+    "slides": [
+      "<b>Señor, mi Dios</b><br><b>Al contemplar los cielos</b><br><b>El firmamento y las estrellas mil</b><br><b>Al oír Tu voz en los potentes truenos</b><br><b>Y ver brillar el Sol en su cenit</b>",
+      "<b>Mi corazón entona la canción</b><br><b>Cuán grande es Él, cuan grande es Él</b><br><b>Mi corazón entona la canción</b><br><b>Cuan grande es Él, cuan grande es Él</b>",
+      "<b>¡Santo! ¡Santo! ¡Santo! Señor omnipotente,</b><br><b>Siempre el labio mío loores te dará.</b><br><b>¡Santo! ¡Santo! ¡Santo! Te adoro reverente,</b><br><b>Dios en tres personas bendita Trinidad.</b>",
+      "<b>¡Santo! ¡Santo! ¡Santo! La gloria de Tu nombre</b><br><b>Vemos en Tus obras en cielo, tierra y mar;</b><br><b>¡Santo! ¡Santo! ¡Santo! te adorará todo hombre,</b><br><b>Dios en tres personas, bendita Trinidad.</b>",
+      "<b>En la cruz en la cruz</b><br><b>Do primero vi la luz</b><br><b>Y las manchas de mi alma yo lavé</b><br><b>Fue allí, por fe, yo vi a Jesús</b><br><b>Y siempre feliz con El seré</b><br><br><b>En la cruz en la cruz</b><br><b>Do primero vi la luz</b><br><b>Y las manchas de mi alma yo lavé</b><br><b>Fue allí, por fe, yo vi a Jesús</b><br><b>//Y siempre feliz con El seré//</b>",
+      "<b>//Oh Tu fidelidad</b><br><b>Oh Tu fidelidad</b><br><b>Cada momento la veo en mi</b><br><b>Nada me falta, pues todo provees</b><br><b>Grande, Señor, es Tu fidelidad//</b><br><br><b>Grande Señor es tu fidelidad</b><br><b>Grande Señor es tu fidelidad.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "Sol-Do",
+    "acordes": [
+      "[Sol]Señor, mi Dios\nAl contemplar los [Do]cielos\nEl firma[Sol]mento y [Re]las estrellas [Sol]mil [Lam7] [Re]\nAl oír Tu [Sol]voz en los potentes [do]truenos\nY ver bri[Sol]llar el [Re]Sol en su [Sol]cenit [Lam7] [Re]",
+      "//Mi cora[Sol]zón [Do]entona la [Sol]canción [Mim]\nCuán grande es [Lam7]Él, [Re]cuan grande es [Sol]Él  [Lam7] [re]\nMi cora[Sol]zón en[Do]tona la [Sol]canción [Mim]\nCuan grande es [Lam7]Él, cuan [Re]grande es [Sol]Él//\n\nCuan grande es [Lam7]Él, cuan [Re]grande es [Mim]Él\nCuan grande es [Lam7]Él, cuan [Re]grande es [Sol]]Él  Sol7]",
+      "[Do]¡Santo! [Mim]¡Santo! [Lam]¡Santo! [Fa]Señor omnipo[Do]tente,\n[Do]Siempre el [Mim]labio [Re]mí[Sol]o lo[Re]ores te [Sol]dará.\n[Do]¡Santo! [Mim]¡Santo! [lam]¡Santo! Te [Fa]adoro reve[Do]rente,\n[Lam]Dios en [Mim]tres per[Fa]so[Do]nas ben[Rem]dita [Sol]Trini[Sib]dad.[Lam] [Fa] [Spl]",
+      "[Do]¡Santo! [Mim]¡Santo! [La]¡Santo! La [FA}gloria de Tu [Do]nombre\n[Do]Vemos [Mim]en Tus [re]o[Sol]bras en [Re]cielo, tierra y [Sol]mar;\n[Do]¡Santo! [Mim]¡Santo! [Lam]¡Santo! te [FA]adorará todo [Do]hombre,\n[Lam]Dios en [Mim]tres [Fa]perso[Do]nas, ben[Rem]dita Trinidad.",
+      "[Do]En la [lam]cruz en la cruz\nDo pri[Rem]mero vi la [sol]luz\nY las [Rem]manchas de mi [Sol]alma yo la[Do]vé\nFue [Fa]allí, por fe, do [Do]vi [Mim]a Je[lam]sús\nY [Rem]siempre [Sol]feliz con El se[Do]ré [La7]\n\nEn la [Re]cruz en la [Sim]cruz\nDo pri[Mim]mero vi la [La]luz\nY las [Mim]manchas de mi [La]alma yo [Re]lavé\nFue [Sol]allí, por fe, yo [Re]vi [Fa#m]a Je[Sim]sús\nY [Mim]siempre fe[La]liz con El se[Re]ré",
+      "[La]//Oh Tu fi[Re]delidad\n[Si]Oh Tu fi[mim]delidad\n[La]Cada mo[re]mento la [Mi]veo en [La]mi\n[La]Nada me [Re]falta, pues todo pro[Sol]vees\n[Mi]Grande, [Re]Señor, es Tu [La]fideli[Re]dad//\n\nGrande Señor es tu fidelidad\nGrande Señor es tu fidelidad."
+    ]
+  },
+  {
     "titulo": "Porque bueno es Dios",
     "preview": "Entrad con acción de gracias\nPor sus atrios alabad\nEntra en su presencia con gozo\nCantando grande y fuerte es el Señor",
     "slides": [
