@@ -288,6 +288,42 @@
       line-height: 1.3;
     }
 
+    /* Botón de dos columnas — solo visible en modo acordes */
+    #fs-btn-cols { display: none; align-items: center; gap: 5px; }
+    /* Solo visible en tablet+ y en modo acordes */
+    @media (min-width: 768px) {
+      #fso.modo-acordes #fs-btn-cols { display: flex; }
+    }
+    #fs-btn-cols { background: none; border: 0.5px solid #444; color: #888; font-size: 13px; padding: 0 10px; height: 28px; border-radius: 6px; cursor: pointer; white-space: nowrap; transition: all .12s; flex-shrink: 0; }
+    #fs-btn-cols:hover { border-color: #777; color: #ccc; }
+    #fs-btn-cols.activo { border-color: #4ec9b0; color: #4ec9b0; }
+
+    /* Modo dos columnas */
+    #fso.modo-acordes.dos-columnas #fs-center {
+      align-items: stretch;
+      justify-content: flex-start;
+      overflow-y: auto;
+      padding: 0;
+    }
+    #fso.modo-acordes.dos-columnas #fs-content {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 1rem 1.5rem;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 2.5rem;
+      column-rule: 1px solid #333;
+      /* Permitir que el contenido fluya entre columnas libremente */
+      height: auto;
+      overflow: visible;
+    }
+    /* Cada canción no se corta entre columnas */
+    #fso.modo-acordes.dos-columnas .acorde-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
     /* Botones laterales de diapositiva */
     @media (max-width: 767px) { #fs-prev-slide, #fs-next-slide { display: none !important; } }
     .fs-side-btn {
@@ -317,6 +353,19 @@
       padding: .4rem 0 .6rem;
     }
     @media (min-width: 1024px) { #fs-bottom { display: none; } }
+    /* En modo dos columnas siempre mostrar el bottom con navegación */
+    #fso.modo-acordes.dos-columnas #fs-bottom {
+      display: flex;
+    }
+    #fso.modo-acordes.dos-columnas .fs-snb {
+      font-size: 22px;
+      color: #777;
+      padding: 6px 16px;
+      border: 0.5px solid #333;
+      border-radius: 8px;
+    }
+    #fso.modo-acordes.dos-columnas .fs-snb:hover:not(:disabled) { color: #ccc; border-color: #666; }
+    #fso.modo-acordes.dos-columnas #fs-dots { display: none; }
     
     #fs-dots { display: flex; gap: 12px; align-items: center; }
     @media (min-width: 1024px) { #fs-dots { display: none; } }
@@ -1025,6 +1074,7 @@
       <button id="fs-size-up" title="Agrandar texto">A&#43;</button>
       <span style="display:inline-block;width:1px;height:16px;background:#333;margin:0 4px"></span>
     </div>
+    <button id="fs-btn-cols" title="Dividir en columnas">⊞ 2 columnas</button>
     <button id="fs-cl">&#10005;</button>
   </div>
 
@@ -1401,9 +1451,36 @@ document.getElementById("fs-size-reset").addEventListener("click", () => {
 });
 cargarFontOffset();
 
+// ── Dos columnas en modo acordes ───────────────────────────────
+const FS_COLS_KEY = "cancionero_fs_dos_cols";
+// En móvil siempre 1 columna, ignorar preferencia guardada
+let fsDosColumnas = window.innerWidth >= 768 && localStorage.getItem(FS_COLS_KEY) === "1";
 
+function aplicarDosColumnas() {
+  const fso    = document.getElementById("fso");
+  const btn    = document.getElementById("fs-btn-cols");
+  const sizeCtrl = document.getElementById("fs-size-ctrl");
+  const fsTop  = document.getElementById("fs-top");
+  const fsBottom = document.getElementById("fs-bottom");
+  fso.classList.toggle("dos-columnas", fsDosColumnas);
+  btn.classList.toggle("activo", fsDosColumnas);
+  btn.innerHTML = fsDosColumnas ? "⊟ 1 columna" : "⊞ 2 columnas";
+  // En 2 columnas: mover size-ctrl al top (libera espacio en bottom)
+  // En 1 columna:  volver al bottom (comportamiento original en móvil/tablet)
+  if (fsDosColumnas) {
+    fsTop.insertBefore(sizeCtrl, btn);
+  } else {
+    fsBottom.insertBefore(sizeCtrl, fsBottom.firstChild);
+  }
+}
 
-// ── Slides ─────────────────────────────────────────────────────
+document.getElementById("fs-btn-cols").addEventListener("click", () => {
+  fsDosColumnas = !fsDosColumnas;
+  localStorage.setItem(FS_COLS_KEY, fsDosColumnas ? "1" : "0");
+  aplicarDosColumnas();
+});
+
+aplicarDosColumnas();
 function buildSlides(queue, pauseEdges) {
   const slides = [];
   const mobile = isMobile();
@@ -2079,7 +2156,12 @@ document.addEventListener("visibilitychange", () => {
 });
 
 function renderFSNewSong() {
-  document.getElementById("fs-center").scrollTop = 0;
+  const center = document.getElementById("fs-center");
+  const content = document.getElementById("fs-content");
+  center.scrollTop = 0;
+  center.scrollLeft = 0;
+  content.scrollTop = 0;
+  content.scrollLeft = 0;
   renderFS();
 }
 
@@ -2099,17 +2181,16 @@ function buildFullSongHtml(songIdx, conAcordes, offset) {
     if (ovLS?.acordes_texto) {
       acordesArr = ovLS.acordes_texto.split(/^---$/m).map(b => b.trim()).filter(Boolean);
     }
-    return slides.map((s) => {
+    return `<div class="acorde-block">${slides.map((s) => {
       let slideAcordes = acordesArr[s.slideNum - 1] || "";
       if (slideAcordes) {
-        // Normalizar: \n → <br>
         if (!slideAcordes.includes("<br>")) {
           slideAcordes = slideAcordes.replace(/\n/g, "<br>");
         }
         return renderizarAcordes(transponerTexto(slideAcordes, offset));
       }
       return htmlParaFS(s.html);
-    }).join('<hr class="slide-divider">');
+    }).join('<hr class="slide-divider">')}</div>`;
   }
   return slides.map(s => htmlParaFS(s.html)).join('<hr class="slide-divider">');
 }
@@ -2135,10 +2216,15 @@ function renderFS() {
   } else if (fsMostrarAcordes) {
     // Modo acordes: canción completa con scroll
     document.getElementById("fs-content").innerHTML = buildFullSongHtml(s.songIdx, true, offset);
+    document.getElementById("fs-center").scrollTop = 0;
+    document.getElementById("fs-center").scrollLeft = 0;
+    document.getElementById("fs-content").scrollTop = 0;
+    document.getElementById("fs-content").scrollLeft = 0;
   } else {
     // Modo letra: canción completa con scroll, igual que acordes
     document.getElementById("fs-content").innerHTML = buildFullSongHtml(s.songIdx, false, offset);
     document.getElementById("fs-center").scrollTop = 0;
+    document.getElementById("fs-center").scrollLeft = 0;
   }
   aplicarFontSize();
 
@@ -2224,6 +2310,8 @@ function onTouchEnd(e) {
   const dx = e.changedTouches[0].clientX - touchStartX;
   const dy = e.changedTouches[0].clientY - touchStartY;
   if (Math.abs(dx) < SWIPE_MIN || Math.abs(dx) < Math.abs(dy) * SWIPE_RATIO) return;
+  // En modo dos columnas el swipe horizontal es para scroll — no cambiar canción
+  if (fsDosColumnas && document.getElementById("fso").classList.contains("modo-acordes")) return;
   // Swipe horizontal cambia de canción
   if (dx < 0) goSongDirect(1); else goSongDirect(-1);
 }
