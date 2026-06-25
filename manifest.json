@@ -7,9 +7,20 @@
   "theme_color": "#252526",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='32' fill='%23252526'/%3E%3Ctext x='96' y='140' font-family='Consolas%2CMonaco%2Cmonospace' font-size='130' font-weight='bold' fill='%234ec9b0' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "src": "logo-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
