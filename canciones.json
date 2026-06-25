@@ -35,6 +35,35 @@
     ]
   },
   {
+    "titulo": "Aquí estás (Way Maker)",
+    "preview": "// Aquí estás, te vemos mover\nTe adoraré, Te adoraré\nAquí estás, obrando en mí\nTe adoraré, Te adoraré //",
+    "slides": [
+      "<b>// Aquí estás, te vemos mover</b><br><b>Te adoraré, Te adoraré</b><br><b>Aquí estás, obrando en mí</b><br><b>Te adoraré, Te adoraré //</b>",
+      "<b>// Milagroso, abres camino</b><br><b>Cumples promesas, luz en tinieblas</b><br><b>Mi Dios, así eres tú //</b>",
+      "<b>Aquí estás, sanando mi corazón</b><br><b>Te adoraré, Te adoraré</b><br><b>Aquí estás, tocando mi corazón</b><br><b>Te adoraré, Te adoraré (te llamamos)</b>",
+      "<b>// Milagroso, abres camino</b><br><b>Cumples promesas, luz en tinieblas</b><br><b>Mi Dios, así eres tú //</b>",
+      "<b>Aquí estás, tocando mi corazón</b><br><b>Te adoraré, Te adoraré</b><br><b>Aquí estás, sanando mi corazón</b><br><b>Te adoraré, Te adoraré</b>",
+      "<b>// Milagroso, abres camino</b><br><b>Cumples promesas, luz en tinieblas</b><br><b>Mi Dios, así eres tú //</b><br><br><b>Así eres tú , Así eres tú</b><br><b>Así eres tú, Así eres tú</b>",
+      "<b>//// Aunque no pueda ver estás obrando</b><br><b>Aunque no pueda ver estás obrando</b><br><b>Siempre estás, siempre estás obrando</b><br><b>Siempre estás, siempre estás obrando ////</b>",
+      "<b>// Milagroso, abres camino</b><br><b>Cumples promesas, luz en tinieblas</b><br><b>Mi Dios, así eres tú //</b>",
+      "<b>Así eres tú, Así eres tú</b><br><b>Así eres tú, Así eres tú.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LA",
+    "youtube": "https://www.youtube.com/watch?v=Dj8gGf7-FVI&list=RDDj8gGf7-FVI&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=lnR8h7R7g30",
+    "acordes": [
+      "// [RE]Aquí estás, te vemos [LA]mover\nTe adora[MI]ré, Te adora[FA#m]ré\nAquí [RE]estás, obrando en [LA]mí\nTe adora[MI]ré, Te adora[FA#m]ré //",
+      "// [RE]Milagroso, abres camino\n[LA]Cumples promesas, luz en tinieblas[MI]\nMi Dios, así eres [FA#m]tú //",
+      "Aquí es[RE]tás, sanando mi cora[LA]zón\nTe adora[MI]ré, Te adora[FA#m]ré\nAquí es[RE]tás, tocando mi cora[LA]zón\nTe adora[MI]ré, Te adora[FA#m]ré",
+      "// [RE]Milagroso, abres camino\n[LA]Cumples promesas, luz en tinieblas[MI]\nMi Dios, así eres [FA#m]tú //",
+      "Aquí es[RE]tás, tocando mi cora[LA]zón\nTe adora[MI]ré, Te adora[FA#m]ré\nAquí es[RE]tás, sanando mi cora[LA]zón\nTe adora[MI]ré, Te adora[FA#m]ré",
+      "//[RE]Milagroso, abres camino\n[LA]Cumples promesas, luz en tinieblas\n[MI]Mi Dios, así eres [FA#m]tú //\n\nAsí eres [RE]tú , Así eres [LA]tú\nAsí eres [MI]tú, Así eres [FA#m]tú",
+      "//// [RE]Aunque no pueda ver estás obrando\n[LA]Aunque no pueda ver estás obrando\n[MI]Siempre estás, siempre estás obrando\n[FA#m]Siempre estás, siempre estás obrando ////",
+      "//[RE]Milagroso, abres camino\n[LA]Cumples promesas, luz en tinieblas\n[MI]Mi Dios, así eres [FA#m]tú.//\n\nAsí eres [RE]tú, Así eres [LA]tú\nAsí eres [MI]tú, Así eres [FA#m]tú."
+    ]
+  },
+  {
     "titulo": "Con Humildad",
     "preview": "Con humildad, y sencillez\na Tí Señor me acercaré\nes por tu amor, que soy feliz\npara decir con todo mi corazón",
     "slides": [
