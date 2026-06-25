@@ -152,6 +152,24 @@
     ]
   },
   {
+    "titulo": "Mi Roca",
+    "preview": "//Mi esperanza está en Jesús\nEn su justicia y en la cruz\nDe nadie más dependeré\nSolo en su nombre confiaré.//",
+    "slides": [
+      "<b>//Mi esperanza está en Jesús</b><br><b>En su justicia y en la cruz</b><br><b>De nadie más dependeré</b><br><b>Solo en su nombre confiaré.//</b>",
+      "<b>Coro</b><br><b>En Jesús fuerte soy</b><br><b>Solo Él mi Roca es, sobre la tempestad</b><br><b>Él es Rey</b><br><br><b>Cuando no puedo ver su faz</b><br><b>Se que su gracia es siempre igual</b><br><b>A La tormenta venceré</b><br><b>Mi ancla firme está en Él</b><br><b>Mi ancla firme está en Él</b><br><br><b>(Coro)</b>",
+      "<b>Un día Él regresará</b><br><b>En su presencia voy estar</b><br><b>Sin mancha ante el vendré</b><br><b>Justificado por la fe</b><br><b>Justificado por la fe</b><br><br><b>(Coro)</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "youtube": "https://www.youtube.com/watch?v=m-eLxibV9QM&list=RDm-eLxibV9QM&start_radio=1",
+    "acordes": [
+      "[RE]//Mi esperanza está en Jesús\n[SOL]En su justicia y [LA]en la cruz\n[SIm]De nadie más de[RE]penderé\n[SOL]Solo en su [LA]nombre con[RE]fiaré.//",
+      "Coro\nEn Je[SOL]sús fuerte [LA]soy\nSolo [SOL]Él mi Roca [LA]es, \nsobre [SOL]la tempes[LA]tad\nÉl es [RE]Rey",
+      "[RE]Cuando no puedo ver su faz\n[SOL]Se que su gracia es [LA]siempre igual\n[SIm]A La tormenta [RE]venceré\n[SOL]Mi ancla [LA]firme está en [RE]Él\n[SOL]Mi ancla [LA]firme está en [RE]Él\n\n(Coro)",
+      "[RE]Un día Él regresará\n[SOL]En su presencia [LA]voy estar\n[SIm]Sin mancha ante [RE]el vendré\n[SOL]Justifi[LA]cado por la [RE]fe\n[SOL]Justifi[LA]cado por la [RE]fe\n\n(Coro)"
+    ]
+  },
+  {
     "titulo": "Porque bueno es Dios",
     "preview": "Entrad con acción de gracias\nPor sus atrios alabad\nEntra en su presencia con gozo\nCantando grande y fuerte es el Señor",
     "slides": [
