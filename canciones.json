@@ -1,5 +1,22 @@
 [
   {
+    "titulo": "A quién iré",
+    "preview": "¿A quién iré en necesidad,\na quién iré en busca de paz,\ny quién podrá mi vida saciar de verdad?",
+    "slides": [
+      "<b>¿A quién iré en necesidad,</b><br><b>a quién iré en busca de paz,</b><br><b>y quién podrá mi vida saciar de verdad?</b>",
+      "<b>¿Quién más tendrá de mi compasión</b><br><b>y entenderá mi corazón,</b><br><b>quién cambiará mi eternidad</b><br><b>sino Tú Jesús?</b>",
+      "<b>Cristo, ¿a dónde más podría ir?</b><br><b>Cristo, ¿qué otro lugar puede existir?</b><br><b>Solo Tú tienes palabras de amor,</b><br><b>camino al Padre y verdad eres Tú.</b><br><b>Cristo, ¿a dónde más podría ir?</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "youtube": "https://www.youtube.com/watch?v=FZYphEU8gjM&list=RDFZYphEU8gjM&start_radio=1",
+    "acordes": [
+      "[DO]¿A quién iré en necesidad,\n[LAm]a quién iré en busca de paz,\n[FA]y quién podrá mi vida saciar de [DO]verdad?[SOL]",
+      "[DO]¿Quién más tendrá de mi compasión\n[LAm]y entenderá mi corazón,\n[FA]quién cambiará mi eternidad\nsino [DO]Tú Je[SOL]sús?",
+      "[DO]Cristo, ¿a dónde [MIm]más podría [FA]ir?\n[DO]Cristo, ¿qué otro [MIm]lugar puede exis[FA]tir?\n[REm]Solo Tú tienes palabras de amor,\n[FA]camino al Padre y [SOL]verdad eres Tú.\n[DO]Cristo, ¿a dónde [MIm]más podría [FA]ir?"
+    ]
+  },
+  {
     "titulo": "Al estar aquí",
     "preview": "Al estar en la presencia\nDe tu divinidad\nY al contemplar la hermosura\nDe Tu santidad\nMi espíritu se alegra\nEn Tu majestad\nTe adoro a Ti, te adoro a Ti",
     "slides": [
