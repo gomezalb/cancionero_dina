@@ -368,14 +368,14 @@
   },
   {
     "titulo": "Vengo a ti con mis cargas (Eres Rey)",
-    "preview": "/Vengo a Ti\nCon mis cargas vengo\nVengo a Ti\nTú eres mi sustento, Dios\nTorre fuerte, eres mi vida\nEres mi fiel compañía. /",
+    "preview": "//Vengo a Ti\nCon mis cargas vengo\nVengo a Ti\nTú eres mi sustento, Dios\nTorre fuerte, eres mi vida\nEres mi fiel compañía. //",
     "slides": [
-      "<b>/Vengo a Ti</b><br><b>Con mis cargas vengo</b><br><b>Vengo a Ti</b><br><b>Tú eres mi sustento, Dios</b><br><b>Torre fuerte, eres mi vida</b><br><b>Eres mi fiel compañía. /</b>",
+      "<b>//Vengo a Ti</b><br><b>Con mis cargas vengo</b><br><b>Vengo a Ti</b><br><b>Tú eres mi sustento, Dios</b><br><b>Torre fuerte, eres mi vida</b><br><b>Eres mi fiel compañía. //</b>",
       "<b>Rey sobre toda tempestad.</b><br><b>Rey sobre toda enfermedad.</b><br><b>Tú eres Rey sobre todas circunstancia</b><br><b>Sobre todas mis batallas</b><br><b>Eres Rey, eres Rey</b>",
       "<b>Vengo a Ti</b><br><b>Con mis cargas vengo</b><br><b>Vengo a Ti</b><br><b>Tú eres mi sustento, Dios</b><br><b>Torre fuerte, eres mi vida</b><br><b>Eres mi fiel compañía.</b>",
-      "<b>//Rey sobre toda tempestad.</b><br><b>Rey sobre toda enfermedad.</b><br><b>Tú eres Rey sobre todas circunstancia</b><br><b>Sobre todas mis batallas</b><br><b>Eres Rey, eres Rey//</b><br><br><b>Tú eres Rey</b><br><b>Eres Rey…</b>",
-      "<b>¿A Quién tengo yo en los cielos?</b><br><b>Sólo a Ti, mi Rey eterno</b>",
-      "<b>/Rey sobre toda tempestad.</b><br><b>Rey sobre toda enfermedad.</b><br><b>Tú eres Rey sobre todas circunstancia</b><br><b>Sobre todas mis batallas</b><br><b>Eres Rey, eres Rey//</b>"
+      "<b>//Rey sobre toda tempestad.</b><br><b>Rey sobre toda enfermedad.</b><br><b>Tú eres Rey sobre todas circunstancia</b><br><b>Sobre todas mis batallas</b><br><b>Eres Rey,// eres Rey</b><br><br><b>Tú eres Rey</b><br><b>Eres Rey…</b>",
+      "<b>////¿A Quién tengo yo en los cielos?</b><br><b>Sólo a Ti, mi Rey eterno ////</b>",
+      "<b>//Rey sobre toda tempestad.</b><br><b>Rey sobre toda enfermedad.</b><br><b>Tú eres Rey sobre todas circunstancia</b><br><b>Sobre todas mis batallas</b><br><b>Eres Rey,// eres Rey</b>"
     ],
     "carpeta": "Alabanza",
     "tono": "RE",
@@ -386,7 +386,7 @@
       "[RE]Vengo a [LA]Ti\n[SIm]Con mis [SOL]cargas vengo\n[RE]Vengo a [LA]Ti\n[SIm]Tú eres mi sustento, [SOL]Dios\nTorre fue[SIm]rte, eres mi [LA]vida\n[MIm]Eres [SIm]mi fiel compa[LA]ñía.",
       "//[SOL]Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circuns[MIm]tancia\nSobre todas mis ba[SIm]tallas//\nEres [LA]Rey, \n\nTú eres [SOL]Re [RE]ey [SIm][LA]\nEres [SOL]Re [RE]ey… [SIm] [LA]",
       "////¿[SOL]A Quién tengo [RE]yo en los cielos?\n[SIm]Sólo a Ti, mi [LA]Rey eterno ////",
-      "//[SOL]/Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circun[MIm]stancia\nSobre todas mis ba[SIm]tallas //\nEres [LA]Rey, eres [SOL]Rey//"
+      "/[SOL]/Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circun[MIm]stancia\nSobre todas mis ba[SIm]tallas \nEres [LA]Rey, eres [SOL]Rey//"
     ]
   },
   {
