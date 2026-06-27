@@ -64,6 +64,29 @@
     ]
   },
   {
+    "titulo": "Aunque mis ojos no te puedan ver (Tu estas aquí)",
+    "preview": "Aunque mis ojos no te puedan ver\nTe puedo sentir, sé que estás aquí.\nAunque mis manos no puedan tocar\nTu rostro, Señor, sé que estás aquí.",
+    "slides": [
+      "<b>Aunque mis ojos no te puedan ver</b><br><b>Te puedo sentir, sé que estás aquí.</b><br><b>Aunque mis manos no puedan tocar</b><br><b>Tu rostro, Señor, sé que estás aquí.</b>",
+      "<b>Mi corazón puede sentir Tu presencia,</b><br><b>Tú estas aquí, Tú estás aquí.</b><br><b>Puedo sentir Tu Majestad,</b><br><b>Tú estas aquí, tú estás aquí.</b>",
+      "<b>Aunque mis ojos no te puedan ver</b><br><b>Te puedo sentir, sé que estás aquí.</b><br><b>Aunque mis manos no puedan tocar</b><br><b>Tu rostro, Señor, sé que estás aquí.</b>",
+      "<b>Mi corazón puede sentir Tu presencia,</b><br><b>Tú estas aquí, Tú estás aquí.</b><br><b>Puedo sentir Tu Majestad,</b><br><b>Tú estas aquí, tú estás aquí.</b>",
+      "<b>Mi corazón puede</b><br><b>mirar Tu hermosura,</b><br><b>Tú estas aquí, Tú estás aquí.</b><br><b>Puedo sentir Tu gran amor,</b><br><b>Tú estás aquí, Tú estás aquí.</b><br><br><b>//Tú estás aquí, Tú estás aquí//</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "youtube": "https://www.youtube.com/watch?v=-ALOwx-RHm4&list=RD-ALOwx-RHm4&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=lENxaqPiaiM",
+    "acordes": [
+      "Aunque mis [RE]ojos no te puedan [SIm]ver\nTe puedo sen[SOL]tir, sé que estás [RE]aquí.\nAunque mis [RE]manos no puedan [SIm]tocar\nTu rostro, Se[SOL]ñor, sé que estás [RE]aquí Oh [LA]oh",
+      "Mi cora[SIm]zón puede sen[SOL]tir Tu presencia,\n[RE]Tú estas aquí, [LA]Tú estás aquí.\n[SIm]Puedo sentir [SOL]Tu Majestad,\n[RE]Tú estas aquí, [LA]tú estás aquí.",
+      "Aunque mis [RE]ojos no te puedan [SIm]ver\nTe puedo sen[SOL]tir, sé que estás [RE]aquí.\nAunque mis [RE]manos no puedan [SIm]tocar\nTu rostro, [SOL]Señor, sé que estás [RE]aquí Oh [LA]oh",
+      "Mi cora[SIm]zón puede [SOL]sentir Tu presencia,\n[RE]Tú estas aquí, [LA]Tú estás aquí.\n[SIm]Puedo sentir [SOL]Tu Majestad,\n[RE]Tú estas aquí, [LA]tú estás aquí.",
+      "Mi cora[SIm]zón puede\n[SOL]mirar Tu hermosura,\n[RE]Tú estas aquí, [LS]Tú estás aquí.\n[SIm]Puedo sentir [SOL]Tu gran amor,\n[RE]Tú estás aquí, [LA]Tú estás aquí.",
+      "//[SIm]Tú estás aquí, [LA]Tú estás aquí//"
+    ]
+  },
+  {
     "titulo": "Con Humildad",
     "preview": "Con humildad, y sencillez\na Tí Señor me acercaré\nes por tu amor, que soy feliz\npara decir con todo mi corazón",
     "slides": [
