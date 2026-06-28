@@ -289,14 +289,16 @@
     }
 
     /* Botón de dos columnas — solo visible en modo acordes */
-    #fs-btn-cols { display: none; align-items: center; gap: 5px; }
-    /* Solo visible en tablet+ y en modo acordes */
-    @media (min-width: 768px) {
-      #fso.modo-acordes #fs-btn-cols { display: flex; }
-    }
-    #fs-btn-cols { background: none; border: 0.5px solid #444; color: #888; font-size: 13px; padding: 0 10px; height: 28px; border-radius: 6px; cursor: pointer; white-space: nowrap; transition: all .12s; flex-shrink: 0; }
+    /* Botón columnas: siempre visible en modo acordes */
+    #fs-btn-cols { display: none; align-items: center; gap: 5px; background: none; border: 0.5px solid #444; color: #888; font-size: 13px; padding: 0 10px; height: 28px; border-radius: 6px; cursor: pointer; white-space: nowrap; transition: all .12s; flex-shrink: 0; }
     #fs-btn-cols:hover { border-color: #777; color: #ccc; }
     #fs-btn-cols.activo { border-color: #4ec9b0; color: #4ec9b0; }
+    #fso.modo-acordes #fs-btn-cols { display: flex; }
+    /* En móvil: ocultar el texto, solo el ícono */
+    #fs-btn-cols .cols-label { display: none; }
+    @media (min-width: 768px) {
+      #fs-btn-cols .cols-label { display: inline; }
+    }
 
     /* Modo dos columnas */
     #fso.modo-acordes.dos-columnas #fs-center {
@@ -1073,8 +1075,8 @@
       <button id="fs-size-reset" title="Tamaño automático">A</button>
       <button id="fs-size-up" title="Agrandar texto">A&#43;</button>
       <span style="display:inline-block;width:1px;height:16px;background:#333;margin:0 4px"></span>
+      <button id="fs-btn-cols" title="Dividir en columnas"><span id="fs-cols-icon">⊞</span><span class="cols-label"> 2 columnas</span></button>
     </div>
-    <button id="fs-btn-cols" title="Dividir en columnas">⊞ 2 columnas</button>
     <button id="fs-cl">&#10005;</button>
   </div>
 
@@ -1453,24 +1455,31 @@ cargarFontOffset();
 
 // ── Dos columnas en modo acordes ───────────────────────────────
 const FS_COLS_KEY = "cancionero_fs_dos_cols";
-// En móvil siempre 1 columna, ignorar preferencia guardada
+// En móvil siempre 1 columna; en tablet+ respetar preferencia guardada
 let fsDosColumnas = window.innerWidth >= 768 && localStorage.getItem(FS_COLS_KEY) === "1";
 
 function aplicarDosColumnas() {
-  const fso    = document.getElementById("fso");
-  const btn    = document.getElementById("fs-btn-cols");
+  const fso      = document.getElementById("fso");
+  const btn      = document.getElementById("fs-btn-cols");
+  const icon     = document.getElementById("fs-cols-icon");
+  const label    = btn.querySelector(".cols-label");
   const sizeCtrl = document.getElementById("fs-size-ctrl");
-  const fsTop  = document.getElementById("fs-top");
+  const fsTop    = document.getElementById("fs-top");
   const fsBottom = document.getElementById("fs-bottom");
+  const esMobil  = window.innerWidth < 768;
+
   fso.classList.toggle("dos-columnas", fsDosColumnas);
   btn.classList.toggle("activo", fsDosColumnas);
-  btn.innerHTML = fsDosColumnas ? "⊟ 1 columna" : "⊞ 2 columnas";
-  // En 2 columnas: mover size-ctrl al top (libera espacio en bottom)
-  // En 1 columna:  volver al bottom (comportamiento original en móvil/tablet)
-  if (fsDosColumnas) {
-    fsTop.insertBefore(sizeCtrl, btn);
+  icon.textContent = fsDosColumnas ? "⊟" : "⊞";
+  if (label) label.textContent = fsDosColumnas ? " 1 columna" : " 2 columnas";
+
+  // size-ctrl (que contiene el btn-cols) se mueve como bloque
+  if (!esMobil && fsDosColumnas) {
+    // Tablet en 2 columnas: size-ctrl sube al top
+    if (!fsTop.contains(sizeCtrl)) fsTop.insertBefore(sizeCtrl, document.getElementById("fs-cl"));
   } else {
-    fsBottom.insertBefore(sizeCtrl, fsBottom.firstChild);
+    // Resto: size-ctrl en el bottom
+    if (!fsBottom.contains(sizeCtrl)) fsBottom.insertBefore(sizeCtrl, fsBottom.firstChild);
   }
 }
 
