@@ -376,7 +376,13 @@
     "carpeta": "Alabanza",
     "tono": "LA",
     "youtube": "https://www.youtube.com/watch?v=pkfmBLEVvNg&list=RDpkfmBLEVvNg&start_radio=1",
-    "youtube_vocal": "https://www.youtube.com/watch?v=Q9Mh_cr3k4I"
+    "youtube_vocal": "https://www.youtube.com/watch?v=Q9Mh_cr3k4I",
+    "acordes": [
+      "/ [LA]Señor eres fiel\ny Tu [LAdis]misericordia eterna[RE]./\n[RE]Gente de toda [MI]lengua y nación,\nde [FA]generación a [SOL]generación.",
+      "¡[LA]Te adoramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\nTe ado[LA]ramos [MI]hoy, eres Se[SOL]ñor.[RE]\n\n¡Te ado[LA]ramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\nTe ado[LA]ramos [MIm]hoy, eres Se[FA]ñor.[SOL]\n\nEres [LAm7]fiel.",
+      "/ Se[LA]ñor eres fiel\ny Tu [LAdis]misericordia eterna[RE]./\n[RE]Gente de toda [MI]lengua y nación,\nde [FA]generación a [SOL]generación.",
+      "///¡[LA]Te adoramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\n[LA]Te adoramos [MI]hoy, eres Se[SOL]ñor[RE]. ///\n\n¡[LA]Te adoramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\n[LS]Te adoramos [MIm]hoy, ///eres Se[FA]ñor[SOL].///\n\nEres [LAm]fiel."
+    ]
   },
   {
     "titulo": "Tú eres mi todo",
