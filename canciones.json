@@ -367,6 +367,21 @@
     ]
   },
   {
+    "titulo": "Tú eres mi todo",
+    "preview": "[DO][MIm][SOL][DO]\n[SOL]Mi Dios, redentor\n[RE]Mi rey, consolador\n[MIm]A ti, todo el ho[DO]nor\n\n[SOL]Es paz a mi ser\n[RE]La luz en mi amanecer\n[MIm]A ti, todo el ho[DO]nor\nTú [DO]eres mi todo\n----\n//[SOL]Cantaré con todo el cora[DO]zón\nCantaré con todo lo que [MIm]soy\nCantaré por siempre, mi Se[RE]ñor\nTú [DO]eres mi todo//\n[DO][MIm][SOL][DO]",
+    "slides": [
+      "<b>[DO][MIm][SOL][DO]</b><br><b>[SOL]Mi Dios, redentor</b><br><b>[RE]Mi rey, consolador</b><br><b>[MIm]A ti, todo el ho[DO]nor</b><br><br><b>[SOL]Es paz a mi ser</b><br><b>[RE]La luz en mi amanecer</b><br><b>[MIm]A ti, todo el ho[DO]nor</b><br><b>Tú [DO]eres mi todo</b><br><b>----</b><br><b>//[SOL]Cantaré con todo el cora[DO]zón</b><br><b>Cantaré con todo lo que [MIm]soy</b><br><b>Cantaré por siempre, mi Se[RE]ñor</b><br><b>Tú [DO]eres mi todo//</b><br><b>[DO][MIm][SOL][DO]</b>",
+      "<b>[SOL]Es paz a mi ser</b><br><b>[RE]La luz en mi amanecer</b><br><b>[MIm]A ti, todo el ho[DO]nor</b><br><b>Tú [DO]eres mi todo</b>",
+      "<b>//[SOL]Cantaré con todo el cora[DO]zón</b><br><b>Cantaré con todo lo que [MIm]soy</b><br><b>Cantaré por siempre, mi Se[RE]ñor</b><br><b>Tú [DO]eres mi todo//</b><br><b>[DO][MIm][RE][LAm]</b>",
+      "<b>[DO]Mi Jesús por ti</b><br><b>[MIm]Siempre viviré[RE] y por siempre canta[LAm]ré</b><br><b>Que tú eres mi todo</b><br><b>[DO]Mi Jesús por ti</b><br><b>[MIm]Siempre viviré[RE] y por siempre canta[LAm]ré[DO]</b>",
+      "<b>[SOL]Cantaré con todo el cora[DO]zón</b><br><b>Cantaré con todo lo que ]MIm]soy</b><br><b>Cantaré por siempre mi Se[[RE]ñor</b><br><b>Tú [DO]eres mi todo</b><br><b>[DO][MIm][SOL][DO]</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL",
+    "youtube": "https://www.youtube.com/watch?v=qMGcGTVBaPE&list=RDqMGcGTVBaPE&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=0sazvMjqgOU"
+  },
+  {
     "titulo": "Vengo a ti con mis cargas (Eres Rey)",
     "preview": "//Vengo a Ti\nCon mis cargas vengo\nVengo a Ti\nTú eres mi sustento, Dios\nTorre fuerte, eres mi vida\nEres mi fiel compañía. //",
     "slides": [
