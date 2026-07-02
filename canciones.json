@@ -245,6 +245,27 @@
     "youtube": "https://www.youtube.com/watch?v=1X9x7M4MXqc"
   },
   {
+    "titulo": "Gracia Sublime",
+    "preview": "Quién rompe el poder del pecado \nSu amor es fuerte y poderoso \nEl Rey de gloria, El Rey de majestad. \nConmueve al mundo con Su estruendo \nY nos asombra con maravillas \nEl Rey de gloria, El Rey de majestad.",
+    "slides": [
+      "<b>Quién rompe el poder del pecado</b><br><b>Su amor es fuerte y poderoso</b><br><b>El Rey de gloria, El Rey de majestad.</b><br><b>Conmueve al mundo con Su estruendo</b><br><b>Y nos asombra con maravillas</b><br><b>El Rey de gloria, El Rey de majestad.</b>",
+      "<b>CORO</b><br><b>Gracia sublime es</b><br><b>Perfecto es tu amor</b><br><b>Tomaste mi lugar</b><br><b>Cargaste Tú mi cruz</b><br><b>Tu vida diste ahí</b><br><b>Y ahora libre soy</b><br><b>Jesús te adoro</b><br><b>por lo que hiciste en mí</b>",
+      "<b>Pusiste en orden todo el caos</b><br><b>Nos adoptaste como Tus hijos</b><br><b>El Rey de gloria, El Rey de majestad.</b><br><b>El que gobierna con Su justicia</b><br><b>Y resplandece con Su belleza</b><br><b>El Rey de gloria, El Rey de majestad</b>",
+      "<b>PUENTE</b><br><b>///Digno es el Cordero de Dios</b><br><b>Digno es el Rey que la muerte venció.///</b><br><b>Digno es el Cordero de Dios</b><br><b>Digno, digno, digno.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "youtube": "https://www.youtube.com/watch?v=0IWl_QPVBMI&list=RD0IWl_QPVBMI&start_radio=1",
+    "youtube_vocal": "https://www.youtube.com/watch?v=5BPSuar-zNQ",
+    "acordes": [
+      "[RE][SOL]  [RE][SOL]\n[RE]Quién rompe el poder del pecado\n[SOL]Su amor es fuerte y poderoso\n[SIm]El Rey de gloria, [LA]El Rey de majes[SOL]tad.\n[RE]Conmueve al mundo con Su estruendo\n[SOL]Y nos asombra con maravillas\n[SIm]El Rey de gloria, [LA]El Rey de majes[SOL]tad.",
+      "CORO\nGracia sublime [RE]es\nPerfecto es tu [SOL]amor\nTomaste mi lu[SIm]gar\nCargaste Tú mi [LA]cruz\nTu vida diste [RE]ahí\nY ahora libre [SOL]soy \n[SIm]Jesús te adoro\n[LA]por lo que hiciste en [RE]mí",
+      "[RE]Pusiste en orden todo el caos\n[SOL]Nos adoptaste como Tus hijos\n[SIm]El Rey de gloria, [LA]El Rey de majes[SOL]tad.\n[RE]El que gobierna con Su justicia\n[SOL]Y resplandece con Su belleza\n[SIm]El Rey de gloria, [LA]El Rey de majes[SOL]tad",
+      "Gracia sublime [RE]es\nPerfecto es tu [SOL]amor\nTomaste mi lu[SIm]gar\nCargaste Tú mi [LA]cruz\nTu vida diste [RE]ahí\nY ahora libre [SOL]soy \n[SIm]Jesús te adoro\n[LA]por lo que hiciste en [RE]mí",
+      "PUENTE\n///[RE]Digno es el Cordero de Dios\n[SOL]Digno es el Rey que la muerte venció.///\n[RE]Digno es el Cordero de Dios\n[SOL]Digno, digno, digno."
+    ]
+  },
+  {
     "titulo": "Jesucristo Basta",
     "preview": "Nuestros corazones, Insaciables son\nHasta que conocen A su salvador\nTal y como somos nos amó Hoy nos acercamos sin temor",
     "slides": [
