@@ -391,7 +391,14 @@
     "carpeta": "Alabanza",
     "tono": "SOL",
     "youtube": "https://www.youtube.com/watch?v=qMGcGTVBaPE&list=RDqMGcGTVBaPE&start_radio=1",
-    "youtube_vocal": "https://www.youtube.com/watch?v=0sazvMjqgOU"
+    "youtube_vocal": "https://www.youtube.com/watch?v=0sazvMjqgOU",
+    "acordes": [
+      "[DO][MIm][SOL][DO]\n[SOL]Mi Dios, redentor\n[RE]Mi rey, consolador\n[MIm]A ti, todo el [DO]honor\n\n[SOL]Es paz a mi ser\n[RE]La luz en mi amanecer\n[MIm]A ti, todo el ho[DO]nor\nTú eres mi todo\n[DO][MIm][SOL][DO]\n----\n//[SOL]Cantaré con todo el cora[DO]zón\nCantaré con todo lo que [MIm]soy\nCantaré por siempre, mi Se[RE]ñor\nTú [DO]eres mi todo//\n[DO][MIm][SOL][DO]",
+      "[SOL]Es paz a mi ser\n[RE]La luz en mi amanecer\n[MIm]A ti, todo el ho[DO]nor\nTú eres mi todo",
+      "//[SOL]Cantaré con todo el cora[DO]zón\nCantaré con todo lo que [MIm]soy\nCantaré por siempre, mi Se[RE]ñor\nTú [DO]eres mi todo/\n[DO][MIm][RE][LAm]",
+      "[DO]Mi Jesús por ti\n[MIm]Siempre viviré[RE] \ny por siempre canta[LAm]ré\nQue tú eres mi todo\n[DO]Mi Jesús por ti\n[MIm]Siempre viviré[RE] \ny por siempre canta[LAm]ré [DO]",
+      "//[SOL]Cantaré con todo el cora[DO]zón\nCantaré con todo lo que [MIm]soy\nCantaré por siempre mi Se[RE]ñor\nTú [DO]eres mi todo //\n[DO][MIm][SOL][DO]"
+    ]
   },
   {
     "titulo": "Vengo a ti con mis cargas (Eres Rey)",
