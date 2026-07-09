@@ -469,7 +469,7 @@
     ]
   },
   {
-    "titulo": "Te adoro a ti",
+    "titulo": "Te adoro a ti (Cuando pienso en tu amor tan bello)",
     "preview": "Cuando pienso en tu amor tan bello\ny te veo a Ti en santidad,\ny tu divinidad excede las riquezas de este mundo.",
     "slides": [
       "<b>Cuando pienso en tu amor tan bello</b><br><b>y te veo a Ti en santidad,</b><br><b>y tu divinidad excede las riquezas de este mundo.</b>",
@@ -478,7 +478,12 @@
     ],
     "carpeta": "Alabanza",
     "tono": "SOL",
-    "youtube": "https://www.youtube.com/watch?v=saz44lQoTyI&list=RDsaz44lQoTyI&start_radio=1"
+    "youtube": "https://www.youtube.com/watch?v=saz44lQoTyI&list=RDsaz44lQoTyI&start_radio=1",
+    "acordes": [
+      "Cuando [SOL]pienso en tu amor tan [DO]bello\ny te [SOL]veo a Ti en santi[DO]dad,\ny tu di[SOL]vinidad e[[RE/FA#]xcede las ri[MIm]quezas de este [LAm7]mundo[RE].",
+      "Cuando [SOL]te siento en mi cora[DO]zón,\ncuando [SOL]me llamas con Tu [DO]amor,\ncuando [SOL]todo está como [RE/FA#]a la [MIm]sombra al lado de [LAm7]Tu luz[RE].",
+      "Te adoro a [DO]T[RE]i, te adoro a [SIm]Ti[MIm],\nla ra[LAm]zón por la cual yo [RE]vivo es para ado[SOL]ra[[LAm7]r[SOL/SI]te.\nTe adoro a [DO]T[RE]i, te adoro a [SIm]T[LAm7]i,\nla ra[DO]zón por la cual yo [RE]vivo,\nla ra[SI7]zón por la cual yo [MIm]vivo,\nla ra[DO]zón por la cual yo [RE]vivo\nes para ado[DO][DOM7]rar[SOL]te."
+    ]
   },
   {
     "titulo": "Tú eres mi todo",
