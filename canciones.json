@@ -35,6 +35,19 @@
     ]
   },
   {
+    "titulo": "Al que es Digno",
+    "preview": "//Al que es digno de recibir la gloria,  \nal que es digno de recibir honor.// \n--- \nLevantemos nuestras manos  \ny adoremos  \na Jesús, Cordero de gloria.  \nY exaltemos su incomparable \nMajestad, \nal que vive por siempre, \nal gran Yo Soy, a Jesús.",
+    "slides": [
+      "<b>//Al que es digno de recibir la gloria,</b><br><b>al que es digno de recibir honor.//</b><br><b>---</b><br><b>Levantemos nuestras manos</b><br><b>y adoremos</b><br><b>a Jesús, Cordero de gloria.</b><br><b>Y exaltemos su incomparable</b><br><b>Majestad,</b><br><b>al que vive por siempre,</b><br><b>al gran Yo Soy, a Jesús.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "youtube": "https://www.youtube.com/watch?v=pb-8DTuLwKY&list=RDpb-8DTuLwKY&start_radio=1",
+    "acordes": [
+      "//Al que es [do]digno de recibir la [FA]gloria,\nal que es [MIm7]digno de recibir ho[SOL]nor.//\n\nLevan[FA]temos nuestras [SOL/F]manos\ny ado[MIm7]remos\na Je[FA]sús, [SOL]Cordero de [MIm7]glo[SOLm7]ria.\n[DO7]Y exal[FA]temos su in[SOL]comparable\n[MIm7Majes[LAm]tad,\nal que [REm7]vi[MIm7]ve por [FA]siempre,\n[REm7]al [MIm7]gran Yo [FA]Soy, a Je[DO]sús."
+    ]
+  },
+  {
     "titulo": "Aquí estás (Way Maker)",
     "preview": "// Aquí estás, te vemos mover\nTe adoraré, Te adoraré\nAquí estás, obrando en mí\nTe adoraré, Te adoraré //",
     "slides": [
@@ -453,6 +466,18 @@
       "/ Se[LA]ñor eres fiel\ny Tu [LAdis]misericordia eterna[RE]./\n[RE]Gente de toda [MI]lengua y nación,\nde [FA]generación a [SOL]generación.",
       "///¡[LA]Te adoramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\n[LA]Te adoramos [MI]hoy, eres Se[SOL]ñor[RE]. ///\n\n¡[LA]Te adoramos [MI]hoy\n[SOL]Aleluya, [RE]aleluya!\n[LS]Te adoramos [MIm]hoy, ///eres Se[FA]ñor[SOL].///\n\nEres [LAm]fiel."
     ]
+  },
+  {
+    "titulo": "Te adoro a ti",
+    "preview": "Cuando pienso en tu amor tan bello\ny te veo a Ti en santidad,\ny tu divinidad excede las riquezas de este mundo.",
+    "slides": [
+      "<b>Cuando pienso en tu amor tan bello</b><br><b>y te veo a Ti en santidad,</b><br><b>y tu divinidad excede las riquezas de este mundo.</b>",
+      "<b>Cuando te siento en mi corazón,</b><br><b>cuando me llamas con Tu amor,</b><br><b>cuando todo está como a la sombra al lado de Tu luz.</b>",
+      "<b>Te adoro a Ti, te adoro a Ti,</b><br><b>la razón por la cual yo vivo es para adorarte.</b><br><b>Te adoro a Ti, te adoro a Ti,</b><br><b>la razón por la cual yo vivo,</b><br><b>la razón por la cual yo vivo,</b><br><b>la razón por la cual yo vivo</b><br><b>es para adorarte.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL",
+    "youtube": "https://www.youtube.com/watch?v=saz44lQoTyI&list=RDsaz44lQoTyI&start_radio=1"
   },
   {
     "titulo": "Tú eres mi todo",
