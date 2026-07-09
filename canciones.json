@@ -213,7 +213,13 @@
     "carpeta": "Alabanza",
     "tono": "RE",
     "youtube": "https://www.youtube.com/watch?v=y_678O4S6l8&list=RDy_678O4S6l8&start_radio=1",
-    "youtube_vocal": "https://www.youtube.com/watch?v=qSpLL1daOrE"
+    "youtube_vocal": "https://www.youtube.com/watch?v=qSpLL1daOrE",
+    "acordes": [
+      "De [RE]gloria en [LA]gloria, Te [SIm]veo [DO][RE]\nCuan[SOL]to más Te co[RE]nozco\n[MIm}Quiero saber más de [LA]Ti",
+      "Mi [RE]Dios, cual [LA]buen alfa[SIm]rero [DO][RE]\nQue[SOL]brántame, trans[RE]fórmame\nMol[MIm]déame a Tu i[LA]magen, Se[RE]ñor [DO][RE]",
+      "[SOL]Quiero [LA]ser más [FA#M]como [SIm]Tú\n[SOL]Ver la [LA]vida [FA#m]como [SIm]Tú\n[SOL]Satu[LA]rarme de Tu es[FA#m]píri[SIm]tu\nY [MIm]reflejar al [SOL]mundo Tu [LA]amor",
+      "[SOL]Quiero [LA]ser más [FA#m]como [SIm]Tú\n[SOL]Ver la [LA]vida [FA#m]como [SIm]Tú\n[SOL]Satu[LA]rarme de Tu es[FA#m]píri[SIm]tu\nY [SOL]reflejar al [LA]mundo Tu [RE]amor"
+    ]
   },
   {
     "titulo": "En el nombre de Jesús",
