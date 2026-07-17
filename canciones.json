@@ -265,6 +265,26 @@
     ]
   },
   {
+    "titulo": "Eres mi amigo fiel",
+    "preview": "//¿Quién soy yo para que en mi Tú pienses\ny que escuches mi clamor?\nY es verdad lo que Tú hoy me dices:\nque me amas, me asombras.//",
+    "slides": [
+      "<b>//¿Quién soy yo para que en mi Tú pienses</b><br><b>y que escuches mi clamor?</b><br><b>Y es verdad lo que Tú hoy me dices:</b><br><b>que me amas, me asombras.//</b>",
+      "<b>//Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Tu amigo soy.//</b>",
+      "<b>¿Quién soy yo para que en mi Tú pienses</b><br><b>y que escuches mi clamor?</b><br><b>Y es verdad lo que Tú hoy me dices:</b><br><b>que me amas, me asombras.</b>",
+      "<b>//Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Tu amigo soy.//</b>",
+      "<b>Majestuoso y poderoso,</b><br><b>Tu amigo soy.</b><br><b>Majestuoso y poderoso,</b><br><b>Tu amigo soy.</b><br><b>Majestuoso y poderoso,</b><br><b>Tu amigo soy.</b>",
+      "<b>//Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Eres mi amigo fiel,</b><br><b>Tu amigo soy.//</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "youtube": "https://www.youtube.com/watch?v=wcfvZzT3ufA&list=RDwcfvZzT3ufA&start_radio=1",
+    "acordes": [
+      "INTRO [DO][LA#][FA][DO]\n\n¿[DO]Quién soy yo para que en mi Tú [LAm]pienses\ny que es[FA]cuches mi cla[DO]mor?\nY [DO]es verdad lo que Tú hoy me [LAm]dices:\nque me [FA]amas, me a[LA#]sombras.",
+      "//[DO]Eres mi amigo fiel,\n[LAm]Eres mi amigo fiel,\n[FA]Eres mi amigo fiel,\nTu amigo [DO]soy//.",
+      "[FA]Majestuoso y [DO]poderoso,\n[REm]Tu amigo [FA]soy.\n[FA]Majestuoso y [DO]poderoso,\n[REm]Tu amigo [FA]soy.\n[DO]Majestuoso y [FA]poderoso,\n[REm]Tu amigo [SOL]soy."
+    ]
+  },
+  {
     "titulo": "Es tu Fidelidad",
     "preview": "Es Tu fidelidad tan grande, oh Padre;\nTú dices la verdad, descanso allí.\nTu luz rodea mi senda en el mundo,\nTu voz me anima; mi fuerza es en Ti.",
     "slides": [
