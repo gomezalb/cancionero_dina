@@ -49,6 +49,39 @@
     "youtube_vocal": "https://www.youtube.com/watch?v=7sCuOM92fOU"
   },
   {
+    "titulo": "Alaba",
+    "preview": "Te alabo en el valle\nTe alabo en el monte\nTe alabo en el día\nTe alabo en la noche",
+    "slides": [
+      "<b>Te alabo en el valle</b><br><b>Te alabo en el monte</b><br><b>Te alabo en el día</b><br><b>Te alabo en la noche</b>",
+      "<b>Te alabo en el medio</b><br><b>Estando rodeado</b><br><b>Porque cuando alabo</b><br><b>Tú estás a mi lado</b>",
+      "<b>Mientras tenga aliento</b><br><b>Mi alma canta y</b>",
+      "<b>Alaba a Dios, Mi corazón</b><br><b>Alaba a Dios, Mi corazón</b>",
+      "<b>Te alabo al sentirlo</b><br><b>Y aun cuando no</b><br><b>Te alabo y sé</b><br><b>Que estás en control</b><br><br><b>Es más que un sonido</b><br><b>Es adoración</b><br><b>Y cuando alabamos</b><br><b>Caerá Jericó</b>",
+      "<b>Mientras tenga aliento</b><br><b>Mi alma canta y</b><br><br><b>Alaba a Dios, Mi corazón</b><br><b>Alaba a Dios, Mi corazón</b>",
+      "<b>No me detengo</b><br><b>Mi Dios vivo está</b><br><b>¿Cómo me voy a callar?</b><br><br><b>Alaba a Dios</b><br><b>Mi corazón</b>",
+      "<b>//Alabo al que reina</b><br><b>Alabo al Señor</b><br><b>Alabo a aquel que la tumba venció</b><br><br><b>Alabo al que es bueno</b><br><b>Alabo al que es fiel</b><br><b>Le alabo porque no hay otro como él//</b>",
+      "<b>//Alaba a Dios, Mi corazón</b><br><b>Alaba a Dios, Mi corazón//</b>",
+      "<b>No me detengo</b><br><b>Mi Dios vivo está</b><br><b>¿Cómo me voy a callar?</b><br><br><b>No me detengo</b><br><b>Mi Dios vivo está</b><br><b>¿Cómo me voy a callar?</b>",
+      "<b>Alaba a Dios Mi corazón.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL",
+    "youtube": "https://www.youtube.com/watch?v=naG_gVo8buc&list=RDnaG_gVo8buc&start_radio=1",
+    "acordes": [
+      "[SOL]Te alabo en el valle\nTe [DO]alabo en el [SOL]monte\nTe [RE]alabo en el día\n[DO]Te alabo en la [SOL]noche",
+      "Te [SOL]alabo en el medio\nEs[DO]tando ro[SOL]deado\n[RE]Porque cuando alabo\n[DO]Tú estás a mi [SOL]lado",
+      "Mien[RE]tras tenga aliento\n[DO]Mi alma canta y",
+      "[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
+      "Te [SOL]alabo al sentirlo\nY [DO]aun cuando [SOL]no\nTe [RE]alabo y sé\n[DO]Que estás en con[SOL]trol\n\n[SOL]Es más que un sonido\nEs [DO]adora[SOL]ción\nY [RE]cuando alabamos\n[DO]Caerá Jeri[SOL]có",
+      "Mien[RE]tras tenga aliento\n[DO]Mi alma canta y\n\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
+      "[MIm]No me detengo\nMi [DO]Dios vivo está\n[SOL]¿Cómo me voy a ca[RE]llar?\n\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
+      "//A[SOL]labo al que reina\nA[LAm7]labo al Señor\nA[RE/FA#]labo a aquel que la [DO]tumba venció\n\nA[SOL]labo al que es bueno\nA[LAm7]labo al que es fiel\nLe a[RE/FA#]labo porque no hay [DO]otro como él//",
+      "//[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón//",
+      "//[SOL]No me detengo\nMi [LAm]]Dios vivo está\n¿[SOL]Cómo me voy a ca[RE]llar?//",
+      "[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón"
+    ]
+  },
+  {
     "titulo": "Aquí estás (Way Maker)",
     "preview": "// Aquí estás, te vemos mover\nTe adoraré, Te adoraré\nAquí estás, obrando en mí\nTe adoraré, Te adoraré //",
     "slides": [
