@@ -44,9 +44,8 @@
     "tono": "DO",
     "youtube": "https://www.youtube.com/watch?v=pb-8DTuLwKY&list=RDpb-8DTuLwKY&start_radio=1",
     "acordes": [
-      "//Al que es [do]digno de recibir la [FA]gloria,\nal que es [MIm7]digno de recibir ho[SOL]nor.//\n\nLevan[FA]temos nuestras [SOL/F]manos\ny ado[MIm7]remos\na Je[FA]sús, [SOL]Cordero de [MIm7]glo[SOLm7]ria.\n[DO7]Y exal[FA]temos su in[SOL]comparable\n[MIm7Majes[LAm]tad,\nal que [REm7]vi[MIm7]ve por [FA]siempre,\n[REm7]al [MIm7]gran Yo [FA]Soy, a Je[DO]sús."
-    ],
-    "youtube_vocal": "https://www.youtube.com/watch?v=7sCuOM92fOU"
+      "//Al que es [do]digno de recibir la [FA]gloria,\nal que es [MIm7]digno de recibir ho[SOL]nor.//\n\nLevan[FA]temos nuestras [SOL/F#]manos\ny ado[MIm7]remos\na Je[FA]sús, [SOL]Cordero de [MIm7]glo[SOLm7]ria.\n[DO7]Y exal[FA]temos su in[SOL]comparable\n[MIm7]Majes[LAm]tad,\nal que [REm7]vi[MIm7]ve por [FA]siempre,\n[REm7]al [MIm7]gran Yo [FA]Soy, a Je[DO]sús."
+    ]
   },
   {
     "titulo": "Alaba",
@@ -65,20 +64,20 @@
       "<b>Alaba a Dios Mi corazón.</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "SOL",
+    "tono": "LA",
     "youtube": "https://www.youtube.com/watch?v=naG_gVo8buc&list=RDnaG_gVo8buc&start_radio=1",
     "acordes": [
-      "[SOL]Te alabo en el valle\nTe [DO]alabo en el [SOL]monte\nTe [RE]alabo en el día\n[DO]Te alabo en la [SOL]noche",
-      "Te [SOL]alabo en el medio\nEs[DO]tando ro[SOL]deado\n[RE]Porque cuando alabo\n[DO]Tú estás a mi [SOL]lado",
-      "Mien[RE]tras tenga aliento\n[DO]Mi alma canta y",
-      "[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
-      "Te [SOL]alabo al sentirlo\nY [DO]aun cuando [SOL]no\nTe [RE]alabo y sé\n[DO]Que estás en con[SOL]trol\n\n[SOL]Es más que un sonido\nEs [DO]adora[SOL]ción\nY [RE]cuando alabamos\n[DO]Caerá Jeri[SOL]có",
-      "Mien[RE]tras tenga aliento\n[DO]Mi alma canta y\n\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
-      "[MIm]No me detengo\nMi [DO]Dios vivo está\n[SOL]¿Cómo me voy a ca[RE]llar?\n\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón",
-      "//A[SOL]labo al que reina\nA[LAm7]labo al Señor\nA[RE/FA#]labo a aquel que la [DO]tumba venció\n\nA[SOL]labo al que es bueno\nA[LAm7]labo al que es fiel\nLe a[RE/FA#]labo porque no hay [DO]otro como él//",
-      "//[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón\n[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón//",
-      "//[SOL]No me detengo\nMi [LAm]]Dios vivo está\n¿[SOL]Cómo me voy a ca[RE]llar?//",
-      "[MIm]Aaa[DO]laba a [SOL]Dios, Mi cora[RE]zón"
+      "[LA]Te alabo en el valle\nTe [RE]alabo en el [LA]monte\nTe [MI]alabo en el día\n[RE]Te alabo en la [LA]noche",
+      "Te [LA]alabo en el medio\nEs[RE]tando ro[LA]deado\n[MI]Porque cuando alabo\n[RE]Tú estás a mi [LA]lado",
+      "Mien[MI]tras tenga aliento\n[RE]Mi alma canta y",
+      "[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón\n[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón",
+      "Te [LA]alabo al sentirlo\nY [RE]aun cuando [LA]no\nTe [MI]alabo y sé\n[RE]Que estás en con[LA]trol\n\n[LA]Es más que un sonido\nEs [RE]adora[LA]ción\nY [MI]cuando alabamos\n[RE]Caerá Jeri[LA]có",
+      "Mien[MI]tras tenga aliento\n[RE]Mi alma canta y\n\n[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón\n[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón",
+      "[FA#m]No me detengo\nMi [RE]Dios vivo está\n[LA]¿Cómo me voy a ca[MI]llar?\n\n[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón",
+      "//A[LA]labo al que reina\nA[SIm7]labo al Señor\nA[MI/SOL#]labo a aquel que la [RE]tumba venció\n\nA[LA]labo al que es bueno\nA[SIm7]labo al que es fiel\nLe a[MI/SOL#]labo porque no hay [RE]otro como él//",
+      "//[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón\n[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón//",
+      "//[LA]No me detengo\nMi [SIm]]Dios vivo está\n¿[LA]Cómo me voy a ca[MI]llar?//",
+      "[FA#m]Aaa[RE]laba a [LA]Dios, Mi cora[MI]zón"
     ]
   },
   {
@@ -145,8 +144,8 @@
     "tono": "DO",
     "youtube": "https://www.youtube.com/watch?v=hU_239qE24Y&list=RDhU_239qE24Y&start_radio=1",
     "acordes": [
-      "Cantad alegres a [DO]Dios [FA7]\nhabitantes de la [DO]Tierra,[FA7]\n[DO]glorificad al Crea[SOL]dor,\nreconoced Su gran[DO]deza.",
-      "Con alegría can[DO]tad [FA7]\nde Su poder y Su [DO]gloria,[FA7]\n[DO]servidle con rego[SOL]cijo\npues nos ha hecho sus [DO]hijos.[DO7]",
+      "Cantad alegres a [DO]Dios [FA7]\nhabitantes de la [DO]Tierra,[FA7]\n[DO]glorificad al Crea[SOL]dor,\n[FA]reconoced Su gran[DO]deza.",
+      "Con alegría can[DO]tad [FA7]\nde Su poder y Su [DO]gloria,[FA7]\n[DO]servidle con rego[SOL]cijo\n[FA]pues nos ha hecho sus [DO]hijos.[DO7]",
       "Te damos ala[FA7]banza Señor,\nTe has vestido\nde ho[DO]nor y poder.\nLas naciones tri[FA7]buto darán\na Tu nombre por [MIm7]la eterni[LAm7]dad,\ny Tu reino la [REm]Tie[MIm]rra [FA7]cubri[SOL]rá.\nLo declaramos Se[DO]ñor.[FA7][DO]"
     ]
   },
@@ -212,7 +211,7 @@
     "youtube": "https://www.youtube.com/watch?v=vaXHjxZblrU&list=RDvaXHjxZblrU&start_radio=1",
     "acordes": [
       "Con mis [MI]manos levantadas hacia el [LA]cielo\nme pre[DO#m]sento ante [SI]Ti hoy mi [MI]Señor\npara [LA]recibir de [SI]Ti la [[SOL#m]fuerza y el po[DO#m]der,\npara vi[LA/FA#]vir[LA] junto a [SI]Ti.",
-      "Llenas [MI]hoy mi corazón con Tu [FA#m]presencia,\nllenas [SI]de alegría y paz todo mi [DO#m]ser.\nDe [LA]cualquier necesi[MI]dad Tú me res[DO#m]ponderás,\nporque me [LA]amas[FA#m], me [SI]amas,\nporque me [LA[amas, [SI]me [LA]a [MI]mas."
+      "Llenas [MI]hoy mi corazón con Tu [FA#m]Llenas]presencia,\nllenas [SI]de alegría y paz todo mi [DO#m]ser.\nDe [LA]cualquier necesi[MI]dad Tú me res[DO#m]ponderás,\nporque me [LA]amas[FA#m], me [SI]amas,\nporque me [LA[amas, [SI]me [LA]a [MI]mas."
     ]
   },
   {
@@ -268,7 +267,7 @@
     "youtube": "https://www.youtube.com/watch?v=y_678O4S6l8&list=RDy_678O4S6l8&start_radio=1",
     "youtube_vocal": "https://www.youtube.com/watch?v=qSpLL1daOrE",
     "acordes": [
-      "De [RE]gloria en [LA]gloria, Te [SIm]veo [DO][RE]\nCuan[SOL]to más Te co[RE]nozco\n[MIm}Quiero saber más de [LA]Ti",
+      "De [RE]gloria en [LA]gloria, Te [SIm]veo [DO][RE]\nCuan[SOL]to más Te co[RE]nozco\n[MIm]Quiero saber más de [LA]Ti",
       "Mi [RE]Dios, cual [LA]buen alfa[SIm]rero [DO][RE]\nQue[SOL]brántame, trans[RE]fórmame\nMol[MIm]déame a Tu i[LA]magen, Se[RE]ñor [DO][RE]",
       "[SOL]Quiero [LA]ser más [FA#M]como [SIm]Tú\n[SOL]Ver la [LA]vida [FA#m]como [SIm]Tú\n[SOL]Satu[LA]rarme de Tu es[FA#m]píri[SIm]tu\nY [MIm]reflejar al [SOL]mundo Tu [LA]amor",
       "[SOL]Quiero [LA]ser más [FA#m]como [SIm]Tú\n[SOL]Ver la [LA]vida [FA#m]como [SIm]Tú\n[SOL]Satu[LA]rarme de Tu es[FA#m]píri[SIm]tu\nY [SOL]reflejar al [LA]mundo Tu [RE]amor"
@@ -454,6 +453,17 @@
     "carpeta": "Alabanza",
     "tono": "RE",
     "youtube": "https://www.youtube.com/watch?v=ZoKsBeoEW18&list=RDZoKsBeoEW18&start_radio=1"
+  },
+  {
+    "titulo": "Inmerecedor",
+    "preview": "Inmerecedor,  soy de Tu gracia y Tu perdón, \nde Tu perfecto amor indigno soy. \nNo existe nada en mí, con lo que pueda yo pagar \nTu tierna y dulce paz Tu eterna bondad.",
+    "slides": [
+      "<b>Inmerecedor,  soy de Tu gracia y Tu perdón,</b><br><b>de Tu perfecto amor indigno soy.</b><br><b>No existe nada en mí, con lo que pueda yo pagar</b><br><b>Tu tierna y dulce paz Tu eterna bondad.</b>",
+      "<b>Tú me has amado, y has decidido estar aquí,</b><br><b>para abrazarme, sin recordarme lo que fui.</b><br><b>Un pecador, que de Ti su rostro escondió,</b><br><b>no merecía el regalo de Tu amor.</b>",
+      "<b>Yo quiero agradecerte, amarte siempre</b><br><b>Con gran pasión,</b><br><b>como lo has hecho Tú</b><br><b>Quiero corresponderte, ser fiel por siempre.</b><br><b>Con decisión y no fallar jamás,</b><br><b>Señor.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "Do"
   },
   {
     "titulo": "Jesucristo Basta",
@@ -735,7 +745,7 @@
       "[RE]Vengo a [LA]Ti\n[SIm]Con mis [SOL]cargas vengo\n[RE]Vengo a [LA]Ti\n[SIm]Tú eres mi sustento, [SOL]Dios\nTorre fue[SIm]rte, eres mi [LA]vida\n[MIm]Eres [SIm]mi fiel compa[LA]ñía.",
       "//[SOL]Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circuns[MIm]tancia\nSobre todas mis ba[SIm]tallas//\nEres [LA]Rey, \n\nTú eres [SOL]Re [RE]ey [SIm][LA]\nEres [SOL]Re [RE]ey… [SIm] [LA]",
       "////¿[SOL]A Quién tengo [RE]yo en los cielos?\n[SIm]Sólo a Ti, mi [LA]Rey eterno ////",
-      "//[SOL]/Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circun[MIm]stancia\nSobre todas mis ba[SIm]tallas //\nEres [LA]Rey, eres [SOL]Rey//"
+      "/[SOL]/Rey sobre toda tempes[RE]tad.\n[SOL]Rey sobre toda enferme[RE]dad.\nTú eres [LA]Rey sobre todas circun[MIm]stancia\nSobre todas mis ba[SIm]tallas \nEres [LA]Rey, eres [SOL]Rey//"
     ]
   },
   {
