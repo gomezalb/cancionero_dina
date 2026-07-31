@@ -360,6 +360,21 @@
     ]
   },
   {
+    "titulo": "Este es mi deseo",
+    "preview": "Este es mi deseo, honrarte a Ti.\nCon todo mi ser te adoro a Ti.\nCon todas mis fuerzas te alabaré.\nMi adoración eres Tú.",
+    "slides": [
+      "<b>Este es mi deseo, honrarte a Ti.</b><br><b>Con todo mi ser te adoro a Ti.</b><br><b>Con todas mis fuerzas te alabaré.</b><br><b>Mi adoración eres Tú.</b>",
+      "<b>/Hoy te rindo mi ser,</b><br><b>te doy mi corazón;</b><br><b>yo vivo para Ti.</b><br><b>En cada palpitar,</b><br><b>mientras haya aliento en mi,</b><br><b>Dios haz tu obra en mí./</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MI",
+    "youtube": "https://www.youtube.com/watch?v=L2EqWBfFWXs&list=RDL2EqWBfFWXs&start_radio=1",
+    "acordes": [
+      "intro [LA][SI][SOL#m][DO#m]\n\n[MI]Este es mi de[DO#m]seo, hon[[LA]rar[MI]te a [SI]Ti.\n[DO#m]Con todo [SI]mi [MI]ser te adoro a [RE]Ti.[SI]\n[MI]Con todas mis [DO#m]fuerzas te a[LA]la[MI]ba[SI]ré.\n[DO#m]Mi ado[SI]ra[MI]ción eres [RE]Tú.[SI]",
+      "/[MI]Hoy te rindo mi [SI]ser,\nte doy mi co[FA#m]razón;\nyo [LA]vivo [SI]para [MI]Ti.\nEn cada palpi[SI]tar,\nmientras haya aliento en [FA#m]mi,\nDios [LA]haz tu [SI]obra en mí./ [LA][SI][SOL#m][DO#m]"
+    ]
+  },
+  {
     "titulo": "Glorioso día",
     "preview": "Mi vergüenza me sepultó, Yo buscaba un salvador\nMás tu perdón, me libero.\nMuerto estaba en mi interior, Me escondía de ti señor\nMás tu perdón, me libero. Tu voz me habló...\n\nY a la muerte venció\nGlorioso Día, tu sangre me rescató\nTu voz me habló, Y a la muerte venció\nGlorioso Día, tu sangre me rescató",
     "slides": [
