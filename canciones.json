@@ -338,6 +338,23 @@
     ]
   },
   {
+    "titulo": "Eres todopoderoso",
+    "preview": "La única razón de mi adoración\neres Tú mi Jesús.\nEl único motivo para vivir\neres Tú mi Señor.",
+    "slides": [
+      "<b>La única razón de mi adoración</b><br><b>eres Tú mi Jesús.</b><br><b>El único motivo para vivir</b><br><b>eres Tú mi Señor.</b>",
+      "<b>Mi única verdad está en Ti,</b><br><b>eres mi luz y mi salvación.</b><br><b>Mi único amor eres Tú Señor</b><br><b>y por siempre te alabaré.</b>",
+      "<b>// Eres todopoderoso,</b><br><b>eres grande y majestuoso,</b><br><b>eres fuerte, invencible</b><br><b>y no hay nadie como Tú. //</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LAm",
+    "youtube": "https://www.youtube.com/watch?v=C4DqvUby9B0&list=RDC4DqvUby9B0&start_radio=1",
+    "acordes": [
+      "[LAm]La única razón de mi a[FA]doración\n[DO]eres Tú mi Je[SOL]sús.\nEl [LAm]único motivo para [FA]vivir\n[DO]eres Tú mi Se[SOL]ñor.",
+      "Mi úni[LAm]ca verdad es[FA]tá en Ti,\neres mi [DO]luz y mi salva[SOL]ción.\nMi úni[LAm]co amor eres [FA]Tú Señor\ny por [DO]siempre te alaba[SOL]ré.",
+      "// Eres [LAm]todopode[FA]roso,\neres [DO]grande y majes[SOL]tuoso,\neres [LAm]fuerte, inven[FA]cible\ny no hay [DO]nadie como [SOL]Tú.[LAm] //"
+    ]
+  },
+  {
     "titulo": "Es tu Fidelidad",
     "preview": "Es Tu fidelidad tan grande, oh Padre;\nTú dices la verdad, descanso allí.\nTu luz rodea mi senda en el mundo,\nTu voz me anima; mi fuerza es en Ti.",
     "slides": [
