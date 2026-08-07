@@ -415,6 +415,21 @@
     ]
   },
   {
+    "titulo": "Exáltate",
+    "preview": "Al borde de Tu gran trono \nme postraré hoy a Ti. \nTú reinas sobre principados \nsentado a la diestra de Dios.",
+    "slides": [
+      "<b>Al borde de Tu gran trono</b><br><b>me postraré hoy a Ti.</b><br><b>Tú reinas sobre principados</b><br><b>sentado a la diestra de Dios.</b>",
+      "<b>Exáltate, oh gran Cordero,</b><br><b>Tú vives hoy, y vivirás,</b><br><b>corónate con mi alabanza,</b><br><b>Tu nombre es, el Vencedor.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MI",
+    "youtube": "https://www.youtube.com/watch?v=YcaRBL-WjNE&list=RDYcaRBL-WjNE&start_radio=1",
+    "acordes": [
+      "INTRO [MI][DO#m][LA][SI]\n[MI]Al borde de Tu gran [DO#m]trono\nme [LA]postraré hoy a [SI]Ti.\nTú [MI]reinas sobre princi[DO#m]pados\nsen[LA]tado[FA#m] a la diestra de [SI]Dios.",
+      "E[MI]xáltate, oh gran Cor[DO#m]dero,\nTú [LA]vives hoy,[FA#m] y vivi[SI]rás,\nco[MI]rónate con mi ala[DO#m]banza,\nTu [LA]nombre es,[SI] el Vence[MI]dor."
+    ]
+  },
+  {
     "titulo": "Glorioso día",
     "preview": "Mi vergüenza me sepultó, Yo buscaba un salvador\nMás tu perdón, me libero.\nMuerto estaba en mi interior, Me escondía de ti señor\nMás tu perdón, me libero. Tu voz me habló...\n\nY a la muerte venció\nGlorioso Día, tu sangre me rescató\nTu voz me habló, Y a la muerte venció\nGlorioso Día, tu sangre me rescató",
     "slides": [
