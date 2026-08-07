@@ -318,6 +318,29 @@
     ]
   },
   {
+    "titulo": "Eres digno de adorar",
+    "preview": "Ángeles y santos\nHoy se postrarán\nSus coronas traen\nAl cordero que venció y cantarán",
+    "slides": [
+      "<b>Ángeles y santos</b><br><b>Hoy se postrarán</b><br><b>Sus coronas traen</b><br><b>Al cordero que venció y cantarán</b>",
+      "<b>Eres digno de adorar</b><br><b>Eres digno de adorar</b><br><b>Todo viene de ti</b><br><b>Y todo es para ti</b><br><b>Tú mereces gloria</b>",
+      "<b>Ángeles y santos</b><br><b>Hoy se postrarán</b><br><b>Sus coronas traen</b><br><b>Al cordero que venció y cantarán</b>",
+      "<b>//Eres digno de adorar</b><br><b>Eres digno de adorar</b><br><b>Todo viene de ti</b><br><b>Y todo es para ti</b><br><b>Tú mereces gloria //</b>",
+      "<b>Día y noche se oirá nuestra adoración</b><br><b>Día y noche se oirá nuestra adoración</b><br><b>Día y noche se oirá nuestra adoración</b><br><b>Día y noche se oirá nuestra adoración</b>",
+      "<b>//Eres digno de adorar</b><br><b>Eres digno de adorar</b><br><b>Todo viene de ti</b><br><b>Y todo es para ti</b><br><b>Tú mereces gloria //</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MI",
+    "youtube": "https://www.youtube.com/watch?v=Z9jWFAA30mc&list=RDZ9jWFAA30mc&start_radio=1",
+    "acordes": [
+      "[LA]Ángeles y [SI]santos\n[LA]Hoy se postra[SI]rán\n[LA]Sus coronas [SI]traen\nAl cor[DO#]dero que ven[LA]ció y [SI]canta[MI]rán",
+      "Eres digno de ado[MI]rar\nEres digno de ado[SI]rar\nTodo viene de [LA]ti\nY todo es para [SI]ti\nTú mereces [MI]gloria",
+      "Ángeles y santos\nHoy se postrarán\nSus coronas traen\nAl cordero que venció y cantarán",
+      "//Eres digno de adorar\nEres digno de adorar\nTodo viene de ti\nY todo es para ti\nTú mereces gloria //",
+      "Día y noche se oirá nuestra adoración\nDía y noche se oirá nuestra adoración\nDía y noche se oirá nuestra adoración\nDía y noche se oirá nuestra adoración",
+      "//Eres digno de adorar\nEres digno de adorar\nTodo viene de ti\nY todo es para ti\nTú mereces gloria //"
+    ]
+  },
+  {
     "titulo": "Eres mi amigo fiel",
     "preview": "//¿Quién soy yo para que en mi Tú pienses\ny que escuches mi clamor?\nY es verdad lo que Tú hoy me dices:\nque me amas, me asombras.//",
     "slides": [
