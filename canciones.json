@@ -907,6 +907,23 @@
     ]
   },
   {
+    "titulo": "Te doy Gloria",
+    "preview": "Cuán! Hermoso eres Jesús\nSon Tus Palabras, es Tu Amor\nCuán! Glorioso eres Jesús\nEs Tu Poder, fue Tu Cruz,\nLa que me salvó, me rescató\nUn momento ahí nos dio libertad.",
+    "slides": [
+      "<b>Cuán! Hermoso eres Jesús</b><br><b>Son Tus Palabras, es Tu Amor</b><br><b>Cuán! Glorioso eres Jesús</b><br><b>Es Tu Poder, fue Tu Cruz,</b><br><b>La que me salvó, me rescató</b><br><b>Un momento ahí nos dio libertad.</b>",
+      "<b>Te doy Gloria Gloria</b><br><b>Te doy Gloria Gloria</b><br><b>Te doy Gloria Gloria</b><br><b>A Ti Jesús</b>",
+      "<b>(Con una corona de espinos</b><br><b>Te hiciste Rey por siempre) x4</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LA",
+    "youtube": "https://www.youtube.com/watch?v=BsFNAgJncfc&list=RDBsFNAgJncfc&start_radio=1",
+    "acordes": [
+      "Cuán! Her[LA]moso eres Je[MI]sús\nSon Tus Pa[FA#m]labras, es Tu [RE]Amor\nCuán! Glo[LA]rioso eres Je[MI]sús\nEs Tu Po[FA#m]der, fue Tu [RE]Cruz,\nLa que me sal[LA]vó, me resca[MI]tó\nUn mo[FA#m]mento ahí nos dio liber[RE]tad.",
+      "Te doy [LA]Gloria Gloria\nTe doy [MI]Gloria Gloria\nTe doy [FA#m]Gloria Gloria\nA Ti Je[RE]sús",
+      "////Con [RE]una corona de es[MI]pinos\nTe [FA#m]hiciste Rey por [LA]siempre ////"
+    ]
+  },
+  {
     "titulo": "Tú eres mi todo",
     "preview": "Mi Dios, redentor\nMi rey, consolador\nA ti, todo el honor\n\nEs paz a mi ser\nLa luz en mi amanecer\nA ti, todo el honor\nTú eres mi todo\n----\n//Cantaré con todo el corazón\nCantaré con todo lo que soy\nCantaré por siempre, mi Señor\nTú eres mi todo//",
     "slides": [
