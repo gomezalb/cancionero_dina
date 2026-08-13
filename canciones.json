@@ -135,9 +135,12 @@
   },
   {
     "titulo": "Canta al Señor - Mi Cristo mi Rey",
-    "preview": "Mi Cristo, mi Rey, nadie es como Tú,  \nToda mi vida quiero exaltar  \nlas maravillas de Tu amor. \n ---\nConsuelo, refugio,  \nTorre de fuerza y poder,  \nTodo mi ser, lo que yo soy,  \nnunca cese de adorar. \n---   \nCanta al Señor toda la creación.  \nHonra y poder, majestad sean al Rey.  \nMontes caerán y el mar rugirá  \nal sonar de Tu nombre. \n ---\nCanto con gozo al mirar Tu poder,  \nPor siempre yo te amaré y diré:  \nIncomparables promesas  \nme das Señor.",
+    "preview": "Mi Cristo, mi Rey, nadie es como Tú,\nToda mi vida quiero exaltar\nlas maravillas de Tu amor.",
     "slides": [
-      "<b>Mi Cristo, mi Rey, nadie es como Tú,</b><br><b>Toda mi vida quiero exaltar</b><br><b>las maravillas de Tu amor.</b><br><b>---</b><br><b>Consuelo, refugio,</b><br><b>Torre de fuerza y poder,</b><br><b>Todo mi ser, lo que yo soy,</b><br><b>nunca cese de adorar.</b><br><b>---</b><br><b>Canta al Señor toda la creación.</b><br><b>Honra y poder, majestad sean al Rey.</b><br><b>Montes caerán y el mar rugirá</b><br><b>al sonar de Tu nombre.</b><br><b>---</b><br><b>Canto con gozo al mirar Tu poder,</b><br><b>Por siempre yo te amaré y diré:</b><br><b>Incomparables promesas</b><br><b>me das Señor.</b>"
+      "<b>Mi Cristo, mi Rey, nadie es como Tú,</b><br><b>Toda mi vida quiero exaltar</b><br><b>las maravillas de Tu amor.</b>",
+      "<b>Consuelo, refugio,</b><br><b>Torre de fuerza y poder,</b><br><b>Todo mi ser, lo que yo soy,</b><br><b>nunca cese de adorar.</b>",
+      "<b>Canta al Señor toda la creación.</b><br><b>Honra y poder, majestad sean al Rey.</b><br><b>Montes caerán y el mar rugirá</b><br><b>al sonar de Tu nombre.</b>",
+      "<b>Canto con gozo al mirar Tu poder,</b><br><b>Por siempre yo te amaré y diré:</b><br><b>Incomparables promesas</b><br><b>me das Señor.</b>"
     ],
     "carpeta": "Alabanza",
     "tono": "LA",
