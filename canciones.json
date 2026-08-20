@@ -257,6 +257,23 @@
     ]
   },
   {
+    "titulo": "Creo en Ti - Quiero levantar a ti mis manos",
+    "preview": "Quiero levantar a Ti mis manos\nMaravilloso Jesús, milagroso Señor,\nLlena este lugar de Tu presencia\nY haz descender Tu poder\nA los que estamos aquí.",
+    "slides": [
+      "<b>Quiero levantar a Ti mis manos</b><br><b>Maravilloso Jesús, milagroso Señor,</b><br><b>Llena este lugar de Tu presencia</b><br><b>Y haz descender Tu poder</b><br><b>A los que estamos aquí.</b>",
+      "<b>Pre Coro</b><br><b>//Creo en Ti, Jesús</b><br><b>Y en lo que harás en mí//</b><br><br><b>En mí,        En mí</b>",
+      "<b>Recibe</b><br><b>Toda la gloria, recibe</b><br><b>Toda la honra</b><br><b>Precioso Hijo de Dios</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "MIm",
+    "youtube": "https://www.youtube.com/watch?v=KaNsqrxZo40&list=RDKaNsqrxZo40&start_radio=1",
+    "acordes": [
+      "INTRO  [DO][RE][SOL][DO] (2 veces)\n\n[MIm]Quiero levantar a Ti mis [DO]manos\nMaravi[SOL]lloso Jesús, mila[RE]groso Señor,\n[MIm]Llena este lugar de Tu pre[DO]sencia\nY haz descen[SOL]der Tu poder\nA los que es[RE]tamos aquí.",
+      "Pre Coro\n//Creo en [MIm]Ti, [RE]Je[DO]sús\nY en lo que ha[MIm]rás [RE]en [DO]mí//\n\nEn [SOL]mí,        En [RE]mí",
+      "Recibe\nToda la [MIm]gloria, recibe\n[DO]Toda la honra\nPre[SOL]cioso Hijo de [RE]Dios"
+    ]
+  },
+  {
     "titulo": "Cuán grande es Él",
     "preview": "Señor mi Dios, al contemplar los cielos,\nel firmamento y las estrellas mil,\nal oír tu voz en los potentes truenos\ny ver brillar el sol en su cenit.",
     "slides": [
