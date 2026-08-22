@@ -1003,7 +1003,11 @@
       "<b>¡Santo, Santo, Santo! La gloria de Tu nombre</b><br><b>vemos en Tus obras, en cielo tierra y mar.</b><br><b>//¡Santo, Santo, Santo! Te adorará todo hombre,</b><br><b>Dios en tres personas, bendita Trinidad.//</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "Do"
+    "tono": "Do",
+    "acordes": [
+      "//¡[DO]Santo, [MIm]Santo, [LAm]Santo! Se[FA]ñor omnipo[]Dotente,\n[DO]siempre el [MI]labio [RE]mío[SOL] lo[RE]ores te da[SOL]rá.\n¡[DO]Santo, [MIm]Santo, [LAm]Santo! Te [FA]adoro reve[DO]rente,\n[LAm]Dios en [MIm]tres per[FA]so[DO]nas, ben[REm]dita [SOL]Trini[DO]dad.//",
+      "¡Santo, Santo, Santo! La gloria de Tu nombre\nvemos en Tus obras, en cielo tierra y mar.\n//¡Santo, Santo, Santo! Te adorará todo hombre,\nDios en tres personas, bendita Trinidad.//"
+    ]
   },
   {
     "titulo": "Señor eres fiel",
