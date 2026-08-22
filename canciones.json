@@ -605,7 +605,13 @@
       "<b>//Grandes son, Grandes son</b><br><b>Grandes son tus maravillas</b><br><b>Grandes son,  Grandes son</b><br><b>Grandes son tus maravillas//</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "LA"
+    "tono": "LA",
+    "acordes": [
+      "//[LA]Te alaba[RE]ré, oh Se[LA]ñor\nI[Re]nvocaré [MI]tu Santo Nombre\n[LA]Siempre da[RE]ré a cono[LA]cer\nEn los [RE]pueblos tus [MI]obras //",
+      "G[FA#m]randes [DO#m]son, [RE]Grandes s[LA]on\n[FA#m]Grandes [DO#m]son tus [RE]mara[MI]villas\n[FA#m]Grandes [DO#m]son,  [RE]Grandes [DO]son\nG[FA#m]randes [DO#m]son tus [RE]mara[Mi]vil[LA]las",
+      "//Te alabaré, oh Señor\nInvocaré tu Santo Nombre\nSiempre daré a conocer\nEn los pueblos tus obras //",
+      "//Grandes son, Grandes son\nGrandes son tus maravillas\nGrandes son,  Grandes son\nGrandes son tus maravillas//"
+    ]
   },
   {
     "titulo": "Hay Libertad (IBI)",
