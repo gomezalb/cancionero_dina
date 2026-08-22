@@ -596,6 +596,18 @@
     ]
   },
   {
+    "titulo": "Grandes son tus maravillas",
+    "preview": "//Te alabaré, oh Señor\nInvocaré tu Santo Nombre\nSiempre daré a conocer\nEn los pueblos tus obras //",
+    "slides": [
+      "<b>//Te alabaré, oh Señor</b><br><b>Invocaré tu Santo Nombre</b><br><b>Siempre daré a conocer</b><br><b>En los pueblos tus obras //</b>",
+      "<b>Grandes son, Grandes son</b><br><b>Grandes son tus maravillas</b><br><b>Grandes son,  Grandes son</b><br><b>Grandes son tus maravillas</b>",
+      "<b>//Te alabaré, oh Señor</b><br><b>Invocaré tu Santo Nombre</b><br><b>Siempre daré a conocer</b><br><b>En los pueblos tus obras //</b>",
+      "<b>//Grandes son, Grandes son</b><br><b>Grandes son tus maravillas</b><br><b>Grandes son,  Grandes son</b><br><b>Grandes son tus maravillas//</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LA"
+  },
+  {
     "titulo": "Hay Libertad (IBI)",
     "preview": "Las cadenas de la muerte me quitó\nPara mí, ya no hay condenación\nHay libertad, libertad",
     "slides": [
@@ -903,6 +915,20 @@
       "Esco[FA#m]gido, [Mi]perdonado\nYo [La]soy quien dices que [Re]soy\nVas con[FA#m]migo, a mi [Mi]lado\nYo [La]soy quien dices que [Re]soy \n\nEsco[FA#m]gido, perdo[Mi]nado\nYo [La]soy quien dices que [Re]soy\nVas con[FA#m]migo, a mi [Mi]lado\nYo [La]soy quien dices que [Re]soy\nSí, yo [FA#m]soy quien [Mi]dices que [Re]soy",
       "Libre [La]soy en Él, Libre [Mi]en verdad\nSoy [FA#m]hijo [Mi]de [Re]Dios, Sí, lo [La]soy\n\nEn tu [La]casa Dios, Sitio [Mi]hay para mí\nSoy [FA#m]hijo [Mi]de [Re]Dios, Sí, lo [La]soy."
     ]
+  },
+  {
+    "titulo": "Revelacion - Digno es el Cordero Santo",
+    "preview": "// Digno es el Cordero Santo\nSanto, santo es Él\nLevantamos nuestra alabanza\nAl que en el trono está //",
+    "slides": [
+      "<b>// Digno es el Cordero Santo</b><br><b>Santo, santo es Él</b><br><b>Levantamos nuestra alabanza</b><br><b>Al que en el trono está //</b>",
+      "<b>Santo, santo, santo Dios todo poderoso</b><br><b>Quien fue, quien es y quien vendrá</b><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre</b>",
+      "<b>Digno es el Cordero Santo</b><br><b>Santo, santo es Él</b><br><b>Levantamos nuestra alabanza</b><br><b>Al que en el trono está</b>",
+      "<b>// Santo, santo, santo Dios todo poderoso</b><br><b>Quien fue, quien es y quien vendrá</b><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre //</b>",
+      "<b>/// Levantamos nuestra alabanza</b><br><b>Al que en el trono está ///</b>",
+      "<b>Santo, santo, santo Dios todo poderoso</b><br><b>Quien fue, quien es y quien vendrá</b><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre</b><br><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL"
   },
   {
     "titulo": "Santo por siempre",
