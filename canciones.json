@@ -934,7 +934,15 @@
       "<b>Santo, santo, santo Dios todo poderoso</b><br><b>Quien fue, quien es y quien vendrá</b><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre</b><br><br><b>La creación hoy canta y damos gloria a Él</b><br><b>Tú eres digno por siempre y siempre</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "SOL"
+    "tono": "SOL",
+    "acordes": [
+      "// [RE]Digno es el [LAm]Cordero Santo\n[DO]Santo, santo es [SOL]Él\n[RE]Levantamos [LAm]nuestra alabanza\n[DO]Al que en el trono es[RE]tá //",
+      "[RE]Santo, santo, santo [LAm]Dios todo poderoso\n[DO]Quien fue, quien es y quien ven [SOL]drá\n[RE]La creación hoy canta [LAm]y damos gloria a Él\n[DO]Tú eres digno por [SOL]siempre y [RE]siempre",
+      "Digno es el Cordero Santo\nSanto, santo es Él\nLevantamos nuestra alabanza\nAl que en el trono está",
+      "// Santo, santo, santo Dios todo poderoso\nQuien fue, quien es y quien vendrá\nLa creación hoy canta y damos gloria a Él\nTú eres digno por siempre y siempre //",
+      "/// Levantamos nuestra alabanza\nAl que en el trono está ///",
+      "Santo, santo, santo Dios todo poderoso\nQuien fue, quien es y quien vendrá\nLa creación hoy canta y damos gloria a Él\nTú eres digno por siempre y siempre\n\nLa creación hoy canta y damos gloria a Él\nTú eres digno por siempre y siempre"
+    ]
   },
   {
     "titulo": "Santo por siempre",
