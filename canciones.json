@@ -139,7 +139,16 @@
       "<b>Amor sin condición, amor sin condición</b><br><b>Amor sin condición, amor sin condición</b>"
     ],
     "carpeta": "Alabanza",
-    "tono": "MI"
+    "tono": "MI",
+    "acordes": [
+      "INTRO [MI][FA#m][SOL#m][LA]\n\nDe [MI]tal manera al mundo Tú a[SI]maste\nQue hasta tu vida entre[DO#m]gaste\nTu cos[LA]tado abierto [SI]fue\nY [MI]fueron esas gotas de tu [SI]sangre\nQue mi corazón lim[FA#m]piaron\nMe hi[LA]ciste un nuevo [SI]ser",
+      "[MI]Gracias, te doy [SI]gracias\nPor tu [DO#m]amor sin condi[LA]ción en esa [SI]cruz\n[MI]Gracias, te doy [SI]gracias\nPor tu [FA#m]perdón la salva[LA]ción en esa [SI]cruz",
+      "A[MI]mor [SI]sin [SOL#m]condi[SI]ción, a[MI]mor [SI]sin [SOL#mcondi[SI]ción\nA[MI]mor [SI]sin [SOL#m]condición, a[MI]mor [SI]sin [SOL#m]condi[SI]ción",
+      "De tal manera al mundo Tú amaste\nQue hasta tu vida entregaste\nTu costado abierto fue\nY fueron esas gotas de tu sangre\nQue mi corazón limpiaron\nMe hiciste un nuevo ser",
+      "Gracias, te doy gracias\nPor tu amor sin condición en esa cruz\nGracias, te doy gracias\nPor tu perdón la salvación en esa cruz",
+      "Amor sin condición, amor sin condición\nAmor sin condición, amor sin condición"
+    ],
+    "youtube": "https://www.youtube.com/watch?v=NEX_uGmxqcg&list=RDNEX_uGmxqcg&start_radio=1"
   },
   {
     "titulo": "Aquí estás (Way Maker)",
