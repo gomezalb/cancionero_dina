@@ -1277,6 +1277,23 @@
     ]
   },
   {
+    "titulo": "Vamos a cantar",
+    "preview": "Vamos a cantar\nCon la música del cielo\nVamos a cantar\nAlegres porque escuchas\nCuando cantamos\nPara exaltar Tu nombre.",
+    "slides": [
+      "<b>Vamos a cantar</b><br><b>Con la música del cielo</b><br><b>Vamos a cantar</b><br><b>Alegres porque escuchas</b><br><b>Cuando cantamos</b><br><b>Para exaltar Tu nombre.</b>",
+      "<b>Amamos todo de Ti</b><br><b>Cielo y tierra Te adoran</b><br><b>Los reinos se rinden</b><br><b>Hijo de Dios Tú eres por quien</b><br><b>Tú eres por quien</b><br><b>Vivimos hoy.</b>",
+      "<b>Eres quien nos liberta</b><br><b>Eres la luz que guía</b><br><b>Como un fuego ardiente</b><br><b>Hijo de Dios Tú eres por quien</b><br><b>Tú eres por quien</b><br><b>Vivimos hoy.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SOL",
+    "youtube": "https://www.youtube.com/watch?v=HSQzeIaPgIg&list=RDHSQzeIaPgIg&start_radio=1",
+    "acordes": [
+      "//Vamos [SOL]a cantar\nCon la música del cielo\nVamos [MIm]a cantar\nAlegres porque escuchas\nCuando [RE]cantamos\nPa[DO]ra exaltar Tu [SOL]nombre.//",
+      "[SOL]Amamos todo de Ti\nCielo y tierra Te adoran\n[MIm]Los reinos se rinden\nHijo de Dios Tú eres por [RE]quien\nTú eres por [DO]quien\nVivimos [SOL]hoy.",
+      "Eres quien [SOL]nos liberta\nEres la luz que guía\n[MIm]Como un fuego ardiente\nHijo de Dios Tú eres por [RE]quien\nTú eres por [DO]quien\nVivimos [SOL]hoy."
+    ]
+  },
+  {
     "titulo": "Vengo a ti con mis cargas (Eres Rey)",
     "preview": "//Vengo a Ti\nCon mis cargas vengo\nVengo a Ti\nTú eres mi sustento, Dios\nTorre fuerte, eres mi vida\nEres mi fiel compañía. //",
     "slides": [
