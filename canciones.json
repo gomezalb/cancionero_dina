@@ -134,6 +134,21 @@
     "youtube_vocal": "https://www.youtube.com/watch?v=7sCuOM92fOU"
   },
   {
+    "titulo": "Al que está sentado en el Trono",
+    "preview": "Quiero conocerte\nCada día más a Ti\nEntrar en Tu presencia y adorar\n\nRevélanos Tu gloria\nDeseamos ir mucho más en Ti\nQueremos Tu presencia\nJesús",
+    "slides": [
+      "<b>Quiero conocerte</b><br><b>Cada día más a Ti</b><br><b>Entrar en Tu presencia y adorar</b><br><br><b>Revélanos Tu gloria</b><br><b>Deseamos ir mucho más en Ti</b><br><b>Queremos Tu presencia</b><br><b>Jesús</b>",
+      "<b>Al que está sentado en el trono (en el trono)</b><br><b>Al que vive para siempre y siempre</b><br><b>Sea la gloria</b><br><b>Sea la honra y el poder</b><br><b>Sea la gloria</b><br><b>Sea la honra y el poder</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LA",
+    "youtube": "https://www.youtube.com/watch?v=PKd0WGCcxMs&list=RDPKd0WGCcxMs&start_radio=1",
+    "acordes": [
+      "INTRO  [RE][FA#m][LA]  [RE][FA#m][LA]  [RE][MI][RE][MI]\n[LA]Quiero conocerte\n[FA#m]Cada día más a Ti\n[LA]Entrar en Tu presencia y ado[RE]rar[MI][RE][MI]\n\nRe[FA#m]vélanos Tu gloria\nDe[LA]seamos ir mucho más en Ti\nQue[RE]remos Tu presencia\nJe[MI]sús",
+      "[LA]Al que está sentado en el trono (en el trono)\n[FA#m]Al que vive para siempre y siempre\nSea la [SIm]gloria\nSea la [DO#m]honra y el poder\nSea la [RE]gloria\nSea la [MI]honra y el poder"
+    ]
+  },
+  {
     "titulo": "Alaba",
     "preview": "Te alabo en el valle\nTe alabo en el monte\nTe alabo en el día\nTe alabo en la noche",
     "slides": [
