@@ -71,6 +71,18 @@
     ]
   },
   {
+    "titulo": "Agnus dei (solo estribillo)",
+    "preview": "Santo, Santo \nEl Señor Dios Poderoso \nDigno eres Tú, Digno eres Tú, \nTu Eres Santo, Santo \nEl Señor Dios Poderoso \nDigno eres Tú, Digno eres Tú, \nAmén.",
+    "slides": [
+      "<b>Santo, Santo</b><br><b>El Señor Dios Poderoso</b><br><b>Digno eres Tú, Digno eres Tú,</b><br><b>Tu Eres Santo, Santo</b><br><b>El Señor Dios Poderoso</b><br><b>Digno eres Tú, Digno eres Tú,</b><br><b>Amén.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "acordes": [
+      "San[RE]to, Santo\nEl Señor Dios Podero[LA]so\nDigno eres [SOL]Tú, Digno eres [SOL]Tú,\nTu Eres San[RE]to, Santo\nEl Señor Dios Podero[LA]so\nDigno eres [SOL]Tú, Digno eres [SOL]Tú,\nA[RE]mén."
+    ]
+  },
+  {
     "titulo": "Al Alto y Sublime",
     "preview": "Al alto y sublime, \nque habita la eternidad, \ny su nombre es el Santo de Israel.",
     "slides": [
