@@ -44,6 +44,29 @@
     ]
   },
   {
+    "titulo": "Abre mis ojos oh Cristo",
+    "preview": "//Abre mis ojos, oh Cristo,\nabre mis ojos te pido.\nYo quiero verte,\nyo quiero verte//",
+    "slides": [
+      "<b>//Abre mis ojos, oh Cristo,</b><br><b>abre mis ojos te pido.</b><br><b>Yo quiero verte,</b><br><b>yo quiero verte//</b>",
+      "<b>Y contemplar Tu majestad</b><br><b>y el resplandor de Tu gloria.</b><br><b>Derrama Tu amor y poder</b><br><b>cuando cantamos Santo, Santo</b>",
+      "<b>///Santo, Santo, Santo///</b><br><b>Yo quiero verte</b>",
+      "<b>//Abre mis ojos, oh Cristo,</b><br><b>abre mis ojos te pido.</b><br><b>Yo quiero verte,</b><br><b>yo quiero verte//</b>",
+      "<b>//Y contemplar Tu majestad</b><br><b>y el resplandor de Tu gloria.</b><br><b>Derrama Tu amor y poder</b><br><b>cuando cantamos Santo, Santo //</b>",
+      "<b>///Santo, Santo, Santo///</b><br><b>Yo quiero verte</b><br><br><b>///Santo, Santo, Santo///</b><br><b>Yo quiero verte</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "youtube": "https://www.youtube.com/watch?v=vaMrXE4vZlI&list=RDvaMrXE4vZlI&start_radio=1",
+    "acordes": [
+      "//[RE]Abre mis ojos, oh Cristo,\n[FA#m]abre mis ojos te pido.\nYo quiero [SOL]verte,\nyo quiero [RE]verte//",
+      "Y contem[LA]plar Tu majes[SIm]tad\n[SOL]y el resplandor de Tu [LA]gloria.\nDe[LA]rrama Tu amor y po[SIm]der\ncuando can[SOL]tamos Santo, [LA]Santo",
+      "[RE]Santo, Santo, Santo\n[FA#m]Santo, Santo, Santo\n[SOL]Santo, Santo, [LA]Santo\nYo quiero [RE]verte",
+      "//[RE]Abre mis ojos, oh Cristo,\n[FA#m]abre mis ojos te pido.\nYo quiero [SOL]verte,\nyo quiero [RE]verte//",
+      "//Y contem[LA]plar Tu majes[SIm]tad\n[SOL]y el resplandor de Tu [LA]gloria.\nDe[LA]rrama Tu amor y po[SIm]der\ncuando can[SOL]tamos Santo, [LA]Santo//",
+      "//[RE]Santo, Santo, Santo\n[FA#m]Santo, Santo, Santo\n[SOL]Santo, Santo, [LA]Santo\nYo quiero [RE]verte//"
+    ]
+  },
+  {
     "titulo": "Abrenos los cielos",
     "preview": "Nos congregamos hoy\nCon anticipación\nClamándote a ti\nDeseamos presenciar\nTu gloria y majestad\nRevelada aquí",
     "slides": [
