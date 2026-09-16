@@ -1419,6 +1419,29 @@
     ]
   },
   {
+    "titulo": "Tu hijo soy",
+    "preview": "Llamado, escogido por Ti\nMarcado, yo vivo para Ti\nY aunque Te fallé mil veces\nTu amor nunca falló\nY aunque corra muchas veces\nTú me llamas y me dices",
+    "slides": [
+      "<b>Llamado, escogido por Ti</b><br><b>Marcado, yo vivo para Ti</b><br><b>Y aunque Te fallé mil veces</b><br><b>Tu amor nunca falló</b><br><b>Y aunque corra muchas veces</b><br><b>Tú me llamas y me dices</b>",
+      "<b>Que Tu hijo soy</b><br><b>Que Tu hijo soy</b>",
+      "<b>Llamado, escogido por Ti</b><br><b>Marcado, yo vivo para Ti</b><br><b>Y aunque Te fallé mil veces</b><br><b>Tu amor nunca falló</b><br><b>Y aunque corra muchas veces</b><br><b>Tú me llamas y me dices</b>",
+      "<b>//Que Tu hijo soy</b><br><b>Que Tu hijo soy//</b>",
+      "<b>Vuelvo a casa, a mi casa</b><br><b>Casa de Mi Padre</b><br><b>Vuelvo a casa, a mi casa</b><br><b>Casa de Mi Padre</b><br><b>Vuelvo a casa, a mi casa</b><br><b>Casa de Mi Padre (dilo)</b><br><b>Vuelvo a casa, a mi casa</b><br><b>Casa de Mi Padre</b>",
+      "<b>Ya no hay tristeza, Ya no hay vergüenza</b><br><b>Todo lo haces nuevo,</b><br><br><b>Ya no hay tristeza Ya no hay vergüenza,</b><br><b>Todo lo haces nuevo</b><br><br><b>Ya no hay tristeza, Ya no hay vergüenza</b><br><b>Todo lo haces nuevo</b><br><br><b>Ya no hay tristeza Ya no hay vergüenza</b><br><b>Todo lo haces nuevo</b>",
+      "<b>//Que Tu hijo soy</b><br><b>Que Tu hijo soy//</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "LA",
+    "youtube": "https://www.youtube.com/watch?v=eDnJNsQP0os&list=RDeDnJNsQP0os&start_radio=1",
+    "acordes": [
+      "INTRO [FA#m][RE][LA]\n \nLla[FA#m]mado, esco[RE]gido por [LA]Ti\nMar[FA#m]cado, yo vi[RE]vo para [LA]Ti MI]\nY [FA#m]aunque Te fa[RE]llé mil veces\nTu a[LA]mor nunca[MI] falló\nY aunque[FA#m] corra [RE]muchas veces\nTú me [LA]llamas y me [MI]dices",
+      "Que Tu hijo [FA#m]soy[RE][LA]\nQue Tu hijo [FA#m]soy[RE][LA]",
+      "//Vuelvo a [FA#m]casa, a mi [RE]casa\nCasa de Mi [LA]Padre\nVuelvo a [FA#m]casa, a mi [RE]casa\nCasa de Mi [LA]Padre//",
+      "////Ya no hay tris[FA#m]teza, Ya no hay ver[RE]güenza\nTodo lo haces [LA]nuevo[MI],////",
+      "Que Tu hijo [FA#m]soy[RE][LA]\nQue Tu hijo [FA#m]soy[RE][LA]"
+    ]
+  },
+  {
     "titulo": "Vamos a cantar",
     "preview": "Vamos a cantar\nCon la música del cielo\nVamos a cantar\nAlegres porque escuchas\nCuando cantamos\nPara exaltar Tu nombre.",
     "slides": [
