@@ -1705,5 +1705,24 @@
     ],
     "tono": "MIm",
     "youtube": "https://youtu.be/0KTb5aiSXHA?si=5Lttk--xxrE6c0Ig"
+  },
+  {
+    "titulo": "Yo te busco",
+    "preview": "Yo te busco, Yo te busco\nCon fuego en mi Corazón\nYo te busco, Yo te busco\nRecibe mi adoración.",
+    "slides": [
+      "<b>Yo te busco, Yo te busco</b><br><b>Con fuego en mi Corazón</b><br><b>Yo te busco, Yo te busco</b><br><b>Recibe mi adoración.</b>",
+      "<b>CORO</b><br><b>//Te anhelo, Te necesito</b><br><b>Te amo, mas que a mi ser//</b>",
+      "<b>Yo te busco, Yo te busco</b><br><b>Con fuego en mi Corazón</b><br><b>Yo te busco, Yo te busco</b><br><b>Recibe mi adoración.</b>",
+      "<b>CORO</b><br><b>//Te anhelo, Te necesito</b><br><b>Te amo, mas que a mi ser//</b><br><b>//mas que a mi ser //</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "RE",
+    "youtube": "https://www.youtube.com/watch?v=qcekc_yJLxw&list=RDqcekc_yJLxw&start_radio=1",
+    "acordes": [
+      "[RE]Yo te [SOL]bus[RE]co, \n[RE]Yo te [SOL]bus[RE]co\nCon fuego [SOL]en mi Cora[RE]zón\n[RE]Yo te [SOL]bus[RE]co, \n[RE]Yo te [SOL]bus[RE]co\nRecibe mi [SOL]adora[RE]ción.",
+      "CORO\n//Te an[FA#m]he[SOL]lo, Te nece[SIm]si[LA]to\nTe [FA#m]a[SOL]mo, [MIm]mas que a mi [RE]ser//",
+      "[RE]Yo te [SOL]bus[RE]co, \n[RE]Yo te [SOL]bus[RE]co\nRecibe mi [SOL]adora[RE]ción.",
+      "CORO\n//Te an[FA#m]he[SOL]lo, Te nece[SIm]si[LA]to\nTe [FA#m]a[SOL]mo, [MIm]mas que a mi [RE]ser//\n//[MIm]mas que a mi [RE]ser //"
+    ]
   }
 ]
