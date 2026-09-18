@@ -1603,6 +1603,27 @@
     ]
   },
   {
+    "titulo": "Tómalo",
+    "preview": "De todo lugar\nLos perdidos vendrán\nEn libertad\nA ti clamarán\nLlevaste la cruz\nMoriste y vivo estás\nMi Dios, a ti mi vida te daré",
+    "slides": [
+      "<b>De todo lugar</b><br><b>Los perdidos vendrán</b><br><b>En libertad</b><br><b>A ti clamarán</b><br><b>Llevaste la cruz</b><br><b>Moriste y vivo estás</b><br><b>Mi Dios, a ti mi vida te daré</b>",
+      "<b>VERSO 2:</b><br><b>Enviaste a Jesús</b><br><b>Por mi salvación</b><br><b>Por la eternidad</b><br><b>En ti tengo perdón</b><br><b>Busqué la verdad</b><br><b>Y te encontré a ti</b><br><b>Mi Dios, a ti mi vida te daré</b>",
+      "<b>CORO</b><br><b>Jesús, por ti yo viviré</b><br><b>De ti nunca me avergonzaré</b><br><b>Te doy todo lo que soy</b><br><b>Toma, tómalo</b><br><b>Toma, tómalo</b>",
+      "<b>PUENTE</b><br><b>Eres el que vista al ciego das</b><br><b>Brillas en la oscuridad</b><br><b>La salvación del mundo en tus manos está</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "SI",
+    "youtube": "https://www.youtube.com/watch?v=0EZmCNquUOs&list=RD0EZmCNquUOs&start_radio=1",
+    "acordes": [
+      "INTRO [SI]    [LA#m] [RE#m]\n\nDe [SI]todo lugar\nLos per[LA#m]didos ven[RE#m]drán\n[SI]En libertad\nA [LA#m]ti clama[RE#m]rán\nLle[SI]vaste la cruz\nMo[LA#m]riste y [RE#m][SI]vivo estás\nMi Dios, a [FA#m]ti mi vida [RE#m]te daré",
+      "Intro  [SI][LA#m][RE#m]\n\nVERSO 2:\nEn[SI]viaste a Jesús\nPor[FA#m] mi salva[RE#m]ción\nPor [SI]la eternidad\nEn ti [LA#m]tengo per[RE#m]dón\nBus[SI]qué la verdad\nY [LA#m]te encontré a [RE#m]ti\nMi[SOL#m] Dios, a [MI]ti mi vida te daré",
+      "CORO\n[SI]Jesús, por [FA#]ti yo viviré\nDe ti [SOL#m]nunca me avergonza[MI]ré\n[SI]Te doy [FA#]todo lo que soy\n[DO#m]Toma, tómalo\nToma, tómalo",
+      "PUENTE [SI] [DO#m] [RE#m] [MI]\n\n[DO#m]Eres el que [SOL#m]vista al [FA]ciego [MI]das\n[DO#m]Brillas en la [SOL#m]oscuri[FA#]dad\nLa [DO#m]salvación [SOL#m]del mundo [FA#]en tus [MI]manos es[SI]tá\n\n//INTRO [SI]  [LA#M]  [RE#m]//\n(Bombo y solo bajo)",
+      "CORO (Bombo y voces)\n[SI]Jesús, por [FA#]ti yo viviré\nDe ti [SOL#m]nunca me avergonza[MI]ré\n[SI]Te doy [FA#]todo lo que soy\n[DO#m]Toma, tómalo\nToma, tómalo",
+      "FINAL\n[SI]Jesús, por [FA#]ti yo viviré\nDe ti [SOL#m]nunca me avergonza[MI]ré\n[SI]Te doy [FA#]todo lo que soy\n[DO#m]Toma, tómalo\nToma, tómalo"
+    ]
+  },
+  {
     "titulo": "Tú eres mi todo",
     "preview": "Mi Dios, redentor\nMi rey, consolador\nA ti, todo el honor\n\nEs paz a mi ser\nLa luz en mi amanecer\nA ti, todo el honor\nTú eres mi todo\n----\n//Cantaré con todo el corazón\nCantaré con todo lo que soy\nCantaré por siempre, mi Señor\nTú eres mi todo//",
     "slides": [
