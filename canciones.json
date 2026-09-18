@@ -876,6 +876,30 @@
     ]
   },
   {
+    "titulo": "Gracias por la cruz",
+    "preview": "Del cielo bajó el Hijo de Dios\nLleno de gloria e inagotable amor\nSu quebrantar nos vio nacer\nPor sus heridas saciada fue nuestra sed",
+    "slides": [
+      "<b>Del cielo bajó el Hijo de Dios</b><br><b>Lleno de gloria e inagotable amor</b><br><b>Su quebrantar nos vio nacer</b><br><b>Por sus heridas saciada fue nuestra sed</b>",
+      "<b>Gracias por la cruz, gracias por tu amor</b><br><b>La muerte venciste, el velo partiste, Jesús</b><br><b>Y vino a tomar él nuestro lugar</b><br><b>Sangre inocente, precio por nuestra maldad</b><br><b>No más orfandad y ni esclavitud</b><br><b>Y hoy como hijos cantamos a Cristo Jesús</b>",
+      "<b>Gracias por la cruz, gracias por tu amor</b><br><b>La muerte venciste, el velo partiste, Jesús</b><br><b>Sangre que lavó nuestro corazón</b><br><b>Tú nos redimiste y en ti somos libres, Jesús</b><br><b>Oh, oh, oh</b><br><b>Oh, oh, oh</b><br><b>Oh, oh, oh</b>",
+      "<b>Y los redimidos cantarán con la canción de libertad</b><br><b>Nada en el cielo y la tierra nos separará</b><br><b>Y los redimidos danzarán con la canción de libertad</b><br><b>Gloria en el cielo y la tierra, pues Él vivo está</b>",
+      "<b>Oh, oh, oh</b><br><b>Oh, oh, oh</b><br><b>Nada en el cielo y la tierra nos separará</b>",
+      "<b>Oh, oh, oh</b><br><b>Oh, oh, oh</b><br><b>Nada en el cielo y la tierra nos separará</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "youtube": "https://www.youtube.com/watch?v=O1AIrk7ptmU&list=RDO1AIrk7ptmU&start_radio=1",
+    "acordes": [
+      "Del [DO]cielo ba[DO4]jó el Hijo de [DO]Dios\nLleno de [LAm]gloria e inagotable [DO]amor\n[DO]Su quebran[FA/RE]tar nos vio [DO]nacer\nPor sus he[LAm]ridas sa[REm]ciada fue nuestra [DO]sed",
+      "[REm]Gracias por la [DO]cruz, [REm]gracias por tu [DO]amor\nLa [LAm]muerte venciste, el [REm]velo partiste, Je[DO]sús\n\nY [REm]vino a to[DO]mar [REm]él nuestro lu[DO]gar\n[LAm]Sangre inocente, [REm]precio por nuestra mal[DO]dad\n[REm]No más orfan[DO]dad [REm]y ni esclavi[DO]tud\nY [LAm]hoy como hijos can[REm]tamos a Cristo Je[DO]sús",
+      "[REm]Gracias por la [DO]cruz, [REm]gracias por tu [DO]amor\nLa [LAm]muerte venciste, el [REm]velo partiste, Je[DO]sús\n\n[REm]Sangre que la[DO]vó [REm]nuestro cora[DO]zón\nTú [LAm]nos redimiste y en [FA]ti somos libres, Je[DO]sús\nOh, oh, oh [REm][REm/FA][DO]",
+      "Y los [DO]redimidos [REm/DO]cantarán \ncon [LAm/DO]la canción de [FA/DO]libertad\n[LAm/DO]Nada en el cielo y la [FA/DO]tierra nos separa[DO]rá\nY los [DO]redimidos [REm/DO]danzarán \ncon LAm/DO]la canción de [FA/DO]libertad\n[LAm/DO]Gloria en el cielo y la [FA/DO]tierra, pues Él vivo es[DO]tá",
+      "Y los [DO]redimidos [REm]cantarán \ncon [LAm]la canción de [FA]libertad\n[LAm]Nada en el cielo y la [FA]tierra nos separa[DO]rá\nY los [DO]redimidos [REm]danzarán \ncon LAm]la canción de [FA]libertad\n[LAm]Gloria en el cielo y la [FA]tierra, \npues Él vivo es[DO]tá",
+      "Oh, oh, oh\nOh, oh, oh\nNada en el cielo y la tierra nos separará",
+      "Oh, oh, oh\nOh, oh, oh\nNada en el cielo y la tierra nos separará"
+    ]
+  },
+  {
     "titulo": "Grandes son tus maravillas",
     "preview": "//Te alabaré, oh Señor\nInvocaré tu Santo Nombre\nSiempre daré a conocer\nEn los pueblos tus obras //",
     "slides": [
