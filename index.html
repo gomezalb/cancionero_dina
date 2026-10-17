@@ -2897,8 +2897,9 @@ function construirExportado() {
   const acordesLS  = getAcordesLS();
   const nuevasLS   = getNuevasLS();
   const eliminadas = JSON.parse(localStorage.getItem("cancionero_eliminadas") || "[]");
+  const normElim = eliminadas.map(t => norm(t));
   const exportado = SONGS
-    .filter(s => !eliminadas.includes(s.titulo))
+    .filter(s => !normElim.includes(norm(s.titulo)))
     .filter(s => s.carpeta !== "Nuevas" || !getNuevasLS().find(n => n.titulo === s.titulo))
     .map(s => {
       const c = { ...s };
@@ -2914,7 +2915,7 @@ function construirExportado() {
       return c;
     });
   nuevasLS.forEach(n => {
-    if (!eliminadas.includes(n.titulo) && !exportado.find(s => s.titulo === n.titulo)) {
+    if (!normElim.includes(norm(n.titulo)) && !exportado.find(s => s.titulo === n.titulo)) {
       const c = { ...n }; delete c.nueva; exportado.push(c);
     }
   });
