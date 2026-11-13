@@ -1942,6 +1942,20 @@
     ]
   },
   {
+    "titulo": "Te Exaltamos (Solo estribillo)",
+    "preview": "Te exaltamos\nte exaltamos,\nte exaltamos\noh Señor.",
+    "slides": [
+      "<b>Te exaltamos</b><br><b>te exaltamos,</b><br><b>te exaltamos</b><br><b>oh Señor.</b>",
+      "<b>Te exaltamos</b><br><b>te exaltamos,</b><br><b>te exaltamos</b><br><b>oh Señor.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "acordes": [
+      "Te exal[DO]tamos\nte exal[SOL]tamos,\nte exal[FA]tamos\n[SOL]oh Se[DO]ñor.",
+      "Te exal[DO]tamos\nte exal[SOL]tamos,\nte exal[FA]tamos\n[SOL]oh Se[DO]ñor."
+    ]
+  },
+  {
     "titulo": "Toda lengua y toda nación",
     "preview": "Hasta que Él venga sonará\nLa melodía del clamor de tu iglesia\nJesús, ¡regresa!\n\nHasta que Él venga subirá\nLa adoración de los que anhelan tu belleza\nJesús, ¡regresa!",
     "slides": [
