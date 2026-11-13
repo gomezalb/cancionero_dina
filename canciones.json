@@ -1824,6 +1824,22 @@
     ]
   },
   {
+    "titulo": "Somos el pueblo de Dios",
+    "preview": "Somos el pueblo de Dios, \nsomos un pueblo especial, \nllamados para anunciar, \nlas virtudes de Aquel, \nque nos llamó a Su luz..",
+    "slides": [
+      "<b>Somos el pueblo de Dios,</b><br><b>somos un pueblo especial,</b><br><b>llamados para anunciar,</b><br><b>las virtudes de Aquel,</b><br><b>que nos llamó a Su luz..</b>",
+      "<b>Somos el pueblo de Dios,</b><br><b>su sangre nos redimió,</b><br><b>y su Espíritu dio,</b><br><b>para darnos poder,</b><br><b>y ser testigos de Él</b>",
+      "<b>Coro</b><br><b>Y llevaremos Su gloria,</b><br><b>a cada pueblo y nación,</b><br><b>trayéndoles esperanzas,</b><br><b>y nuevas de salvación</b><br><b>y Su amor nos impulsa,</b><br><b>no nos podemos callar,</b><br><b>anunciaremos al mundo,</b><br><b>de Su amor y verdad.</b>"
+    ],
+    "carpeta": "Alabanza",
+    "tono": "DO",
+    "acordes": [
+      "[DO]Somos el pueblo de Dios,[FA][DO]\nsomos un pueblo espe[LAm]cial,\nllamados para anun[FA]ciar,[REm]\nlas virtudes de A[SOL]quel,\nque nos llamó a Su [DO]luz..[FA][DO]",
+      "Somos el pueblo de [DO]Dios,[FA][DO]\nsu sangre nos redi[LAm]mió,\ny su Espíritu [FA]dio,[REm]\npara darnos po[SOL]der,\ny ser testigos de [DO]Él",
+      "Coro\nY llevaremos Su [FA]gloria,[LA#][FA]\na cada pueblo y na[DO]ción,\ntrayéndoles espe[SOL]ranzas,\ny nuevas de salva[DO]ción\ny Su amor nos im[FA]pulsa,[LA#][DO]\nno nos podemos ca[DO]llar,\nanunciaremos al [SOL]mundo,\nde Su amor y ver[DO]dad.[FA][DO]"
+    ]
+  },
+  {
     "titulo": "Sublime Gracia - Himno",
     "preview": "Sublime Gracia del Señor\nQue a un pecador salvó;\nFui ciego más, hoy veo yo,\nPerdido y Él me halló.",
     "slides": [
