@@ -1,14 +1,3 @@
 {
-  "listas": [
-    {
-      "name": "Domingo 29",
-      "expira": "2026-11-29",
-      "songs": [
-        "A ti sea la Gloria - No existen mas motivos",
-        "Agnus dei",
-        "A tus pies",
-        "Al que está sentado en el Trono"
-      ]
-    }
-  ]
+  "listas": []
 }
