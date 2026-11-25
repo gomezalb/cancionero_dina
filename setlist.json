@@ -1,3 +1,14 @@
 {
-  "listas": []
+  "listas": [
+    {
+      "name": "Domingo 29",
+      "expira": "2026-11-29",
+      "songs": [
+        "Al estar aquí",
+        "A tus pies",
+        "Agnus dei",
+        "Al que está sentado en el Trono"
+      ]
+    }
+  ]
 }
